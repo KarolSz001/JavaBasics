@@ -1,0 +1,46 @@
+
+1. Zaimplementuj klasę Klient oraz klasę Produkt. Klasa Klient posiada
+pola imię, nazwisko, wiek, gotówka. Klasa Produkt posiada pola nazwa,
+kategoria, cena. Przygotuj kilka plików tekstowych. W każdym pliku
+znajdują się wiersze, przechowujące dane o kliencie oraz w kwadratowych
+nawiasach dane o produktach, które klient zakupił. Przykładowy wiersz
+z danymi umieszczonymi w pliku tekstowym zaprezentowano poniżej:
+Jan;Kos;18;2000 [Komputer;Elektronika;2400 PanTadeusz;Ksiazka;120]
+Ten sam klient może pojawiać się w wielu wierszach w kilku plikach.
+Ten sam produkt może być kupowany kilka razy nawet przez tego samego
+klienta. Przygotuj klasę Zakupy, która posiada pole składowe - mapę.
+Kluczem mapy jest obiekt klasy Klient, natomiast wartością mapa, która
+jako klucz posiada obiekt klasy Produkt, natomiast wartością jest
+liczba całkowita, określająca, ile razy klient zakupił ten produkt.
+Przygotuj konstruktor, który jako argument pobiera nazwy plików
+tekstowych i wypełnia mapę danymi z plików tekstowych. Następnie napisz
+metody, które wykorzystując operacje na kolekcjach oraz mapach
+(programiści Java mogą stosować strumienie Java 8) rozwiążą następujące
+problemy:
+TASK 1
+ Wyznacz klienta, który zapłacił najwięcej za wszystkie zakupy.
+W osobnej metodzie wyznacz klienta, który zapłacił najwięcej
+za zakupy z wybranej kategorii. Nazwę kategorii przekaż jako
+argument funkcji.
+TASK 2
+ Wykonaj zestawienie (mapę), w którym pokażesz wiek klientów oraz
+kategorie produktów, które najchętniej w tym wieku kupowano.
+TASK 3
+ Wykonaj zestawienie (mapę), w którym pokażesz średnią cenę produktów
+w danej kategorii. Dodatkowo wyznacz dla każdej kategorii produkt
+najdroższy oraz produkt najtańszy.
+TASK 4
+ Wyznacz klientów, którzy kupowali najczęściej produkty danej
+kategorii. Otrzymane zestawienie zwracaj w postaci mapy.
+TASK 5
+ Sprawdź, czy klient jest w stanie zapłacić za zakupy. Żeby
+to stwierdzić, porównaj wartość pola przechowującego ilość gotówki,
+którą posiada klient z sumaryczną ceną za zakupy klienta. Wykonaj
+
+
+/////////////////////////
+- create menu
+- method to clrean screen
+- package for control and visulaisation
+- create comments in englis and java doc !!!
+- no methode with void , most of them !!!

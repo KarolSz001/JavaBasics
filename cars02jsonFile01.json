@@ -1,0 +1,61 @@
+{
+  "customerWithProducts": [
+    {
+      "customer": {
+        "name": "GenowefaNiewiadomska",
+        "age": 25,
+        "cash": 479
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 408
+        },
+        {
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 28048
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "AgataKowalski",
+        "age": 27,
+        "cash": 968
+      },
+      "products": [
+        {
+          "name": "Last Mochcanine",
+          "category": "BOOK",
+          "price": 468
+        },
+        {
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 16726
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "JanuszNowicki",
+        "age": 45,
+        "cash": 152
+      },
+      "products": [
+        {
+          "name": "Game of Throne",
+          "category": "BOOK",
+          "price": 308
+        },
+        {
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 22034
+        }
+      ]
+    }
+  ]
+}

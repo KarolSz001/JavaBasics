@@ -1,0 +1,23 @@
+{
+  "model": "FERRARI",
+  "price": 803108,
+  "mileage": 290389,
+  "engine": {
+    "engineType": "GASOLINE",
+    "power": 120.5
+  },
+  "carBody": {
+    "color": "SILVER",
+    "type": "SEDAN",
+    "components": [
+      "GPS",
+      "ABS",
+      "TV"
+    ]
+  },
+  "wheel": {
+    "model": "Motiv",
+    "size": 21,
+    "tyreType": "SUMMER"
+  }
+}

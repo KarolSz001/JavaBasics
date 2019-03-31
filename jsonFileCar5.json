@@ -1,0 +1,23 @@
+{
+  "model": "AUDI",
+  "price": 978191,
+  "mileage": 378430,
+  "engine": {
+    "engineType": "DIESEL",
+    "power": 102.2
+  },
+  "carBody": {
+    "color": "RED",
+    "type": "COMBI",
+    "components": [
+      "GPS",
+      "ABS",
+      "RADIO"
+    ]
+  },
+  "wheel": {
+    "model": "Pacer",
+    "size": 21,
+    "tyreType": "SUMMER"
+  }
+}

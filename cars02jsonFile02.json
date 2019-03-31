@@ -1,0 +1,61 @@
+{
+  "customerWithProducts": [
+    {
+      "customer": {
+        "name": "JanuszNowak",
+        "age": 33,
+        "cash": 503
+      },
+      "products": [
+        {
+          "name": "Boogeman",
+          "category": "BOOK",
+          "price": 490
+        },
+        {
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 18465
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "TeresaNowicki",
+        "age": 28,
+        "cash": 951
+      },
+      "products": [
+        {
+          "name": "Boogeman",
+          "category": "BOOK",
+          "price": 963
+        },
+        {
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 12788
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "ZofiaNowicki",
+        "age": 45,
+        "cash": 654
+      },
+      "products": [
+        {
+          "name": "Last Mochcanine",
+          "category": "BOOK",
+          "price": 986
+        },
+        {
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 15414
+        }
+      ]
+    }
+  ]
+}

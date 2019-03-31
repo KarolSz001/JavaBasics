@@ -1,0 +1,23 @@
+{
+  "model": "TESLA",
+  "price": 845574,
+  "mileage": 181662,
+  "engine": {
+    "engineType": "GASOLINE",
+    "power": 81.0
+  },
+  "carBody": {
+    "color": "SILVER",
+    "type": "COMBI",
+    "components": [
+      "GPS",
+      "RADIO",
+      "TV"
+    ]
+  },
+  "wheel": {
+    "model": "Motiv",
+    "size": 21,
+    "tyreType": "WINTER"
+  }
+}

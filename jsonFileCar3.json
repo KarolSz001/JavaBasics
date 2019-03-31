@@ -1,0 +1,23 @@
+{
+  "model": "AUDI",
+  "price": 589241,
+  "mileage": 323721,
+  "engine": {
+    "engineType": "LPG",
+    "power": 81.0
+  },
+  "carBody": {
+    "color": "GREEN",
+    "type": "HATCHBACK",
+    "components": [
+      "ABS",
+      "TV",
+      "RADIO"
+    ]
+  },
+  "wheel": {
+    "model": "Pacer",
+    "size": 21,
+    "tyreType": "SUMMER"
+  }
+}

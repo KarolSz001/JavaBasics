@@ -1,0 +1,23 @@
+{
+  "model": "OPEL",
+  "price": 703302,
+  "mileage": 147382,
+  "engine": {
+    "engineType": "DIESEL",
+    "power": 102.2
+  },
+  "carBody": {
+    "color": "BLACK",
+    "type": "SEDAN",
+    "components": [
+      "TV",
+      "GPS",
+      "ABS"
+    ]
+  },
+  "wheel": {
+    "model": "DEBICA",
+    "size": 17,
+    "tyreType": "WINTER"
+  }
+}
