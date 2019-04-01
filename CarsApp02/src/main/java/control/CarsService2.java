@@ -2,7 +2,7 @@ package control;
 
 import converters.CarJsonConverter2;
 import enums.CarBodyType;
-import enums.Criterion;
+import enums.Criterion2;
 import enums.EngineType;
 import enums.TyreType;
 import exception.MyUncheckedException2;
@@ -10,26 +10,28 @@ import model.Car2;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class CarsService2 {
 
-    private Set<Car2> car2s;
+    private Set<Car2> car2Set;
 
     public CarsService2(List<String> stringList) {
 
-        this.car2s = dataLoader(stringList);
+        this.car2Set = dataLoader(stringList);
     }
 
-    public Set<Car2> getCar2s() {
-        return car2s;
+    public Set<Car2> getCar2Set() {
+        return car2Set;
     }
 
     @Override
     public String toString() {
         return "CarService{" +
-                "car2s=" + car2s +
+                "car2Set=" + car2Set +
                 '}';
     }
+
     private static Set<Car2> dataLoader(List<String> filesNameList) {
         Set<Car2> car2Strore = new HashSet<>();
         for (String s : filesNameList) {
@@ -47,41 +49,50 @@ public class CarsService2 {
 
     //////////////////////////////////////////////////TASK1///////////////////////////////////////////////////////
 // is it good solution ??
+
     /**
      * This method return Set Collection of filtered by number of components, power of engine or wheels size
      * and sort natural or reverse order
+     *
      * @param choice
      * @param isReversOrder
      * @return Set<Car2>
      */
-    public Set<Car2> sortMethodByArgumTask1(Criterion choice, boolean isReversOrder) {
-        Set<Car2> temp = new HashSet<>(car2s);
-        switch (choice) {
-            case NUMBER_COMPONENTS: {
-                temp = (!isReversOrder) ?
-                        temp.stream().sorted(Comparator.comparing(s -> s.getCarBody().getComponents().size())).collect(Collectors.toCollection(LinkedHashSet::new)) :
-                        temp.stream().sorted(Comparator.comparing(s -> s.getCarBody().getComponents().size(), Comparator.reverseOrder())).collect(Collectors.toCollection(LinkedHashSet::new));
-            }
-            case POWER: {
-                temp = (!isReversOrder) ?
-                        temp.stream().sorted(Comparator.comparingDouble(s -> s.getEngine().getPower() * (-1))).collect(Collectors.toCollection(LinkedHashSet::new)) :
-                        temp.stream().sorted(Comparator.comparing(s -> s.getEngine().getPower())).collect(Collectors.toCollection(LinkedHashSet::new));
-                break;
-            }
-            case SIZE_WHEEL:{
-                temp = (!isReversOrder) ?
-                        temp.stream().sorted(Comparator.comparing(s -> s.getWheel().getSize() * (-1))).collect(Collectors.toCollection(LinkedHashSet::new)) :
-                        temp.stream().sorted(Comparator.comparing(s -> s.getWheel().getSize())).collect(Collectors.toCollection(LinkedHashSet::new));
-                break;
-            }
-        }
+    public Set<Car2> sortMethodByParam(Criterion2 choice, boolean isReversOrder) {
         System.out.println("solution for task nr 1 --------------->>>>>>>>>>>>");
-        temp.forEach(s -> System.out.println(s));
-        return temp;
+
+        if (choice == null) {
+            throw new MyUncheckedException2("choice is null");
+        }
+
+        Stream<Car2> car2Stream = null;
+
+        switch (choice) {
+            case NUMBER_COMPONENTS:
+                car2Stream = car2Set.stream().sorted(Comparator.comparing(m -> m.getCarBody().getComponents().size()));
+            case MILEAGE:
+                car2Stream = car2Set.stream().sorted(Comparator.comparing(Car2::getMileage));
+            case SIZE_WHEEL:
+                car2Stream = car2Set.stream().sorted(Comparator.comparing(c -> c.getWheel().getSize()));
+            case PRICE:
+                car2Stream = car2Set.stream().sorted(Comparator.comparing(Car2::getPrice));
+            case POWER:
+                car2Stream = car2Set.stream().sorted(Comparator.comparing(s -> s.getEngine().getPower()));
+        }
+
+        Set<Car2> cars = car2Stream.collect(Collectors.toCollection(LinkedHashSet::new));
+
+        if (isReversOrder) {
+            Collections.reverse((List<?>) cars);
+        }
+
+        return cars;
     }
     //////////////////////////////////////////////////TASK2///////////////////////////////////////////////////////
+
     /**
      * This method return Set Collection of filtered by CarBodyType and min , max price
+     *
      * @param cBT -> CarBodyType
      * @param min -> minimum price
      * @param max -> minimum price
@@ -89,64 +100,70 @@ public class CarsService2 {
      */
     public Set<Car2> carBodyCollectionTask2(CarBodyType cBT, int min, int max) {
         System.out.println("solution for task nr 2 --------------->>>>>>>>>>>>");
-        Set<Car2> temp = new HashSet<>(car2s);
+        Set<Car2> temp = new HashSet<>(car2Set);
         return temp.stream()
                 .filter(f -> f.getCarBody().getType() == cBT)
                 .filter(ff -> ff.getPrice().intValue() > min && ff.getPrice().intValue() < max)
                 .collect(Collectors.toCollection(LinkedHashSet::new));
     }
     //////////////////////////////////////////////////TASK3///////////////////////////////////////////////////////
+
     /**
      * This method return Set Collection of Model filtered by engineType
+     *
      * @param engineType
      * @return Set<String>
      */
 
     public Set<String> modelsWithEngineTypeTask3(EngineType engineType) {
         System.out.println(" solution for task nr 3 --------------->>>>>>>>>>>> ");
-        return car2s.stream()
+        return car2Set.stream()
                 .filter(f -> f.getEngine().getEngineType() == engineType)
                 .sorted(Comparator.comparing(s -> s.getModel()))
                 .map(m -> m.getModel())
                 .collect(Collectors.toCollection(LinkedHashSet::new));
     }
     //////////////////////////////////////////////////TASK4///////////////////////////////////////////////////////
+
     /**
      * This method show statistic by parameter , price, mileage, power
+     *
      * @param parameter
      */
     // is it good solution ??
-    public void showStatisticByParameterTask4(Criterion parameter) {
+    public void showStatisticByParameterTask4(Criterion2 parameter) {
         System.out.println("solution for task nr 4 --------------->>>>>>>>>>>>");
         IntSummaryStatistics iss;
         switch (parameter) {
             case PRICE: {
-                iss = car2s.stream().collect(Collectors.summarizingInt(s -> s.getPrice().intValue()));
+                iss = car2Set.stream().collect(Collectors.summarizingInt(s -> s.getPrice().intValue()));
                 System.out.println(iss.getAverage() + " " + iss.getMax() + " " + iss.getMin());
                 break;
             }
             case MILEAGE: {
-                iss = car2s.stream().collect(Collectors.summarizingInt(s -> s.getMileage()));
+                iss = car2Set.stream().collect(Collectors.summarizingInt(s -> s.getMileage()));
                 System.out.println(iss.getAverage() + " " + iss.getMax() + " " + iss.getMin());
                 break;
             }
             // czy poprawnie ??
             case POWER: {
-                iss = car2s.stream().collect(Collectors.summarizingInt(s -> (int) s.getEngine().getPower()));
+                iss = car2Set.stream().collect(Collectors.summarizingInt(s -> (int) s.getEngine().getPower()));
                 System.out.println(iss.getAverage() + " " + iss.getMax() + " " + iss.getMin());
                 break;
             }
         }
     }
     //////////////////////////////////////////////////TASK5///////////////////////////////////////////////////////
+
     /**
      * This method return  Map , Key Car2 and Value number of Mileage
      * sorted by mileage
+     *
      * @return Map<Car2, Integer>
      */
     public Map<Car2, Integer> mapByCarsAndMileageTask5() {
         System.out.println("solution for task nr 5 --------------->>>>>>>>>>>>");
-        Map<Car2, Integer> map = car2s.stream()
+        Map<Car2, Integer> map = car2Set.stream()
                 .collect(Collectors.toMap(
                         e -> e,
                         e -> e.getMileage(),
@@ -165,15 +182,17 @@ public class CarsService2 {
         return map;
     }
     //////////////////////////////////////////////////TASK6///////////////////////////////////////////////////////
+
     /**
      * This method return  Map , Key TyreType and Value list of cars how have one
      * sorted by number of Cars
-     * @return Map<TyreType, List<Car2>>
+     *
+     * @return Map<TyreType, List < Car2>>
      */
 // jak sortowac ??? w koncowej mapie nie moga nigdy wystapic podobne klucze ??
     public Map<TyreType, List<Car2>> mapByTyreTypeTask6() {
         System.out.println("solution for task nr 6 --------------->>>>>>>>>>>>");
-        Map<TyreType, List<Car2>> map = car2s.stream()
+        Map<TyreType, List<Car2>> map = car2Set.stream()
                 .collect(Collectors.groupingBy(e -> e.getWheel().getTyreType()
                 ))
                 .entrySet()

@@ -96,7 +96,7 @@ public class ControlAppService {
 
     private void task2(CarService carService) {
         ScreenManager.clearScreen2();
-        Criterion criterion = dataManager.getCriterion();
+        Criterion criterion = dataManager.getChoice();
         boolean descending = dataManager.getBoolean("Descendin ???");
         carService.sort(criterion, descending).forEach(System.out::println);
     }

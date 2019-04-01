@@ -2,7 +2,7 @@ package control;
 
 import converters.CarJsonConverter2;
 import enums.CarBodyType;
-import enums.Criterion;
+import enums.Criterion2;
 import enums.EngineType;
 import exception.MyUncheckedException2;
 import model.Car2;
@@ -59,7 +59,7 @@ public class ControlApp2 {
                         break;
                     }
                     case 7: {
-                        printRawData(carsService.getCar2s());
+                        printRawData(carsService.getCar2Set());
                         break;
                     }
                     default: {
@@ -93,10 +93,10 @@ public class ControlApp2 {
     private void task1(CarsService2 carService) {
         ScreenManager2.clearScreen2();
         String st = dataManager.getLine(" choose parameter -> components, power, size of wheel ").toUpperCase();
-        Criterion choice = Criterion.valueOf(st);
+        Criterion2 choice = Criterion2.valueOf(st);
         int number = dataManager.getInt(" press 0 for natural sort and other number for reverseSort ");
         boolean isRev = number == 0;
-        carService.sortMethodByArgumTask1(choice, isRev);
+        carService.sortMethodByParam(choice, isRev);
     }
 
     private void task2(CarsService2 carService) {
@@ -116,7 +116,7 @@ public class ControlApp2 {
     private void task4(CarsService2 carService) {
         ScreenManager2.clearScreen2();
         String st = dataManager.getLine(" choose parameter -> price, mileage, power ");
-        Criterion parameter = Criterion.valueOf(st);
+        Criterion2 parameter = Criterion2.valueOf(st);
         carService.showStatisticByParameterTask4(parameter);
     }
 

@@ -9,9 +9,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class DataManager {
 
-    private final  Scanner sc = new Scanner(System.in);
+    private final Scanner sc = new Scanner(System.in);
 
-    public  Integer getInt(String message) {
+    public Integer getInt(String message) {
         System.out.println(message);
 
         String line = sc.nextLine();
@@ -23,21 +23,21 @@ public class DataManager {
     }
 
 
-    public  String getLine(String message) {
+    public String getLine(String message) {
         System.out.println(message);
         return sc.nextLine();
     }
 
-    public Criterion getCriterion() {
+    public Criterion getChoice() {
         Criterion[] criteria = Criterion.values();
         AtomicInteger counter = new AtomicInteger(1);
 
         Arrays.stream(criteria).forEach(criterion -> System.out.println(counter.getAndIncrement() + ". " + criterion));
-        System.out.println("Enter criterion number:");
+        System.out.println("Enter choice number:");
         String text = sc.nextLine();
 
         if (!text.matches("[1-" + criteria.length + "]")) {
-            throw new MyUncheckedException("Criterion number is not correct");
+            throw new MyUncheckedException(" Choice number is not correct ");
         }
 
         return criteria[Integer.parseInt(text) - 1];
@@ -48,7 +48,7 @@ public class DataManager {
         return sc.nextLine().toUpperCase().charAt(0) == 'Y';
     }
 
-    public  void close() {
+    public void close() {
         if (sc != null) {
             sc.close();
         }
