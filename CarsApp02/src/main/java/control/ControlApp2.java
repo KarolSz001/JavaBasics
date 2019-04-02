@@ -8,9 +8,9 @@ import exception.MyUncheckedException2;
 import model.Car2;
 import model.CarGenerator2;
 import screen.ScreenManager2;
-
 import java.math.BigDecimal;
 import java.util.*;
+
 
 public class ControlApp2 {
 
@@ -93,17 +93,17 @@ public class ControlApp2 {
     }
 
     private void task1(CarsService2 carService) {
+        //components, power, size of wheel
         ScreenManager2.clearScreen2();
-        String st = dataManager.getLine(" choose parameter -> components, power, size of wheel ").toUpperCase();
-        Criterion2 choice = Criterion2.valueOf(st);
-        int number = dataManager.getInt(" press 0 for natural sort and other number for reverseSort ");
-        boolean isRev = number == 0;
+        Criterion2 choice = dataManager.getChoice("1");
+        boolean isRev = dataManager.getBoolean(" natural sort ? ");
         carService.sortMethodByParam(choice, isRev);
     }
 
     private void task2(CarsService2 carService) {
         ScreenManager2.clearScreen2();
-        CarBodyType carBodyType = CarBodyType.valueOf(dataManager.getLine(" choose parameter -> SEDAN, HATCHBACK, COMBI ").toUpperCase());
+        //choose parameter -> SEDAN, HATCHBACK, COMBI //
+        CarBodyType carBodyType = dataManager.getCarBodyType();
         BigDecimal minPrice = new BigDecimal(dataManager.getInt(" press minPrice "));
         BigDecimal maxPrice = new BigDecimal(dataManager.getInt(" press maxPrice "));
         carService.carBodyCollectionByPrice(carBodyType, minPrice, maxPrice).stream().forEach(s -> System.out.println());
@@ -111,14 +111,15 @@ public class ControlApp2 {
 
     private void task3(CarsService2 carService) {
         ScreenManager2.clearScreen2();
-        EngineType engineType = EngineType.valueOf(dataManager.getLine(" choose parameter -> DIESEL, GASOLINE, LPG "));
+        EngineType engineType = dataManager.getEngineType();
+        //choose parameter -> SEDAN, HATCHBACK, COMBI //
         carService.carsWithEngineType(engineType).stream().forEach(s -> System.out.println());
     }
 
     private void task4(CarsService2 carService) {
         // price, mileage, power
         ScreenManager2.clearScreen2();
-        Criterion2 parameter = dataManager.getChoice();
+        Criterion2 parameter = dataManager.getChoice("2");
         carService.showStatisticByParameter(parameter);
     }
 
