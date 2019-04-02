@@ -2,58 +2,58 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "GenowefaNiewiadomska",
-        "age": 25,
-        "cash": 479
+        "name": "GenowefaNowak",
+        "age": 35,
+        "cash": 849
       },
       "products": [
         {
-          "name": "Alladyn",
+          "name": "Boogeman",
           "category": "BOOK",
-          "price": 408
+          "price": 644
         },
         {
           "name": "Laptop",
           "category": "ELECTRONIC",
-          "price": 28048
+          "price": 16923
         }
       ]
     },
     {
       "customer": {
-        "name": "AgataKowalski",
-        "age": 27,
-        "cash": 968
-      },
-      "products": [
-        {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 468
-        },
-        {
-          "name": "Phone",
-          "category": "ELECTRONIC",
-          "price": 16726
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "JanuszNowicki",
-        "age": 45,
-        "cash": 152
+        "name": "AdamZlotopolski",
+        "age": 33,
+        "cash": 200
       },
       "products": [
         {
           "name": "Game of Throne",
           "category": "BOOK",
-          "price": 308
+          "price": 460
         },
         {
-          "name": "GameBoy",
+          "name": "Laptop",
           "category": "ELECTRONIC",
-          "price": 22034
+          "price": 10098
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "JanNowicki",
+        "age": 48,
+        "cash": 210
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 493
+        },
+        {
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 15300
         }
       ]
     }

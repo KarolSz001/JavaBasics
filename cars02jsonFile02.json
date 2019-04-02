@@ -2,58 +2,58 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "JanuszNowak",
-        "age": 33,
-        "cash": 503
+        "name": "GenowefaKowalski",
+        "age": 22,
+        "cash": 800
       },
       "products": [
         {
-          "name": "Boogeman",
+          "name": "Alladyn",
           "category": "BOOK",
-          "price": 490
+          "price": 578
         },
         {
           "name": "GameBoy",
           "category": "ELECTRONIC",
-          "price": 18465
+          "price": 14440
         }
       ]
     },
     {
       "customer": {
-        "name": "TeresaNowicki",
-        "age": 28,
-        "cash": 951
+        "name": "GenowefaZlotopolski",
+        "age": 37,
+        "cash": 811
       },
       "products": [
         {
-          "name": "Boogeman",
+          "name": "Alladyn",
           "category": "BOOK",
-          "price": 963
+          "price": 698
         },
         {
-          "name": "Phone",
+          "name": "Radio",
           "category": "ELECTRONIC",
-          "price": 12788
+          "price": 17752
         }
       ]
     },
     {
       "customer": {
-        "name": "ZofiaNowicki",
-        "age": 45,
-        "cash": 654
+        "name": "JanZlotopolski",
+        "age": 34,
+        "cash": 113
       },
       "products": [
         {
-          "name": "Last Mochcanine",
+          "name": "Alladyn",
           "category": "BOOK",
-          "price": 986
+          "price": 758
         },
         {
-          "name": "Phone",
+          "name": "Radio",
           "category": "ELECTRONIC",
-          "price": 15414
+          "price": 29065
         }
       ]
     }

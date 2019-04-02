@@ -1,23 +1,23 @@
 {
-  "model": "TESLA",
-  "price": 845574,
-  "mileage": 181662,
+  "model": "FERRARI",
+  "price": 321763,
+  "mileage": 408445,
   "engine": {
-    "engineType": "GASOLINE",
-    "power": 81.0
+    "engineType": "DIESEL",
+    "power": 120.5
   },
   "carBody": {
-    "color": "SILVER",
+    "color": "RED",
     "type": "COMBI",
     "components": [
-      "GPS",
       "RADIO",
+      "GPS",
       "TV"
     ]
   },
   "wheel": {
-    "model": "Motiv",
+    "model": "Pacer",
     "size": 21,
-    "tyreType": "WINTER"
+    "tyreType": "SUMMER"
   }
 }

@@ -113,6 +113,7 @@ public class CarsService2 {
     /**
      * This method return Set Collection of Model filtered by engineType
      * and sorted Collection by Model
+     *
      * @param engineType
      * @return Set<String>
      */
@@ -135,16 +136,16 @@ public class CarsService2 {
     // is it good solution ??
     public void showStatisticByParameter(Criterion2 parameter) {
         System.out.println("solution for task nr 4 --------------->>>>>>>>>>>>");
-
         IntSummaryStatistics iss;
+        DoubleSummaryStatistics dss;
         switch (parameter) {
 
             case PRICE: {
-                BigDecimal sum = car2Set.stream().map(Car2::getPrice).reduce(BigDecimal.ZERO,BigDecimal::add);
+                BigDecimal sum = car2Set.stream().map(Car2::getPrice).reduce(BigDecimal.ZERO, BigDecimal::add);
                 BigDecimal aver = sum.divideToIntegralValue(new BigDecimal(car2Set.size()));
-                BigDecimal min  = car2Set.stream().min(Comparator.comparing(Car2::getPrice)).get().getPrice();
-                BigDecimal max  = car2Set.stream().max(Comparator.comparing(Car2::getPrice)).get().getPrice();
-                System.out.println(aver + " " + max + " " + min );
+                BigDecimal min = car2Set.stream().min(Comparator.comparing(Car2::getPrice)).get().getPrice();
+                BigDecimal max = car2Set.stream().max(Comparator.comparing(Car2::getPrice)).get().getPrice();
+                System.out.println(aver + " " + max + " " + min);
                 break;
             }
             case MILEAGE: {
@@ -155,12 +156,8 @@ public class CarsService2 {
             }
             // czy poprawnie ??
             case POWER: {
-                double sum  = car2Set.stream().map(m->m.getEngine().getPower()).reduce(0.0,(r1,r2)->r1 + r2);
-                double aver = sum/car2Set.size();
-                double min = car2Set.stream().min(Comparator.comparing(m->m.getEngine().getPower())).get().getPrice().doubleValue();
-                double max = car2Set.stream().min(Comparator.comparing(m->m.getEngine().getPower())).get().getPrice().doubleValue();
-                DecimalFormat dc  = new DecimalFormat("#0.00");
-                System.out.println("aver -> " + dc.format(aver) + " max -> " + dc.format(max) + " min -> " + dc.format(min));
+                dss = car2Set.stream().collect(Collectors.summarizingDouble(m -> m.getEngine().getPower()));
+                System.out.println("aver -> " + dss.getAverage() + " max -> " + dss.getMax() + " min -> " + dss.getMin());
                 break;
             }
         }
@@ -170,6 +167,7 @@ public class CarsService2 {
     /**
      * This method return  Map , Key Car2 and Value number of Mileage
      * sorted by mileage
+     *
      * @return Map<Car2, Integer>
      */
 
@@ -193,7 +191,8 @@ public class CarsService2 {
                 ));
 
 //        car2Set.stream()
-//                .collect(Collectors.toMap(Function.identity(),
+//                .collect(Collectors.groupingBy(Function.identity(),Collectors.collectingAndThen())
+//
 //
 //                )
 
@@ -202,33 +201,36 @@ public class CarsService2 {
     //////////////////////////////////////////////////TASK6///////////////////////////////////////////////////////
 
     /**
-     * This method return  Map , Key TyreType and Value list of cars how have one
+     * This method return  Map , Key TyreType and Value list of cars how have this TyreType
      * sorted by number of Cars
-     *
+
      * @return Map<TyreType, List < Car2>>
      */
 // jak sortowac ??? w koncowej mapie nie moga nigdy wystapic podobne klucze ??
-    public Map<TyreType, List<Car2>> mapByTyreTypeTask6() {
+
+    public Map<TyreType, List<Car2>> groupingByTyreType() {
         System.out.println("solution for task nr 6 --------------->>>>>>>>>>>>");
-        Map<TyreType, List<Car2>> map = car2Set.stream()
+
+        return car2Set.stream()
                 .collect(Collectors.groupingBy(e -> e.getWheel().getTyreType()
                 ))
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getValue().stream().filter(f -> f.getWheel().getTyreType().equals(e.getKey())).collect(Collectors.toCollection(ArrayList::new))
                 ))
                 .entrySet()
                 .stream()
                 .sorted(Comparator.comparing(c -> c.getValue().size()))
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
-                        e -> e.getValue(),
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
                         (v1, v2) -> v1,
-                        () -> new LinkedHashMap<>()
+                        LinkedHashMap::new
                 ));
-        return map;
+//        car2Set.stream()
+//                .collect(Collectors.groupingBy(c->c.getWheel().getTyreType(),Collectors.collectingAndThen(car2Set.stream().filter(f->f.getWheel().getTyreType().equals(Function.identity())).collect(Collectors.toList())))
     }
 
 }

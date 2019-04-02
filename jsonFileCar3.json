@@ -1,23 +1,23 @@
 {
-  "model": "AUDI",
-  "price": 589241,
-  "mileage": 323721,
+  "model": "TESLA",
+  "price": 726904,
+  "mileage": 262195,
   "engine": {
-    "engineType": "LPG",
+    "engineType": "DIESEL",
     "power": 81.0
   },
   "carBody": {
-    "color": "GREEN",
-    "type": "HATCHBACK",
+    "color": "SILVER",
+    "type": "SEDAN",
     "components": [
       "ABS",
-      "TV",
-      "RADIO"
+      "RADIO",
+      "GPS"
     ]
   },
   "wheel": {
     "model": "Pacer",
-    "size": 21,
+    "size": 19,
     "tyreType": "SUMMER"
   }
 }

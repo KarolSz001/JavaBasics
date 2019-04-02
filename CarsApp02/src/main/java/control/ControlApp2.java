@@ -8,6 +8,8 @@ import exception.MyUncheckedException2;
 import model.Car2;
 import model.CarGenerator2;
 import screen.ScreenManager2;
+
+import java.math.BigDecimal;
 import java.util.*;
 
 public class ControlApp2 {
@@ -71,13 +73,13 @@ public class ControlApp2 {
 
             } catch (MyUncheckedException2 e) {
                 e.printStackTrace();
-        }
-        }while(true);
+            }
+        } while (true);
     }
 
     private void printRawData(Set<Car2> store) {
         System.out.println(" Loading data.......... raw data \n");
-        store.stream().forEach(s -> System.out.println(s));
+        store.stream().forEach(System.out::println);
     }
 
     public void carsFileConstructor() {
@@ -102,8 +104,8 @@ public class ControlApp2 {
     private void task2(CarsService2 carService) {
         ScreenManager2.clearScreen2();
         CarBodyType carBodyType = CarBodyType.valueOf(dataManager.getLine(" choose parameter -> SEDAN, HATCHBACK, COMBI ").toUpperCase());
-        int minPrice = dataManager.getInt(" press minPrice ");
-        int maxPrice = dataManager.getInt(" press maxPrice ");
+        BigDecimal minPrice = new BigDecimal(dataManager.getInt(" press minPrice "));
+        BigDecimal maxPrice = new BigDecimal(dataManager.getInt(" press maxPrice "));
         carService.carBodyCollectionByPrice(carBodyType, minPrice, maxPrice).stream().forEach(s -> System.out.println());
     }
 
@@ -114,20 +116,20 @@ public class ControlApp2 {
     }
 
     private void task4(CarsService2 carService) {
+        // price, mileage, power
         ScreenManager2.clearScreen2();
-        String st = dataManager.getLine(" choose parameter -> price, mileage, power ");
-        Criterion2 parameter = Criterion2.valueOf(st);
+        Criterion2 parameter = dataManager.getChoice();
         carService.showStatisticByParameter(parameter);
     }
 
     private void task5(CarsService2 carService) {
         ScreenManager2.clearScreen2();
-        carService.mapByCarsAndMileage().entrySet().stream().forEach(s -> System.out.println(s));
+        carService.mapByCarsAndMileage().entrySet().stream().forEach(System.out::println);
     }
 
     private void task6(CarsService2 carService) {
         ScreenManager2.clearScreen2();
-        carService.mapByTyreTypeTask6().entrySet().stream().forEach(s -> System.out.println(s));
+        carService.groupingByTyreType().entrySet().stream().forEach(System.out::println);
     }
 
 }

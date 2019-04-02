@@ -1,22 +1,22 @@
 {
-  "model": "AUDI",
-  "price": 978191,
-  "mileage": 378430,
+  "model": "SYRENKA",
+  "price": 487166,
+  "mileage": 172686,
   "engine": {
     "engineType": "DIESEL",
-    "power": 102.2
+    "power": 100.0
   },
   "carBody": {
-    "color": "RED",
-    "type": "COMBI",
+    "color": "WHITE",
+    "type": "HATCHBACK",
     "components": [
-      "GPS",
       "ABS",
+      "GPS",
       "RADIO"
     ]
   },
   "wheel": {
-    "model": "Pacer",
+    "model": "Motiv",
     "size": 21,
     "tyreType": "SUMMER"
   }

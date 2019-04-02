@@ -1,17 +1,17 @@
 {
-  "model": "OPEL",
-  "price": 703302,
-  "mileage": 147382,
+  "model": "AUDI",
+  "price": 949731,
+  "mileage": 261031,
   "engine": {
-    "engineType": "DIESEL",
-    "power": 102.2
+    "engineType": "LPG",
+    "power": 100.0
   },
   "carBody": {
-    "color": "BLACK",
-    "type": "SEDAN",
+    "color": "WHITE",
+    "type": "HATCHBACK",
     "components": [
       "TV",
-      "GPS",
+      "RADIO",
       "ABS"
     ]
   },

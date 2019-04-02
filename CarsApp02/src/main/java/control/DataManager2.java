@@ -36,12 +36,12 @@ public class DataManager2 {
         AtomicInteger atomicInteger = new AtomicInteger(1);
 
         Arrays.stream(crits).forEach(choice -> System.out.println(atomicInteger.getAndIncrement() + " " + choice));
-        System.out.println(" Make a choice press number ");
+        System.out.println(" Make a choice press number 1 -> price, 2 -> power, 3 -> mileage ");
         String number = sc.nextLine();
-        if(!number.matches("[1-" + crits.length + "]" )){
+        if(!number.matches("[123]")){
             throw new MyUncheckedException2(" you press wrong number ");
         }
-        return crits[Integer.parseInt(number) - 1];
+        return crits[Integer.parseInt(number) + 1];
     }
 
     public  void close() {
