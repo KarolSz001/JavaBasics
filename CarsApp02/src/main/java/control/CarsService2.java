@@ -8,7 +8,10 @@ import enums.TyreType;
 import exception.MyUncheckedException2;
 import model.Car2;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -98,29 +101,28 @@ public class CarsService2 {
      * @param max -> minimum price
      * @return Set<String>
      */
-    public Set<Car2> carBodyCollectionTask2(CarBodyType cBT, int min, int max) {
+    public Set<Car2> carBodyCollectionByPrice(CarBodyType cBT, BigDecimal min, BigDecimal max) {
         System.out.println("solution for task nr 2 --------------->>>>>>>>>>>>");
-        Set<Car2> temp = new HashSet<>(car2Set);
-        return temp.stream()
+        return car2Set.stream()
                 .filter(f -> f.getCarBody().getType() == cBT)
-                .filter(ff -> ff.getPrice().intValue() > min && ff.getPrice().intValue() < max)
+                .filter(ff -> ff.getPrice().compareTo(min) > 0 && ff.getPrice().compareTo(max) < 0)
                 .collect(Collectors.toCollection(LinkedHashSet::new));
     }
     //////////////////////////////////////////////////TASK3///////////////////////////////////////////////////////
 
     /**
      * This method return Set Collection of Model filtered by engineType
-     *
+     * and sorted Collection by Model
      * @param engineType
      * @return Set<String>
      */
 
-    public Set<String> modelsWithEngineTypeTask3(EngineType engineType) {
+    public Set<String> carsWithEngineType(EngineType engineType) {
         System.out.println(" solution for task nr 3 --------------->>>>>>>>>>>> ");
         return car2Set.stream()
                 .filter(f -> f.getEngine().getEngineType() == engineType)
-                .sorted(Comparator.comparing(s -> s.getModel()))
-                .map(m -> m.getModel())
+                .sorted(Comparator.comparing(Car2::getModel))
+                .map(Car2::getModel)
                 .collect(Collectors.toCollection(LinkedHashSet::new));
     }
     //////////////////////////////////////////////////TASK4///////////////////////////////////////////////////////
@@ -131,24 +133,34 @@ public class CarsService2 {
      * @param parameter
      */
     // is it good solution ??
-    public void showStatisticByParameterTask4(Criterion2 parameter) {
+    public void showStatisticByParameter(Criterion2 parameter) {
         System.out.println("solution for task nr 4 --------------->>>>>>>>>>>>");
+
         IntSummaryStatistics iss;
         switch (parameter) {
+
             case PRICE: {
-                iss = car2Set.stream().collect(Collectors.summarizingInt(s -> s.getPrice().intValue()));
-                System.out.println(iss.getAverage() + " " + iss.getMax() + " " + iss.getMin());
+                BigDecimal sum = car2Set.stream().map(Car2::getPrice).reduce(BigDecimal.ZERO,BigDecimal::add);
+                BigDecimal aver = sum.divideToIntegralValue(new BigDecimal(car2Set.size()));
+                BigDecimal min  = car2Set.stream().min(Comparator.comparing(Car2::getPrice)).get().getPrice();
+                BigDecimal max  = car2Set.stream().max(Comparator.comparing(Car2::getPrice)).get().getPrice();
+                System.out.println(aver + " " + max + " " + min );
                 break;
             }
             case MILEAGE: {
-                iss = car2Set.stream().collect(Collectors.summarizingInt(s -> s.getMileage()));
+
+                iss = car2Set.stream().collect(Collectors.summarizingInt(Car2::getMileage));
                 System.out.println(iss.getAverage() + " " + iss.getMax() + " " + iss.getMin());
                 break;
             }
             // czy poprawnie ??
             case POWER: {
-                iss = car2Set.stream().collect(Collectors.summarizingInt(s -> (int) s.getEngine().getPower()));
-                System.out.println(iss.getAverage() + " " + iss.getMax() + " " + iss.getMin());
+                double sum  = car2Set.stream().map(m->m.getEngine().getPower()).reduce(0.0,(r1,r2)->r1 + r2);
+                double aver = sum/car2Set.size();
+                double min = car2Set.stream().min(Comparator.comparing(m->m.getEngine().getPower())).get().getPrice().doubleValue();
+                double max = car2Set.stream().min(Comparator.comparing(m->m.getEngine().getPower())).get().getPrice().doubleValue();
+                DecimalFormat dc  = new DecimalFormat("#0.00");
+                System.out.println("aver -> " + dc.format(aver) + " max -> " + dc.format(max) + " min -> " + dc.format(min));
                 break;
             }
         }
@@ -158,28 +170,34 @@ public class CarsService2 {
     /**
      * This method return  Map , Key Car2 and Value number of Mileage
      * sorted by mileage
-     *
      * @return Map<Car2, Integer>
      */
-    public Map<Car2, Integer> mapByCarsAndMileageTask5() {
+
+    public Map<Car2, Integer> mapByCarsAndMileage() {
         System.out.println("solution for task nr 5 --------------->>>>>>>>>>>>");
-        Map<Car2, Integer> map = car2Set.stream()
+        car2Set.stream()
                 .collect(Collectors.toMap(
                         e -> e,
-                        e -> e.getMileage(),
-                        (v1, v2) -> Integer.max(v1.intValue(), v2.intValue()),
-                        () -> new LinkedHashMap<>()
+                        Car2::getMileage,
+                        Integer::max,
+                        LinkedHashMap::new
                 ))
                 .entrySet()
                 .stream()
-                .sorted(Comparator.comparing(s -> s.getValue(), Comparator.reverseOrder()))
+                .sorted(Comparator.comparing(Map.Entry::getValue, Comparator.reverseOrder()))
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
-                        e -> e.getValue(),
-                        (v1, v2) -> Integer.max(v1, v2),
-                        () -> new LinkedHashMap<>()
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        Integer::max,
+                        LinkedHashMap::new
                 ));
-        return map;
+
+//        car2Set.stream()
+//                .collect(Collectors.toMap(Function.identity(),
+//
+//                )
+
+        return null;
     }
     //////////////////////////////////////////////////TASK6///////////////////////////////////////////////////////
 

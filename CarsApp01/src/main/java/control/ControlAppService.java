@@ -141,6 +141,6 @@ public class ControlAppService {
         ScreenManager.clearScreen2();
         BigDecimal minPrice = new BigDecimal(dataManager.getInt(" give min price"));
         BigDecimal maxPrice = new BigDecimal(dataManager.getInt(" give max price"));
-        carService.carsByPriceTask10(minPrice, maxPrice).forEach(s-> System.out.println(s));
+        carService.filteredByPriceInRange(minPrice, maxPrice).forEach(s-> System.out.println(s));
     }
 }

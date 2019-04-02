@@ -5,12 +5,13 @@ import dataGenerator.CarGenerator;
 import exception.MyUncheckedException;
 import model.Car;
 import model.enums.Color;
+
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.Function;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
 
 
 class CarService {
@@ -119,19 +120,9 @@ class CarService {
      */
     public Map<String, Car> mostExpensiveInModel() {
 
-        // przerobic na collectingAndThen
-        Map<String, Car> map = cars.stream()
-                .collect(Collectors.groupingBy(c -> c.getModel()))
-                .entrySet()
-                .stream()
-                .collect(Collectors.toMap(
-                        m -> m.getKey(),
-                        m -> m.getValue().stream()
-                                .sorted(Comparator.comparing(s -> s.getPrice(), Comparator.reverseOrder()))
-                                .findFirst()
-                                .orElseThrow(() -> new IllegalStateException(" CAN'T found ")
-                                )));
-        return map;
+        return cars.stream()
+                .collect(Collectors.groupingBy(Car::getModel, Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparing(Car::getPrice)), Optional::orElseThrow)));
+
     }
     //////////////////////////////////////////task6////////////////////////////////////////////
 
@@ -139,14 +130,13 @@ class CarService {
      * Method shows statistic min, max, aver of price and mileage
      */
     public void showStatisticsOfPriceAndMileage() {
-        // obejrzec na YT o collectorach - poprawic dla BigDecimal, nie zaciaga eclipse org ??
-
+        // to correct!!!!
         Stream<BigDecimal> bigDecimalStream = cars.stream().filter(Objects::nonNull).map(Car::getPrice);
         BigDecimal maxPrice = bigDecimalStream.reduce(BigDecimal::max).get();
-        Stream<BigDecimal> bigDecimalStream2= cars.stream().filter(Objects::nonNull).map(Car::getPrice);
+        Stream<BigDecimal> bigDecimalStream2 = cars.stream().filter(Objects::nonNull).map(Car::getPrice);
         BigDecimal minPrice = bigDecimalStream2.reduce(BigDecimal::min).get();
-        Stream<BigDecimal> bigDecimalStream3= cars.stream().filter(Objects::nonNull).map(Car::getPrice);
-        BigDecimal[] sumPrice = bigDecimalStream3.map(m->new BigDecimal[]{m,BigDecimal.ONE}).reduce((a,b)-> new BigDecimal[]{a[0].add(b[0]),a[1].add(BigDecimal.ONE)}).get();
+        Stream<BigDecimal> bigDecimalStream3 = cars.stream().filter(Objects::nonNull).map(Car::getPrice);
+        BigDecimal[] sumPrice = bigDecimalStream3.map(m -> new BigDecimal[]{m, BigDecimal.ONE}).reduce((a, b) -> new BigDecimal[]{a[0].add(b[0]), a[1].add(BigDecimal.ONE)}).get();
         BigDecimal averPrice = sumPrice[0].divideToIntegralValue(sumPrice[1]);
         System.out.println(" price statics ");
         System.out.println(" max price ->" + maxPrice);
@@ -155,7 +145,7 @@ class CarService {
 
         IntSummaryStatistics issMileage = cars
                 .stream()
-                .collect(Collectors.summarizingInt(s -> s.getMileage()));
+                .collect(Collectors.summarizingInt(Car::getMileage));
         System.out.println(" mileage statics ");
         System.out.println(" aver mileage ->" + issMileage.getMax());
         System.out.println(" aver mileage ->" + issMileage.getMin());
@@ -164,13 +154,12 @@ class CarService {
     //////////////////////////////////////////task7////////////////////////////////////////////
 
     /**
-     * Method sort List and return List wit the most expansive Cars
+     * Method sort List by Price and return List with the most expansive Cars
      *
      * @return List of Car
      */
+
     public List<Car> mostExpansiveInList() {
-
-
         return cars
                 .stream()
                 .map(Car::getPrice)
@@ -178,7 +167,6 @@ class CarService {
                 .map(maxPrice -> cars.stream().filter(car -> car.getPrice().equals(maxPrice)))
                 .orElseThrow(() -> new MyUncheckedException("Cars with max price not found"))
                 .collect(Collectors.toList());
-
     }
 
     /**
@@ -199,27 +187,20 @@ class CarService {
      */
 
     public Map<String, List<Car>> componentsWithListOfCars() {
-        return cars
-                .stream()
+        return cars.stream()
                 .flatMap(car -> car.getComponents().stream())
                 .distinct()
-                .collect(Collectors.toMap(
-                        Function.identity(),
-                        component -> cars.stream().filter(car -> car.getComponents().contains(component)).collect(Collectors.toList())
+                .collect(Collectors.toMap(Function.identity(), component -> cars.stream().filter(car -> car.getComponents().contains(component)).collect(Collectors.toList())
                 ))
                 .entrySet()
                 .stream()
-                .sorted(Comparator.comparing(c -> c.getValue().size() * (-1)))
-                .collect(Collectors.toMap(
-                        Map.Entry::getKey,
-                        Map.Entry::getValue,
-                        (v1, v2) -> v1,
-                        LinkedHashMap::new
-                ));
-//        .stream()
-//                .flatMap(f->f.getComponents().stream())
-//                .distinct()
-//                .collect(Collectors.groupingBy(Function.identity(),Collectors.collectingAndThen(cars.stream().filter(car->car.getComponents().contains(Function.identity())).collect(Collectors.toList()))))
+                .sorted(Comparator.comparing(c -> c.getValue().size(), Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (v1, v2) -> v1, LinkedHashMap::new));
+
+        /*cars.stream()
+                .flatMap(f->f.getComponents().stream())
+                .distinct()
+                .collect(Collectors.groupingBy(Function.identity(),Collectors.collectingAndThen(cars.stream().filter(car->car.getComponents().contains(Function.identity())).collect(Collectors.toList()))));*/
     }
 
     /**
@@ -229,18 +210,15 @@ class CarService {
      * @param max max price
      * @return List<Car>
      */
-    public List<Car> carsByPriceTask10(BigDecimal min, BigDecimal max) {
+    public List<Car> filteredByPriceInRange(BigDecimal min, BigDecimal max) {
 
         if (min.compareTo(max) >= 0) {
-            throw new MyUncheckedException("Date range is not correct");
+            throw new MyUncheckedException(" Range is not correct ");
         }
-
         return cars.stream()
                 .filter(p -> p.getPrice().compareTo(min) > 0 && p.getPrice().compareTo(max) < 0)
                 .sorted(Comparator.comparing(Car::getModel))
                 .collect(Collectors.toList());
-
     }
-
 
 }

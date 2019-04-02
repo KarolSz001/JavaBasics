@@ -29,7 +29,6 @@ public class DataManager2 {
     public boolean getBoolean(String message){
         System.out.println("[y/n] ?");
         return sc.nextLine().toUpperCase().charAt(0) == 'Y';
-
     }
 
     public Criterion2 getChoice(){

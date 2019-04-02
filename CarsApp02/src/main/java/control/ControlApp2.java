@@ -104,25 +104,25 @@ public class ControlApp2 {
         CarBodyType carBodyType = CarBodyType.valueOf(dataManager.getLine(" choose parameter -> SEDAN, HATCHBACK, COMBI ").toUpperCase());
         int minPrice = dataManager.getInt(" press minPrice ");
         int maxPrice = dataManager.getInt(" press maxPrice ");
-        carService.carBodyCollectionTask2(carBodyType, minPrice, maxPrice).stream().forEach(s -> System.out.println());
+        carService.carBodyCollectionByPrice(carBodyType, minPrice, maxPrice).stream().forEach(s -> System.out.println());
     }
 
     private void task3(CarsService2 carService) {
         ScreenManager2.clearScreen2();
         EngineType engineType = EngineType.valueOf(dataManager.getLine(" choose parameter -> DIESEL, GASOLINE, LPG "));
-        carService.modelsWithEngineTypeTask3(engineType).stream().forEach(s -> System.out.println());
+        carService.carsWithEngineType(engineType).stream().forEach(s -> System.out.println());
     }
 
     private void task4(CarsService2 carService) {
         ScreenManager2.clearScreen2();
         String st = dataManager.getLine(" choose parameter -> price, mileage, power ");
         Criterion2 parameter = Criterion2.valueOf(st);
-        carService.showStatisticByParameterTask4(parameter);
+        carService.showStatisticByParameter(parameter);
     }
 
     private void task5(CarsService2 carService) {
         ScreenManager2.clearScreen2();
-        carService.mapByCarsAndMileageTask5().entrySet().stream().forEach(s -> System.out.println(s));
+        carService.mapByCarsAndMileage().entrySet().stream().forEach(s -> System.out.println(s));
     }
 
     private void task6(CarsService2 carService) {
