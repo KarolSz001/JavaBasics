@@ -30,8 +30,7 @@ public class DataManager2 {
     }
 
     public boolean getBoolean(String message) {
-        System.out.println(message);
-        System.out.println("press -> [y/n] ?");
+        System.out.println(message + "press -> [y/n] ?");
         return sc.nextLine().toUpperCase().charAt(0) == 'Y';
     }
 
@@ -39,13 +38,11 @@ public class DataManager2 {
         Criterion2[] crits = Criterion2.values();
 
         if (type.matches("1")) {
-
             // PRICE,MILEAGE,POWER,NUMBER_COMPONENTS,SIZE_WHEEL,
             AtomicInteger atomicInteger = new AtomicInteger(1);
             Arrays.stream(crits).forEach(choice -> System.out.println(atomicInteger.getAndIncrement() + " " + choice));
             System.out.println("Make a choice");
             String number = sc.nextLine();
-
             if (!number.matches("[1-" + crits.length + "]")) {
                 throw new MyUncheckedException2(" you press wrong number ");
             }
@@ -53,13 +50,13 @@ public class DataManager2 {
 
         } else {
             // price, power, mileage
-            System.out.println(" Make a choice press number 1 -> price, 2 -> power, 3 -> mileage ");
+            System.out.println(" Make a choice press number 1 -> price, 2 -> mileage, 3 -> power ");
             String number = sc.nextLine();
 
             if (!number.matches("[123]")) {
                 throw new MyUncheckedException2(" you press wrong number ");
             }
-            return crits[Integer.parseInt(number) + 1];
+            return crits[Integer.parseInt(number) - 1];
         }
     }
 

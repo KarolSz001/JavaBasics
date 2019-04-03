@@ -1,23 +1,23 @@
 {
   "model": "AUDI",
-  "price": 949731,
-  "mileage": 261031,
+  "price": 654360,
+  "mileage": 460808,
   "engine": {
-    "engineType": "LPG",
-    "power": 100.0
+    "engineType": "DIESEL",
+    "power": 120.5
   },
   "carBody": {
-    "color": "WHITE",
+    "color": "BLACK",
     "type": "HATCHBACK",
     "components": [
       "TV",
-      "RADIO",
-      "ABS"
+      "ABS",
+      "RADIO"
     ]
   },
   "wheel": {
-    "model": "DEBICA",
-    "size": 17,
+    "model": "Pacer",
+    "size": 19,
     "tyreType": "WINTER"
   }
 }

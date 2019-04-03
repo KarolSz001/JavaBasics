@@ -1,23 +1,23 @@
 {
-  "model": "TESLA",
-  "price": 726904,
-  "mileage": 262195,
+  "model": "FERRARI",
+  "price": 881551,
+  "mileage": 139989,
   "engine": {
-    "engineType": "DIESEL",
-    "power": 81.0
+    "engineType": "LPG",
+    "power": 102.2
   },
   "carBody": {
-    "color": "SILVER",
-    "type": "SEDAN",
+    "color": "GREEN",
+    "type": "HATCHBACK",
     "components": [
-      "ABS",
+      "GPS",
       "RADIO",
-      "GPS"
+      "TV"
     ]
   },
   "wheel": {
-    "model": "Pacer",
-    "size": 19,
-    "tyreType": "SUMMER"
+    "model": "Motiv",
+    "size": 21,
+    "tyreType": "WINTER"
   }
 }

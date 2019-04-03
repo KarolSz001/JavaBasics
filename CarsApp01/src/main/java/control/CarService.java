@@ -56,18 +56,22 @@ class CarService {
         if (criterion == null) {
             throw new MyUncheckedException("Criterion is null");
         }
-
+//MODEL,PRICE,COLOR,MILEAGE
         Stream<Car> carStream = null;
 
         switch (criterion) {
-            case COLOR:
-                carStream = cars.stream().sorted(Comparator.comparing(Car::getColor));
             case MODEL:
                 carStream = cars.stream().sorted(Comparator.comparing(Car::getModel));
+                break;
             case PRICE:
                 carStream = cars.stream().sorted(Comparator.comparing(Car::getPrice));
+                break;
+            case COLOR:
+                carStream = cars.stream().sorted(Comparator.comparing(Car::getColor));
+                break;
             case MILEAGE:
                 carStream = cars.stream().sorted(Comparator.comparing(Car::getMileage));
+                break;
         }
         List<Car> sortedCars = carStream.collect(Collectors.toList());
 
@@ -170,7 +174,7 @@ class CarService {
     }
 
     /**
-     * Method sort List of Car with sorted list of Components
+     * Method show List of Car with sorted list of Components
      *
      * @return List<Car>
      */

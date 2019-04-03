@@ -10,6 +10,7 @@ import model.Car2;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
+import java.text.MessageFormat;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -70,26 +71,31 @@ public class CarsService2 {
 
         Stream<Car2> car2Stream = null;
 
+//  PRICE,MILEAGE,POWER,NUMBER_COMPONENTS,SIZE_WHEEL,
+
         switch (choice) {
-            case NUMBER_COMPONENTS:
-                car2Stream = car2Set.stream().sorted(Comparator.comparing(m -> m.getCarBody().getComponents().size()));
-            case MILEAGE:
-                car2Stream = car2Set.stream().sorted(Comparator.comparing(Car2::getMileage));
-            case SIZE_WHEEL:
-                car2Stream = car2Set.stream().sorted(Comparator.comparing(c -> c.getWheel().getSize()));
             case PRICE:
                 car2Stream = car2Set.stream().sorted(Comparator.comparing(Car2::getPrice));
+                break;
+            case MILEAGE:
+                car2Stream = car2Set.stream().sorted(Comparator.comparing(Car2::getMileage));
+                break;
             case POWER:
                 car2Stream = car2Set.stream().sorted(Comparator.comparing(s -> s.getEngine().getPower()));
+                break;
+            case NUMBER_COMPONENTS:
+                car2Stream = car2Set.stream().sorted(Comparator.comparing(m -> m.getCarBody().getComponents().size()));
+                break;
+            case SIZE_WHEEL:
+                car2Stream = car2Set.stream().sorted(Comparator.comparing(c -> c.getWheel().getSize()));
+                break;
         }
-
-        Set<Car2> cars = car2Stream.collect(Collectors.toCollection(LinkedHashSet::new));
+        List<Car2> carsList = car2Stream.collect(Collectors.toCollection(ArrayList::new));
 
         if (isReversOrder) {
-            Collections.reverse((List<?>) cars);
+            Collections.reverse(carsList);
         }
-
-        return cars;
+        return new LinkedHashSet<>(carsList);
     }
     //////////////////////////////////////////////////TASK2///////////////////////////////////////////////////////
 
@@ -117,7 +123,7 @@ public class CarsService2 {
      * @param engineType
      * @return Set<String>
      */
-
+// try commpartahor and then
     public Set<String> carsWithEngineType(EngineType engineType) {
         System.out.println(" solution for task nr 3 --------------->>>>>>>>>>>> ");
         return car2Set.stream()
@@ -145,19 +151,19 @@ public class CarsService2 {
                 BigDecimal aver = sum.divideToIntegralValue(new BigDecimal(car2Set.size()));
                 BigDecimal min = car2Set.stream().min(Comparator.comparing(Car2::getPrice)).get().getPrice();
                 BigDecimal max = car2Set.stream().max(Comparator.comparing(Car2::getPrice)).get().getPrice();
-                System.out.println(aver + " " + max + " " + min);
+                System.out.println(MessageFormat.format(" PRICE -> aver {0}, max{1}, min{2} ", aver.setScale(2), max.setScale(2), min.setScale(2)));
                 break;
             }
             case MILEAGE: {
-
                 iss = car2Set.stream().collect(Collectors.summarizingInt(Car2::getMileage));
-                System.out.println(iss.getAverage() + " " + iss.getMax() + " " + iss.getMin());
+                System.out.println(" MILEAGE ->/aver/max/min  " + iss.getAverage() + " " + iss.getMax() + " " + iss.getMin());
                 break;
             }
             // czy poprawnie ??
             case POWER: {
                 dss = car2Set.stream().collect(Collectors.summarizingDouble(m -> m.getEngine().getPower()));
-                System.out.println("aver -> " + dss.getAverage() + " max -> " + dss.getMax() + " min -> " + dss.getMin());
+                DecimalFormat dc =  new DecimalFormat("#0.00");
+                System.out.println(" POWER ->/aver/max/min  " + dc.format(dss.getAverage()) + " " + dc.format(dss.getMax()) + " " + dc.format(dss.getMin()));
                 break;
             }
         }
@@ -173,7 +179,7 @@ public class CarsService2 {
 
     public Map<Car2, Integer> mapByCarsAndMileage() {
         System.out.println("solution for task nr 5 --------------->>>>>>>>>>>>");
-        car2Set.stream()
+        return car2Set.stream()
                 .collect(Collectors.toMap(
                         e -> e,
                         Car2::getMileage,
@@ -191,23 +197,17 @@ public class CarsService2 {
                 ));
 
 //        car2Set.stream()
-//                .collect(Collectors.groupingBy(Function.identity(),Collectors.collectingAndThen())
-//
-//
-//                )
-
-        return null;
+//                .collect(Collectors.groupingBy(Function.identity(),Collectors.collectingAndThen(Comparator.comparingInt(Car2::getMileage),Comparator.reverseOrder()),Optional::orElseThrow));
     }
     //////////////////////////////////////////////////TASK6///////////////////////////////////////////////////////
 
     /**
      * This method return  Map , Key TyreType and Value list of cars how have this TyreType
      * sorted by number of Cars
-
+     *
      * @return Map<TyreType, List < Car2>>
      */
 // jak sortowac ??? w koncowej mapie nie moga nigdy wystapic podobne klucze ??
-
     public Map<TyreType, List<Car2>> groupingByTyreType() {
         System.out.println("solution for task nr 6 --------------->>>>>>>>>>>>");
 

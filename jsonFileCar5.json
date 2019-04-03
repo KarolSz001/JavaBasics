@@ -1,23 +1,23 @@
 {
-  "model": "SYRENKA",
-  "price": 487166,
-  "mileage": 172686,
+  "model": "OPEL",
+  "price": 324537,
+  "mileage": 420142,
   "engine": {
     "engineType": "DIESEL",
-    "power": 100.0
+    "power": 81.0
   },
   "carBody": {
-    "color": "WHITE",
+    "color": "RED",
     "type": "HATCHBACK",
     "components": [
+      "RADIO",
       "ABS",
-      "GPS",
-      "RADIO"
+      "TV"
     ]
   },
   "wheel": {
-    "model": "Motiv",
-    "size": 21,
+    "model": "DEBICA",
+    "size": 17,
     "tyreType": "SUMMER"
   }
 }

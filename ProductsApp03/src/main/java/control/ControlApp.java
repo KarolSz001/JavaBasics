@@ -99,7 +99,7 @@ public class ControlApp {
         ss.showAveragePriceInCategoryTask3A().entrySet().stream().forEach(s -> System.out.println(s.getKey() + "::::" + s.getValue()));
         System.out.println("most expansive Product in  Category");
         ss.mostExpProductInCategoryTask3B().entrySet().stream().forEach(s -> System.out.println(s.getKey() + "::::" + s.getValue()));
-        System.out.println("Cheapest producrt in Category");
+        System.out.println("Cheapest product in Category");
         ss.cheapestProductInCategoryTask3C().entrySet().stream().forEach(s -> System.out.println(s.getKey() + "::::" + s.getValue()));
     }
 

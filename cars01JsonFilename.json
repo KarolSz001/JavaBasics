@@ -1,57 +1,57 @@
 [
   {
     "model": "TESLA",
-    "price": 175915,
-    "color": "GREY",
-    "mileage": 343130,
+    "price": 294877,
+    "color": "ORANGE",
+    "mileage": 188326,
     "components": [
-      "TV",
+      "GPS",
       "RADIO",
       "ABS"
+    ]
+  },
+  {
+    "model": "TESLA",
+    "price": 317339,
+    "color": "GREEN",
+    "mileage": 256053,
+    "components": [
+      "RADIO",
+      "ABS",
+      "TV"
+    ]
+  },
+  {
+    "model": "TESLA",
+    "price": 302530,
+    "color": "RED",
+    "mileage": 201685,
+    "components": [
+      "TV",
+      "GPS",
+      "RADIO"
     ]
   },
   {
     "model": "HONDA",
-    "price": 178092,
-    "color": "WHITE",
-    "mileage": 362578,
+    "price": 278770,
+    "color": "GREEN",
+    "mileage": 159068,
     "components": [
-      "TV",
+      "RADIO",
+      "ABS",
+      "GPS"
+    ]
+  },
+  {
+    "model": "TESLA",
+    "price": 333801,
+    "color": "ORANGE",
+    "mileage": 341140,
+    "components": [
+      "RADIO",
       "GPS",
       "ABS"
-    ]
-  },
-  {
-    "model": "AUDI",
-    "price": 269247,
-    "color": "GREEN",
-    "mileage": 116799,
-    "components": [
-      "RADIO",
-      "ABS",
-      "TV"
-    ]
-  },
-  {
-    "model": "SCODA",
-    "price": 354218,
-    "color": "WHITE",
-    "mileage": 300771,
-    "components": [
-      "GPS",
-      "ABS",
-      "TV"
-    ]
-  },
-  {
-    "model": "AUDI",
-    "price": 111304,
-    "color": "ORANGE",
-    "mileage": 490771,
-    "components": [
-      "GPS",
-      "RADIO",
-      "TV"
     ]
   }
 ]

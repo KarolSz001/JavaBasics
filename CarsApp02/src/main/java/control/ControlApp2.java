@@ -25,10 +25,11 @@ public class ControlApp2 {
     public void runApp() {
 
         final CarsService2 carsService = new CarsService2(filesNameList);
-        ScreenManager2.printMenu();
+
         do {
             try {
-                dataManager.getLine("PRESS ENTER TO CONTINUE");
+                dataManager.getLine(" PRESS ENTER TO CONTINUE ");
+                ScreenManager2.printMenu();
                 int number = dataManager.getInt(" MAKE A CHOICE PRESS FROM 0 TO 7 ");
                 switch (number) {
                     case 0: {
@@ -97,7 +98,7 @@ public class ControlApp2 {
         ScreenManager2.clearScreen2();
         Criterion2 choice = dataManager.getChoice("1");
         boolean isRev = dataManager.getBoolean(" natural sort ? ");
-        carService.sortMethodByParam(choice, isRev);
+        carService.sortMethodByParam(choice, isRev).stream().forEach(System.out::println);
     }
 
     private void task2(CarsService2 carService) {
@@ -106,14 +107,14 @@ public class ControlApp2 {
         CarBodyType carBodyType = dataManager.getCarBodyType();
         BigDecimal minPrice = new BigDecimal(dataManager.getInt(" press minPrice "));
         BigDecimal maxPrice = new BigDecimal(dataManager.getInt(" press maxPrice "));
-        carService.carBodyCollectionByPrice(carBodyType, minPrice, maxPrice).stream().forEach(s -> System.out.println());
+        carService.carBodyCollectionByPrice(carBodyType, minPrice, maxPrice).stream().forEach(System.out::println);
     }
 
     private void task3(CarsService2 carService) {
         ScreenManager2.clearScreen2();
         EngineType engineType = dataManager.getEngineType();
         //choose parameter -> SEDAN, HATCHBACK, COMBI //
-        carService.carsWithEngineType(engineType).stream().forEach(s -> System.out.println());
+        carService.carsWithEngineType(engineType).stream().forEach(System.out::println);
     }
 
     private void task4(CarsService2 carService) {

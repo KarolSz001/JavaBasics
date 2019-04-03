@@ -97,13 +97,13 @@ public class ControlAppService {
     private void task2(CarService carService) {
         ScreenManager.clearScreen2();
         Criterion criterion = dataManager.getChoice();
-        boolean descending = dataManager.getBoolean("Descendin ???");
+        boolean descending = dataManager.getBoolean("Descending ???");
         carService.sort(criterion, descending).forEach(System.out::println);
     }
 
     private void task3(CarService carService) {
         ScreenManager.clearScreen2();
-        int number = dataManager.getInt(" press mileage parameter to see cars with more than number you press");
+        int number = dataManager.getInt(" Filtered by mileage , press number ");
         carService.collectionByMileage(number).forEach(System.out::println);
     }
 
@@ -129,7 +129,7 @@ public class ControlAppService {
 
     private void task8(CarService carService) {
         ScreenManager.clearScreen2();
-        carService.withSortedComponents().stream().forEach(s -> System.out.println(s));
+        carService.withSortedComponents().stream().forEach(System.out::println);
     }
 
     private void task9(CarService carService) {
@@ -141,6 +141,6 @@ public class ControlAppService {
         ScreenManager.clearScreen2();
         BigDecimal minPrice = new BigDecimal(dataManager.getInt(" give min price"));
         BigDecimal maxPrice = new BigDecimal(dataManager.getInt(" give max price"));
-        carService.filteredByPriceInRange(minPrice, maxPrice).forEach(s-> System.out.println(s));
+        carService.filteredByPriceInRange(minPrice, maxPrice).forEach(System.out::println);
     }
 }
