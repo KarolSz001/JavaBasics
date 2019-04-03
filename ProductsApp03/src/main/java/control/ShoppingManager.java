@@ -4,6 +4,7 @@ import converters.ShoppingJsonConverter;
 import enums.Category;
 import exception.MyUncheckedException;
 import model.Customer;
+import model.CustomerWithProducts;
 import model.Product;
 
 import java.math.BigDecimal;
@@ -11,21 +12,21 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class ShoopingManagement {
+public class ShoppingManager {
 
     private Map<Customer, List<Product>> customerSetMap;
 
-    public ShoopingManagement(String... filenames) {
+    public ShoppingManager(String... filenames) {
 
         this.customerSetMap = loadData(filenames);
     }
 
-
     /**
      * This method return object as a Map of Customer and Set<Product>
+     *
      * @param filenames get Object from Optional and checked Class , expected List<CustomerWithProducts> or Map<Customer, Set<Product>>
-     *                 for List there is conversion to Map
-     * @return Map<Customer, List<Product>>
+     *                  for List there is conversion to Map
+     * @return Map<Customer, List < Product>>
      */
     private Map<Customer, List<Product>> loadData(String... filenames) {
         return Arrays
@@ -38,10 +39,10 @@ public class ShoopingManagement {
                 .collect(Collectors.toList())
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getCustomer(),
-                        e -> e.getProducts(),
+                        CustomerWithProducts::getCustomer,
+                        CustomerWithProducts::getProducts,
                         (v1, v2) -> v1,
-                        () -> new LinkedHashMap<>()
+                        LinkedHashMap::new
                 ));
     }
 
@@ -53,36 +54,26 @@ public class ShoopingManagement {
         return "";
     }
 
-
     /////////////////////////////////////TASK1A////////////////////////////////////
 
     /**
      * This method return  Customer who paid the most for all purchases
      *
-     * @return Optional Customer
+     * @return Customer
      */
-    public Customer paidTheMostTask1A() {
+    public Customer whoPaidTheMost() {
 
         Customer customer = customerSetMap
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
-                        e -> e.getValue().stream().map(p -> p.getPrice().intValue()).reduce(0, (n1, n2) -> n1 + n2)
+                        Map.Entry::getKey,
+                        e -> e.getValue().stream().map(Product::getPrice).reduce(BigDecimal.ZERO, BigDecimal::add)
                 ))
                 .entrySet()
-                .stream()
-                .collect(Collectors.toMap(
-                        e -> e.getKey(),
-                        e -> e.getValue()
-                ))
-                .entrySet()
-                .stream()
-                .sorted(Comparator.comparingInt(s -> s.getValue() * (-1)))
-                .findFirst()
+                .stream().min(Comparator.comparing(Map.Entry::getValue))
                 .orElseThrow(NullPointerException::new)
                 .getKey();
-
         return customer;
     }
     /////////////////////////////////////TASK1B////////////////////////////////////
@@ -94,8 +85,8 @@ public class ShoopingManagement {
      * @param category selected category
      * @return Optional Customer
      */
-    public Customer paidTheMostTask1B(Category category) {
-        Customer customer = null;
+    public Customer whoPaidTheMostInSelectedCategory(Category category) {
+        Customer customer;
         switch (category) {
             case BOOK: {
                 customer = convertCustomerFromMap(Category.BOOK);
@@ -119,8 +110,8 @@ public class ShoopingManagement {
     }
 
     /**
-     * This is private method for up one return  Customer in selected category
-     * reduce code for  main method
+     * This is private method return Customer who paid most in selected category
+     * reduce code for main method
      *
      * @param cat selected category
      * @return Optional Customer
@@ -129,14 +120,14 @@ public class ShoopingManagement {
         return customerSetMap.entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getValue().stream().filter(f -> f.getCategory() == cat).collect(Collectors.toSet())
                 ))
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
-                        e -> e.getValue().stream().map(m -> m.getPrice()).reduce(BigDecimal.ZERO, (n1, n2) -> n1.add(n2))
+                        Map.Entry::getKey,
+                        e -> e.getValue().stream().map(Product::getPrice).reduce(BigDecimal.ZERO, BigDecimal::add)
                 ))
                 .entrySet()
                 .stream()
@@ -151,17 +142,17 @@ public class ShoopingManagement {
      * This  method return  map  with age of customers and
      * categories of products that were most often purchased at this age.
      *
-     * @return Map<Integer   ,   Category>
+     * @return Map<Integer, Category>
      */
-    public Map<Integer, Category> mappingByAgeCategoryTask2() {
+    public Map<Integer, Category> mappingByAgeCategory() {
         Map<Customer, List<Category>> map = customerSetMap
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getValue()
                                 .stream()
-                                .map(s -> s.getCategory())
+                                .map(Product::getCategory)
                                 .collect(Collectors.toList())
                 ));
 
@@ -172,8 +163,8 @@ public class ShoopingManagement {
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
-                        e -> e.getValue().stream().map(f -> f.getValue()).flatMap(d -> d.stream()).collect(Collectors.toList())
+                        Map.Entry::getKey,
+                        e -> e.getValue().stream().map(Map.Entry::getValue).flatMap(Collection::stream).collect(Collectors.toList())
                 ));
         //Task 2 A ---->>>  Grouping by Age and List of Category Products
 
@@ -181,7 +172,7 @@ public class ShoopingManagement {
         Map<Integer, Map<Category, Long>> map3 = map2.entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getValue()
                                 .stream()
                                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))));
@@ -190,16 +181,14 @@ public class ShoopingManagement {
         Map<Integer, Category> map4 = map3.entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getValue().entrySet()
-                                .stream()
-                                .sorted(Comparator.comparingLong(l -> l.getValue().intValue() * (-1)))
-                                .findFirst()
+                                .stream().max(Comparator.comparingLong(l -> l.getValue().intValue()))
                                 .orElseThrow(() -> new NullPointerException("ERROR"))
                                 .getKey()
                 ));
 //        System.out.println("Task 2 C ---->>>  Grouping by Age and Category Most Taken in This Age ");
-        map4.entrySet().stream().forEach(k -> System.out.println(k));
+        map4.entrySet().stream().forEach(System.out::println);
 
         return map4;
     }
@@ -208,119 +197,112 @@ public class ShoopingManagement {
     /**
      * This  method return  map  category and  averagePrice in  Category
      *
-     * @return Map<Integer               ,               Category>
+     * @return Map<Integer, Category>
      */
-    public Map<Category, Double> showAveragePriceInCategoryTask3A() {
-        Map<Category, Double> mapWithAverPrice = customerSetMap
+    public Map<Category, Double> showAveragePriceInCategory() {
+
+        return customerSetMap
                 .entrySet()
                 .stream()
                 .flatMap(f -> f.getValue().stream())
-                .collect(Collectors.groupingBy(t -> t.getCategory()))
+                .collect(Collectors.groupingBy(Product::getCategory))
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getValue().stream()
                                 .map(f -> f.getPrice().intValue()).mapToDouble(t -> t).average().getAsDouble()
                 ));
-        return mapWithAverPrice;
     }
 
     /**
      * This  method return  map  category and most expansive Product in this category
      *
-     * @return Map<Integer   ,   Category>
+     * @return Map<Integer, Category>
      */
-    public Map<Category, Product> mostExpProductInCategoryTask3B() {
-        Map<Category, Product> map2 = customerSetMap
+    public Map<Category, Product> mostExpProductInCategory() {
+        return customerSetMap
                 .entrySet()
                 .stream()
                 .flatMap(f -> f.getValue().stream())
-                .collect(Collectors.groupingBy(a -> a.getCategory()))
+                .collect(Collectors.groupingBy(Product::getCategory))
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getValue().stream()
-                                .sorted(Comparator.comparing(t -> t.getPrice(), Comparator.reverseOrder()))
-                                .findFirst()
-                                .orElseThrow(() -> new NullPointerException("ERROR"))
+                                .max(Comparator.comparing(Product::getPrice)).get()
                 ));
-        return map2;
     }
 
     /**
      * This  method return  map  category and cheapest Product in this category
      *
-     * @return Map<Integer       ,       ategory>
+     * @return Map<Integer, Category>
      */
-    public Map<Category, Product> cheapestProductInCategoryTask3C() {
-        Map<Category, Product> map2 = customerSetMap
+    public Map<Category, Product> cheapestProductInCategory() {
+        return customerSetMap
                 .entrySet()
                 .stream()
                 .flatMap(f -> f.getValue().stream())
-                .collect(Collectors.groupingBy(a -> a.getCategory()))
+                .distinct()
+                .collect(Collectors.groupingBy(Product::getCategory))
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
-                        e -> e.getValue().stream()
-                                .sorted(Comparator.comparing(t -> t.getPrice()))
-                                .findFirst()
-                                .orElseThrow(() -> new NullPointerException("ERROR"))
+                        Map.Entry::getKey,
+                        e -> e.getValue().stream().min(Comparator.comparing(Product::getPrice)).get()
                 ));
-        return map2;
     }
     /////////////////////////////////////TASK4////////////////////////////////////
 
     /**
      * This  method return  map  with Customer and  Category which is most often choose
      *
-     * @return Map<Customer       ,       Category>
+     * @return Map<Customer, Category>
      */
-    public Map<Customer, Category> showCutomersOfCategoryTask4() {
+    public Map<Customer, Category> customersWithCategoryMostChosen() {
 
         Map<Customer, Map<Category, Long>> map = customerSetMap.entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
-                        e -> e.getValue().stream().collect(Collectors.groupingBy(f -> f.getCategory(), Collectors.counting()))
+                        Map.Entry::getKey,
+                        e -> e.getValue().stream().collect(Collectors.groupingBy(Product::getCategory, Collectors.counting()))
                 ));
-        Map<Customer, Category> map2 = map.entrySet()
+
+        return map.entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getValue().entrySet()
                                 .stream()
-                                .sorted(Comparator.comparing(f -> f.getValue(), Comparator.reverseOrder()))
-                                .findFirst()
-                                .orElseThrow(NullPointerException::new)
+                                .max(Comparator.comparing(Map.Entry::getValue))
+                                .get()
                                 .getKey()
                 ));
-        return map2;
     }
     /////////////////////////////////////TASK5////////////////////////////////////
 
     /**
      * This  method return  map  with Customer and  Debt which is a difference between cash and product's price
      *
-     * @return Map<Customer       ,       Integer>
+     * @return Map<Customer, Integer>
      */
-    public Map<Customer, Integer> showDebtTask5() {
-        Map<Customer, Integer> map = customerSetMap.entrySet()
+
+    public Map<Customer, Integer> customersWithDebts() {
+
+        return customerSetMap.entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getValue().stream().map(p -> p.getPrice().intValue()).reduce(0, (n1, n2) -> n1 + n2)
                 ))
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
-                        e -> e.getKey(),
+                        Map.Entry::getKey,
                         e -> e.getKey().getCash().intValue() - e.getValue()
                 ));
-        return map;
-
     }
 }
 

@@ -207,7 +207,7 @@ public class CarsService2 {
      *
      * @return Map<TyreType, List < Car2>>
      */
-// jak sortowac ??? w koncowej mapie nie moga nigdy wystapic podobne klucze ??
+
     public Map<TyreType, List<Car2>> groupingByTyreType() {
         System.out.println("solution for task nr 6 --------------->>>>>>>>>>>>");
 
