@@ -1,23 +1,23 @@
 {
   "model": "AUDI",
-  "price": 654360,
-  "mileage": 460808,
+  "price": 371528,
+  "mileage": 238890,
   "engine": {
-    "engineType": "DIESEL",
-    "power": 120.5
+    "engineType": "LPG",
+    "power": 100.0
   },
   "carBody": {
-    "color": "BLACK",
+    "color": "WHITE",
     "type": "HATCHBACK",
     "components": [
-      "TV",
+      "RADIO",
       "ABS",
-      "RADIO"
+      "GPS"
     ]
   },
   "wheel": {
     "model": "Pacer",
     "size": 19,
-    "tyreType": "WINTER"
+    "tyreType": "SUMMER"
   }
 }

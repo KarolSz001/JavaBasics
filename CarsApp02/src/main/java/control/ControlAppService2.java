@@ -18,8 +18,8 @@ public class ControlAppService2 {
         carsFileConstructor();
     }
 
-    private final List<String> filesNameList = Arrays.asList("jsonFileCar1.json", "jsonFileCar2.json",
-            "jsonFileCar3.json", "jsonFileCar4.json", "jsonFileCar5.json");
+    private final List<String> filesNameList = Arrays.asList("App02JsonFileCar1.json", "App02JsonFileCar2.json",
+            "App02JsonFileCar3.json", "App02JsonFileCar4.json", "App02JsonFileCar5.json");
     private final DataManager2 dataManager = new DataManager2();
 
     public void runApp() {

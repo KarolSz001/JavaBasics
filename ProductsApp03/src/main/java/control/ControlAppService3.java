@@ -5,6 +5,7 @@ import exception.MyUncheckedException;
 import model.Customer;
 import screen.ScreenManager;
 
+
 public class ControlAppService3 {
 
     private final DataManager dataManager = new DataManager();
@@ -14,7 +15,7 @@ public class ControlAppService3 {
 
             try {
                 dataManager.getLine(" press ENTER to CONTINUE ");
-                final ShoppingManager shoppingManager = new ShoppingManager("cars02jsonFile01.json", "cars02jsonFile02.json");
+                final ShoppingManager shoppingManager = new ShoppingManager("App03jsonFile01.json", "App03jsonFile02.json");
                 ScreenManager.printMenu();
                 int number = dataManager.getInt(" MAKE A CHOICE PRESS FROM 0 TO 6 ");
 
@@ -68,18 +69,21 @@ public class ControlAppService3 {
 
     }
 
-    private Category getCategoryFromNumber(String message) {
-        int parameter = dataManager.getInt(message);
-        return Category.convertFromNumber(parameter);
+    private Category getCategoryFromNumber() {
+        String parameter = dataManager.getLine(" Choose category press 1 - BOOK, 2 - ELECTRONIC, 3 - FOOD ");
+        if (!parameter.matches("[123]")) {
+            return Category.ALL;
+        }
+        return Category.convertFromNumber(Integer.parseInt(parameter));
     }
 
     private void task1(ShoppingManager ss) {
-        System.out.println(" Result of task 1A ........Customer who paid the most for all purchases ");
-        Customer result = ss.whoPaidTheMost();
+        System.out.println(" Customer who paid the most for all purchases ");
+        Customer result = ss.paidMostInSelectedCategory(Category.ALL);
         System.out.println(result);
-        Category category = getCategoryFromNumber("Choose category press 1 - BOOK, 2 - ELECTRONIC, 3 - FOOD ");
-        Customer result2 = ss.whoPaidTheMostInSelectedCategory(category);
-        System.out.println("Result of task 1B ........Customer who paid the most in Category " + category.toString());
+        Category category = getCategoryFromNumber();
+        Customer result2 = ss.paidMostInSelectedCategory(category);
+        System.out.println(" Customer who paid the most in Category ->  " + category.toString());
         System.out.println(result2);
     }
 

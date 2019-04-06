@@ -1,0 +1,76 @@
+{
+  "customerWithProducts": [
+    {
+      "customer": {
+        "name": "KarolNiewiadomska",
+        "age": 28,
+        "cash": 902
+      },
+      "products": [
+        {
+          "name": "Last Mochcanine",
+          "category": "BOOK",
+          "price": 391
+        },
+        {
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 24363
+        },
+        {
+          "name": "Banan",
+          "category": "FOOD",
+          "price": 234
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "MariaaNowicki",
+        "age": 31,
+        "cash": 597
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 335
+        },
+        {
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 16228
+        },
+        {
+          "name": "Banan",
+          "category": "FOOD",
+          "price": 106
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "JanuszKowalski",
+        "age": 27,
+        "cash": 272
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 420
+        },
+        {
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 16638
+        },
+        {
+          "name": "Choco",
+          "category": "FOOD",
+          "price": 277
+        }
+      ]
+    }
+  ]
+}

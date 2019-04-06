@@ -18,7 +18,7 @@ public class DataLoaderService {
     }
 
     public void saveToFile(){
-        List<Car> carList = CarService.carListCreator();
+        List<Car> carList = CarService.carsCreator();
         carsJson.toJson(carList);
     }
 

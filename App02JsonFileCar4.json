@@ -1,23 +1,23 @@
 {
-  "model": "OPEL",
-  "price": 324537,
-  "mileage": 420142,
+  "model": "SYRENKA",
+  "price": 523130,
+  "mileage": 118891,
   "engine": {
     "engineType": "DIESEL",
-    "power": 81.0
+    "power": 102.2
   },
   "carBody": {
-    "color": "RED",
+    "color": "BLACK",
     "type": "HATCHBACK",
     "components": [
-      "RADIO",
+      "GPS",
       "ABS",
-      "TV"
+      "RADIO"
     ]
   },
   "wheel": {
-    "model": "DEBICA",
-    "size": 17,
+    "model": "Pacer",
+    "size": 19,
     "tyreType": "SUMMER"
   }
 }

@@ -1,23 +1,23 @@
 {
-  "model": "FERRARI",
-  "price": 881551,
-  "mileage": 139989,
+  "model": "OPEL",
+  "price": 778078,
+  "mileage": 409362,
   "engine": {
     "engineType": "LPG",
-    "power": 102.2
+    "power": 81.0
   },
   "carBody": {
     "color": "GREEN",
     "type": "HATCHBACK",
     "components": [
       "GPS",
-      "RADIO",
-      "TV"
+      "ABS",
+      "RADIO"
     ]
   },
   "wheel": {
     "model": "Motiv",
-    "size": 21,
+    "size": 19,
     "tyreType": "WINTER"
   }
 }

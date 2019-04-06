@@ -1,0 +1,57 @@
+[
+  {
+    "model": "TESLA",
+    "price": 145251,
+    "color": "WHITE",
+    "mileage": 373066,
+    "components": [
+      "RADIO",
+      "TV",
+      "ABS"
+    ]
+  },
+  {
+    "model": "SCODA",
+    "price": 368974,
+    "color": "WHITE",
+    "mileage": 226041,
+    "components": [
+      "ABS",
+      "TV",
+      "GPS"
+    ]
+  },
+  {
+    "model": "TESLA",
+    "price": 482671,
+    "color": "BLACK",
+    "mileage": 434736,
+    "components": [
+      "ABS",
+      "RADIO",
+      "TV"
+    ]
+  },
+  {
+    "model": "SCODA",
+    "price": 358161,
+    "color": "RED",
+    "mileage": 142821,
+    "components": [
+      "GPS",
+      "TV",
+      "ABS"
+    ]
+  },
+  {
+    "model": "SCODA",
+    "price": 113377,
+    "color": "BLACK",
+    "mileage": 376082,
+    "components": [
+      "TV",
+      "GPS",
+      "RADIO"
+    ]
+  }
+]

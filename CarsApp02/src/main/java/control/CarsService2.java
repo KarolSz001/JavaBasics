@@ -39,10 +39,10 @@ public class CarsService2 {
     private static Set<Car2> dataLoader(List<String> filesNameList) {
         Set<Car2> car2Strore = new HashSet<>();
         for (String s : filesNameList) {
-            CarJsonConverter2 cJC = new CarJsonConverter2(s);
+            CarJsonConverter2 carJson = new CarJsonConverter2(s);
             Car2 car2 = null;
             try {
-                car2 = cJC.fromJson().get();
+                car2 = carJson.fromJson().get();
             } catch (MyUncheckedException2 e) {
                 e.printStackTrace();
             }

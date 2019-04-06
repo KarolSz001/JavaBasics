@@ -60,10 +60,10 @@ public class DataManager {
      */
 
     private void saveDataToFiles() {
-
+//App03jsonFile01
         for (int i = 1; i < 3; i++) {
             List<CustomerWithProducts> customerWithProductsList = customerWithProductListGenerator();
-            String fileName = "app03jsonFile0" + i + ".json";
+            String fileName = "App03jsonFile0" + i + ".json";
             CustomerWithProductsFile cpf = new CustomerWithProductsFile(customerWithProductsList);
             ShoppingJsonConverter shoppingJsonConverter = new ShoppingJsonConverter(fileName);
             shoppingJsonConverter.toJson(cpf);

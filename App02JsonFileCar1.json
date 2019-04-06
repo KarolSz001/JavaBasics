@@ -1,18 +1,18 @@
 {
-  "model": "TESLA",
-  "price": 607580,
-  "mileage": 185065,
+  "model": "OPEL",
+  "price": 304630,
+  "mileage": 311315,
   "engine": {
     "engineType": "GASOLINE",
-    "power": 102.2
+    "power": 81.0
   },
   "carBody": {
-    "color": "RED",
-    "type": "SEDAN",
+    "color": "BLUE",
+    "type": "HATCHBACK",
     "components": [
-      "ABS",
-      "GPS",
-      "RADIO"
+      "TV",
+      "RADIO",
+      "GPS"
     ]
   },
   "wheel": {

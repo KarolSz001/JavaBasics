@@ -3,17 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="20cd8bd9-3fbc-4f1d-a8e0-f9a84d2d796e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/control/DataLoaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/control/DataLoaderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlApp2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataLoaderGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoopingManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoppingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoppingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoppingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/enums/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/enums/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/screen/ScreenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/screen/ScreenManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars02jsonFile01.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars02jsonFile02.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cars01JsonFilename.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonFileCar1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonFileCar2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonFileCar3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonFileCar4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonFileCar5.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/CarsApp01/target/" />
     <ignored path="$PROJECT_DIR$/CarsApp02/target/" />
@@ -25,45 +30,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java">
+        <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoppingManager.java">
+        <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="305" column="19" selection-start-line="305" selection-start-column="19" selection-end-line="305" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="54">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataManager.java">
+        <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-              <folding>
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="234">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,26 +80,29 @@
         <option value="$PROJECT_DIR$/ProductsApp03/pom.xml" />
         <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoopingManagement.java" />
         <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/CarsApp01/src/main/java/main/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/CarsApp01/src/main/java/control/DataManager.java" />
         <option value="$PROJECT_DIR$/CarsApp02/src/main/java/enums/Criterion2.java" />
-        <option value="$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java" />
         <option value="$PROJECT_DIR$/CarsApp01/src/main/java/control/ControlAppService.java" />
         <option value="$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java" />
         <option value="$PROJECT_DIR$/CarsApp02/src/main/java/screen/ScreenManager2.java" />
         <option value="$PROJECT_DIR$/CarsApp01/src/main/java/screen/ScreenManager.java" />
         <option value="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlApp2.java" />
         <option value="$PROJECT_DIR$/CarsApp02/src/main/java/control/DataManager2.java" />
-        <option value="$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java" />
         <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/screen/ScreenManager.java" />
-        <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main.java" />
         <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataLoaderGenerator.java" />
         <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlApp.java" />
-        <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataManager.java" />
-        <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java" />
         <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoopingManager.java" />
+        <option value="$PROJECT_DIR$/CarsApp01/src/main/java/control/AverageCollector.java" />
+        <option value="$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java" />
+        <option value="$PROJECT_DIR$/CarsApp01/src/main/java/main/Main.java" />
+        <option value="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java" />
+        <option value="$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java" />
+        <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataManager.java" />
+        <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main.java" />
+        <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/enums/Category.java" />
         <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoppingManager.java" />
+        <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java" />
       </list>
     </option>
   </component>
@@ -125,9 +130,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="22" />
-    <option name="width" value="1891" />
-    <option name="height" value="1047" />
+    <option name="x" value="515" />
+    <option name="y" value="43" />
+    <option name="width" value="1771" />
+    <option name="height" value="987" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -135,54 +141,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -209,85 +173,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="converters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="description" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="generators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="screen" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554324189580" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554561196694" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last.edited.regexp" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../YOUTUBE" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -295,6 +196,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\KMPROGRAMS\HOMEWORK\GIT\JavaBasics\CarsApp01\src\main\java\converters" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -321,6 +225,19 @@
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="CarsApp01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="ProductsApp03" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -383,97 +300,57 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554022089544</updated>
-      <workItem from="1554022097051" duration="54014000" />
+      <workItem from="1554022097051" duration="63404000" />
+      <workItem from="1554540387069" duration="115000" />
+      <workItem from="1554544092344" duration="16682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54014000" />
+    <option name="totallyTimeSpent" value="80201000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="22" y="0" width="1891" height="1047" extended-state="0" />
+    <frame x="515" y="43" width="1771" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15626666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16410257" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Duplicate detector" visible="true" weight="0.18589744" />
-      <window_info anchor="bottom" id="Terminal" weight="0.20405982" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.3005291" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2857143" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32879582" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28538814" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.016" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.18589744" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.07853403" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3002283" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.017094018" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="12" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/java/control/DataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/acces/ProductDataAccessImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/api/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/converters/JsonConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/acces/ProductDataAccessImpl.java" />
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/api/UserDao.java" />
     <entry file="file://$PROJECT_DIR$/CarsApp02/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -487,9 +364,6 @@
           <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsonFileCar1.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -544,13 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/screen/ScreenManager2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -562,33 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/control/ControlAppService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2078">
-          <caret line="131" column="57" lean-forward="true" selection-start-line="131" selection-start-column="57" selection-end-line="131" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -606,43 +446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/DataManager2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="96" selection-start-line="52" selection-start-column="96" selection-end-line="52" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/model/CustomerWithProducts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/generators/ProductGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
-          <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -653,53 +460,252 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java">
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataLoaderGenerator.java" />
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/Shopping.txt" />
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/converters/AverageCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
+        <state relative-caret-position="324">
+          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataLoaderGenerator.java">
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/model/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/model/CustomerWithProductsFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/model/CustomerWithProducts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/ProductsApp03.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cars01JsonFilename.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsonFileCar1.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/converters/CarsStoresJsonConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        <state relative-caret-position="108">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/control/DataLoaderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/control/ControlAppService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/model/CarGenerator2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="218" column="42" lean-forward="true" selection-start-line="218" selection-start-column="42" selection-end-line="218" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/DataManager2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/converters/JsonConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/converters/ShoppingJsonConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App03jsonFile01.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App03jsonFile02.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://D:/program_windows/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/function/BiFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/program_windows/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="216" column="66" lean-forward="true" selection-start-line="216" selection-start-column="66" selection-end-line="216" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/program_windows/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="1265" column="28" selection-start-line="1265" selection-start-column="28" selection-end-line="1265" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/program_windows/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/enums/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1116">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/converters/JsonConverter2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/converters/CarJsonConverter2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoppingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1554559338201" expanded="true" signature="6884:7072" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="200">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#459#460#0" expanded="true" />
             <element signature="e#492#493#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoppingManager.java">
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
-          <caret line="305" column="19" selection-start-line="305" selection-start-column="19" selection-end-line="305" selection-end-column="19" />
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>

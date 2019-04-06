@@ -1,0 +1,23 @@
+{
+  "model": "OPEL",
+  "price": 874319,
+  "mileage": 295860,
+  "engine": {
+    "engineType": "DIESEL",
+    "power": 120.5
+  },
+  "carBody": {
+    "color": "BLUE",
+    "type": "HATCHBACK",
+    "components": [
+      "TV",
+      "GPS",
+      "ABS"
+    ]
+  },
+  "wheel": {
+    "model": "Motiv",
+    "size": 21,
+    "tyreType": "SUMMER"
+  }
+}
