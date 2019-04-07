@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "AgataNowak",
-        "age": 43,
-        "cash": 696
-      },
-      "products": [
-        {
-          "name": "Game of Throne",
-          "category": "BOOK",
-          "price": 498
-        },
-        {
-          "name": "Radio",
-          "category": "ELECTRONIC",
-          "price": 26293
-        },
-        {
-          "name": "Choco",
-          "category": "FOOD",
-          "price": 221
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "AgataNowak",
+        "name": "GenowefaNowicki",
         "age": 41,
-        "cash": 642
+        "cash": 674
       },
       "products": [
-        {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 772
-        },
-        {
-          "name": "Radio",
-          "category": "ELECTRONIC",
-          "price": 11941
-        },
         {
           "name": "Banan",
           "category": "FOOD",
-          "price": 194
+          "price": 224
+        },
+        {
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 25088
+        },
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 775
         }
       ]
     },
     {
       "customer": {
-        "name": "JanNowak",
-        "age": 32,
-        "cash": 984
+        "name": "GenowefaNowak",
+        "age": 31,
+        "cash": 843
       },
       "products": [
         {
           "name": "Alladyn",
           "category": "BOOK",
-          "price": 890
+          "price": 395
         },
         {
-          "name": "Laptop",
-          "category": "ELECTRONIC",
-          "price": 21528
-        },
-        {
-          "name": "Banan",
+          "name": "IceCream",
           "category": "FOOD",
-          "price": 157
+          "price": 117
+        },
+        {
+          "name": "Last Mochcanine",
+          "category": "BOOK",
+          "price": 407
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "MariaaKowalski",
+        "age": 42,
+        "cash": 274
+      },
+      "products": [
+        {
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 28898
+        },
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 359
+        },
+        {
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 27682
         }
       ]
     }

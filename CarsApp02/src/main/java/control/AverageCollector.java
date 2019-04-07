@@ -1,6 +1,6 @@
-package converters;
+package control;
 
-import model.Car;
+import model.Car2;
 
 import java.math.BigDecimal;
 import java.util.Collections;
@@ -11,7 +11,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
 
-public class AverageCollector implements Collector<Car, AverageCollector.BigDecimalAccumulator, BigDecimal> {
+public class AverageCollector implements Collector<Car2, AverageCollector.BigDecimalAccumulator, BigDecimal> {
 
     @Override
     public Supplier<BigDecimalAccumulator> supplier() {
@@ -19,7 +19,7 @@ public class AverageCollector implements Collector<Car, AverageCollector.BigDeci
     }
 
     @Override
-    public BiConsumer<BigDecimalAccumulator, Car> accumulator() {
+    public BiConsumer<BigDecimalAccumulator, Car2> accumulator() {
         return BigDecimalAccumulator::add;
     }
 
@@ -34,7 +34,7 @@ public class AverageCollector implements Collector<Car, AverageCollector.BigDeci
     }
 
     @Override
-    public Set<Characteristics> characteristics() {
+    public Set<Collector.Characteristics> characteristics() {
         return Collections.emptySet();
     }
 
@@ -78,7 +78,7 @@ public class AverageCollector implements Collector<Car, AverageCollector.BigDeci
             return new BigDecimalAccumulator(total.add(acc.getTotal()), count.add(acc.getCount()));
         }
 
-        void add(Car car) {
+        void add(Car2 car) {
             count = count.add(BigDecimal.ONE);
             total = total.add(car.getPrice());
         }

@@ -1,23 +1,23 @@
 {
-  "model": "OPEL",
-  "price": 778078,
-  "mileage": 409362,
+  "model": "SYRENKA",
+  "price": 762610,
+  "mileage": 460235,
   "engine": {
     "engineType": "LPG",
-    "power": 81.0
+    "power": 120.5
   },
   "carBody": {
-    "color": "GREEN",
-    "type": "HATCHBACK",
+    "color": "SILVER",
+    "type": "COMBI",
     "components": [
+      "TV",
       "GPS",
-      "ABS",
-      "RADIO"
+      "ABS"
     ]
   },
   "wheel": {
-    "model": "Motiv",
-    "size": 19,
-    "tyreType": "WINTER"
+    "model": "Pacer",
+    "size": 17,
+    "tyreType": "SUMMER"
   }
 }

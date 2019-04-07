@@ -37,18 +37,12 @@ public class CarsService2 {
     }
 
     private static Set<Car2> dataLoader(List<String> filesNameList) {
-        Set<Car2> car2Strore = new HashSet<>();
-        for (String s : filesNameList) {
-            CarJsonConverter2 carJson = new CarJsonConverter2(s);
-            Car2 car2 = null;
-            try {
-                car2 = carJson.fromJson().get();
-            } catch (MyUncheckedException2 e) {
-                e.printStackTrace();
-            }
-            car2Strore.add(car2);
-        }
-        return car2Strore;
+        return filesNameList.stream()
+                .map(m->new CarJsonConverter2(m)
+                .fromJson()
+                .orElseThrow(()-> new MyUncheckedException2(" dataLoader Error")))
+                .collect(Collectors.toSet());
+
     }
 
     //////////////////////////////////////////////////TASK1///////////////////////////////////////////////////////
@@ -136,10 +130,9 @@ public class CarsService2 {
 
     /**
      * This method show statistic by parameter , price, mileage, power
-     *
      * @param parameter
+     * return information formatted in console
      */
-    // is it good solution ??
     public void showStatisticByParameter(Criterion2 parameter) {
         System.out.println("solution for task nr 4 --------------->>>>>>>>>>>>");
         IntSummaryStatistics iss;
@@ -147,8 +140,7 @@ public class CarsService2 {
         switch (parameter) {
 
             case PRICE: {
-                BigDecimal sum = car2Set.stream().map(Car2::getPrice).reduce(BigDecimal.ZERO, BigDecimal::add);
-                BigDecimal aver = sum.divideToIntegralValue(new BigDecimal(car2Set.size()));
+                BigDecimal aver = car2Set.stream().map(Car2::getPrice).reduce(BigDecimal.ZERO, BigDecimal::add).divideToIntegralValue(new BigDecimal(car2Set.size()));
                 BigDecimal min = car2Set.stream().min(Comparator.comparing(Car2::getPrice)).get().getPrice();
                 BigDecimal max = car2Set.stream().max(Comparator.comparing(Car2::getPrice)).get().getPrice();
                 System.out.println(MessageFormat.format(" PRICE -> aver {0}, max{1}, min{2} ", aver.setScale(2), max.setScale(2), min.setScale(2)));
@@ -159,7 +151,6 @@ public class CarsService2 {
                 System.out.println(" MILEAGE ->/aver/max/min  " + iss.getAverage() + " " + iss.getMax() + " " + iss.getMin());
                 break;
             }
-            // czy poprawnie ??
             case POWER: {
                 dss = car2Set.stream().collect(Collectors.summarizingDouble(m -> m.getEngine().getPower()));
                 DecimalFormat dc =  new DecimalFormat("#0.00");

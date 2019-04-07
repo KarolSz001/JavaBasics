@@ -1,0 +1,76 @@
+{
+  "customerWithProducts": [
+    {
+      "customer": {
+        "name": "AdamNiewiadomska",
+        "age": 49,
+        "cash": 917
+      },
+      "products": [
+        {
+          "name": "Boogeman",
+          "category": "BOOK",
+          "price": 797
+        },
+        {
+          "name": "Banan",
+          "category": "FOOD",
+          "price": 214
+        },
+        {
+          "name": "Boogeman",
+          "category": "BOOK",
+          "price": 678
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "TeresaNowicki",
+        "age": 43,
+        "cash": 114
+      },
+      "products": [
+        {
+          "name": "Banan",
+          "category": "FOOD",
+          "price": 176
+        },
+        {
+          "name": "Apple",
+          "category": "FOOD",
+          "price": 113
+        },
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 852
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "MariaaZlotopolski",
+        "age": 46,
+        "cash": 749
+      },
+      "products": [
+        {
+          "name": "IceCream",
+          "category": "FOOD",
+          "price": 197
+        },
+        {
+          "name": "Boogeman",
+          "category": "BOOK",
+          "price": 312
+        },
+        {
+          "name": "Banan",
+          "category": "FOOD",
+          "price": 173
+        }
+      ]
+    }
+  ]
+}

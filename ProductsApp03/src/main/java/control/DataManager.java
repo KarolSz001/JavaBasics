@@ -6,21 +6,19 @@ import generators.CustomerGenerator;
 import generators.ProductGenerator;
 import model.CustomerWithProducts;
 import model.CustomerWithProductsFile;
+import model.Product;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class DataManager {
 
-    private final  Scanner sc = new Scanner(System.in);
+    private final Scanner sc = new Scanner(System.in);
 
     public DataManager() {
         saveDataToFiles();
     }
 
-    public  Integer getInt(String message) {
+    public Integer getInt(String message) {
         System.out.println(message);
 
         String line = sc.nextLine();
@@ -31,13 +29,13 @@ public class DataManager {
         return Integer.parseInt(line);
     }
 
-    public String getLine(String message){
+    public String getLine(String message) {
         System.out.println(message);
         return sc.nextLine();
     }
 
 
-    public  void close() {
+    public void close() {
         if (sc != null) {
             sc.close();
         }
@@ -46,12 +44,20 @@ public class DataManager {
     private List<CustomerWithProducts> customerWithProductListGenerator() {
         List<CustomerWithProducts> list = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
-            CustomerWithProducts cp = new CustomerWithProducts(CustomerGenerator.customerGenerator(),
-                    Arrays.asList(ProductGenerator.productBookGenerator(), ProductGenerator.productElectronicGenerator(),ProductGenerator.productFoodGenerator()));
+            CustomerWithProducts cp = new CustomerWithProducts(CustomerGenerator.customerGenerator(), productsGenerator());
             list.add(cp);
         }
         return list;
     }
+
+    private List<Product> productsGenerator() {
+        List<Product> products = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            products.add(ProductGenerator.productGeneratorAll());
+        }
+        return products;
+    }
+
 
     /**
      * This method save data to Json Files
@@ -61,7 +67,7 @@ public class DataManager {
 
     private void saveDataToFiles() {
 //App03jsonFile01
-        for (int i = 1; i < 3; i++) {
+        for (int i = 1; i < 4; i++) {
             List<CustomerWithProducts> customerWithProductsList = customerWithProductListGenerator();
             String fileName = "App03jsonFile0" + i + ".json";
             CustomerWithProductsFile cpf = new CustomerWithProductsFile(customerWithProductsList);

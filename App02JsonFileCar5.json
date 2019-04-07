@@ -1,23 +1,23 @@
 {
-  "model": "OPEL",
-  "price": 874319,
-  "mileage": 295860,
+  "model": "FIAT",
+  "price": 427507,
+  "mileage": 188445,
   "engine": {
-    "engineType": "DIESEL",
+    "engineType": "LPG",
     "power": 120.5
   },
   "carBody": {
     "color": "BLUE",
     "type": "HATCHBACK",
     "components": [
-      "TV",
-      "GPS",
-      "ABS"
+      "ABS",
+      "RADIO",
+      "GPS"
     ]
   },
   "wheel": {
-    "model": "Motiv",
-    "size": 21,
+    "model": "Pacer",
+    "size": 17,
     "tyreType": "SUMMER"
   }
 }

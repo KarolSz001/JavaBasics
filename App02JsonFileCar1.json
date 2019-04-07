@@ -1,23 +1,23 @@
 {
-  "model": "OPEL",
-  "price": 304630,
-  "mileage": 311315,
+  "model": "FIAT",
+  "price": 645452,
+  "mileage": 261952,
   "engine": {
-    "engineType": "GASOLINE",
-    "power": 81.0
+    "engineType": "LPG",
+    "power": 100.0
   },
   "carBody": {
-    "color": "BLUE",
-    "type": "HATCHBACK",
+    "color": "BLACK",
+    "type": "SEDAN",
     "components": [
       "TV",
       "RADIO",
-      "GPS"
+      "ABS"
     ]
   },
   "wheel": {
-    "model": "Pacer",
-    "size": 21,
-    "tyreType": "WINTER"
+    "model": "DEBICA",
+    "size": 17,
+    "tyreType": "SUMMER"
   }
 }

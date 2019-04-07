@@ -1,23 +1,23 @@
 {
   "model": "SYRENKA",
-  "price": 523130,
-  "mileage": 118891,
+  "price": 535205,
+  "mileage": 462246,
   "engine": {
-    "engineType": "DIESEL",
-    "power": 102.2
+    "engineType": "LPG",
+    "power": 120.5
   },
   "carBody": {
-    "color": "BLACK",
-    "type": "HATCHBACK",
+    "color": "GREEN",
+    "type": "SEDAN",
     "components": [
-      "GPS",
-      "ABS",
-      "RADIO"
+      "TV",
+      "RADIO",
+      "GPS"
     ]
   },
   "wheel": {
     "model": "Pacer",
     "size": 19,
-    "tyreType": "SUMMER"
+    "tyreType": "WINTER"
   }
 }

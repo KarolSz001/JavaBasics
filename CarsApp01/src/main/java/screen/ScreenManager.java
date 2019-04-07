@@ -6,7 +6,7 @@ public class ScreenManager {
         System.out.println(new String(new char[10]).replace("\0", "\r\n"));
     }
     public static void printMenu()  {
-        System.out.println("Choose from these choices");
+        System.out.println(" Choose from these choices ");
         System.out.println("-------------------------\n");
         System.out.println("0 -> Exit program");
         System.out.println("1 -> print Raw Data - override to String method");

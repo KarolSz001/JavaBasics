@@ -13,11 +13,11 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class ShoppingManager {
+public class ShoppingService {
 
     private Map<Customer, Map<Product, Long>> customersWithProducts;
 
-    public ShoppingManager(String... filenames) {
+    public ShoppingService(String... filenames) {
 
         this.customersWithProducts = loadData(filenames);
     }

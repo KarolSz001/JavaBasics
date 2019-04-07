@@ -1,12 +1,15 @@
 package control;
 
 import control.enums.Criterion;
+import converters.AverageCollector;
 import dataGenerator.CarGenerator;
 import exception.MyUncheckedException;
 import model.Car;
 import model.enums.Color;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.MessageFormat;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -55,7 +58,6 @@ class CarService {
         if (criterion == null) {
             throw new MyUncheckedException("Criterion is null");
         }
-//MODEL,PRICE,COLOR,MILEAGE
         Stream<Car> carStream = null;
 
         switch (criterion) {
@@ -134,25 +136,13 @@ class CarService {
      */
     public void showStatisticsOfPriceAndMileage() {
         // to correct!!!!
-        Stream<BigDecimal> bigDecimalStream = cars.stream().filter(Objects::nonNull).map(Car::getPrice);
-        BigDecimal maxPrice = bigDecimalStream.reduce(BigDecimal::max).get();
-        Stream<BigDecimal> bigDecimalStream2 = cars.stream().filter(Objects::nonNull).map(Car::getPrice);
-        BigDecimal minPrice = bigDecimalStream2.reduce(BigDecimal::min).get();
-        Stream<BigDecimal> bigDecimalStream3 = cars.stream().filter(Objects::nonNull).map(Car::getPrice);
-        BigDecimal[] sumPrice = bigDecimalStream3.map(m -> new BigDecimal[]{m, BigDecimal.ONE}).reduce((a, b) -> new BigDecimal[]{a[0].add(b[0]), a[1].add(BigDecimal.ONE)}).get();
-        BigDecimal averPrice = sumPrice[0].divideToIntegralValue(sumPrice[1]);
-        System.out.println(" price statics ");
-        System.out.println(" max price ->" + maxPrice);
-        System.out.println(" min price ->" + minPrice);
-        System.out.println(" aver price ->" + averPrice);
-
-        IntSummaryStatistics issMileage = cars
-                .stream()
-                .collect(Collectors.summarizingInt(Car::getMileage));
-        System.out.println(" mileage statics ");
-        System.out.println(" aver mileage ->" + issMileage.getMax());
-        System.out.println(" aver mileage ->" + issMileage.getMin());
-        System.out.println(" aver mileage ->" + issMileage.getAverage());
+        BigDecimal maxPrice = cars.stream().map(Car::getPrice).reduce(BigDecimal::max).get();
+        BigDecimal minPrice = cars.stream().map(Car::getPrice).reduce(BigDecimal::min).get();
+        BigDecimal aver = cars.stream().collect(new AverageCollector());
+        System.out.println(MessageFormat.format("Statistic for PRICE -> maxPrice {0} ::::: minPrice {1} :::::: averPrice {2} ", maxPrice.setScale(2), minPrice.setScale(2), aver.setScale(2)));
+        DecimalFormat dc = new DecimalFormat("#0.00");
+        IntSummaryStatistics issMileage = cars.stream().collect(Collectors.summarizingInt(Car::getMileage));
+        System.out.println(MessageFormat.format("Statistic for MILEAGE -> maxMileage{0} ::::: minMileage {1} :::::: averMileage {2} ", dc.format(issMileage.getMax()), dc.format(issMileage.getMin()), dc.format(issMileage.getAverage())));
     }
     //////////////////////////////////////////task7////////////////////////////////////////////
 

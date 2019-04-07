@@ -15,7 +15,7 @@ public class ControlAppService3 {
 
             try {
                 dataManager.getLine(" press ENTER to CONTINUE ");
-                final ShoppingManager shoppingManager = new ShoppingManager("App03jsonFile01.json", "App03jsonFile02.json");
+                final ShoppingService shoppingService = new ShoppingService("App03jsonFile01.json", "App03jsonFile02.json");
                 ScreenManager.printMenu();
                 int number = dataManager.getInt(" MAKE A CHOICE PRESS FROM 0 TO 6 ");
 
@@ -26,27 +26,27 @@ public class ControlAppService3 {
                         return;
                     }
                     case 1: {
-                        task1(shoppingManager);
+                        task1(shoppingService);
                         break;
                     }
                     case 2: {
-                        task2(shoppingManager);
+                        task2(shoppingService);
                         break;
                     }
                     case 3: {
-                        task3(shoppingManager);
+                        task3(shoppingService);
                         break;
                     }
                     case 4: {
-                        task4(shoppingManager);
+                        task4(shoppingService);
                         break;
                     }
                     case 5: {
-                        task5(shoppingManager);
+                        task5(shoppingService);
                         break;
                     }
                     case 6: {
-                        printRawData(shoppingManager);
+                        printRawData(shoppingService);
                         break;
                     }
                     default: {
@@ -63,7 +63,7 @@ public class ControlAppService3 {
     }
 
 
-    private static void printRawData(ShoppingManager s) {
+    private static void printRawData(ShoppingService s) {
         System.out.println(" Loading data.......... \n ");
         s.toString();
 
@@ -77,7 +77,7 @@ public class ControlAppService3 {
         return Category.convertFromNumber(Integer.parseInt(parameter));
     }
 
-    private void task1(ShoppingManager ss) {
+    private void task1(ShoppingService ss) {
         System.out.println(" Customer who paid the most for all purchases ");
         Customer result = ss.paidMostInSelectedCategory(Category.ALL);
         System.out.println(result);
@@ -87,13 +87,13 @@ public class ControlAppService3 {
         System.out.println(result2);
     }
 
-    private void task2(ShoppingManager ss) {
+    private void task2(ShoppingService ss) {
         System.out.println("Result of task 2A ........map  with age of customers and\n" +
                 "     categories of products that were most often purchased at this age");
         ss.mappingByAgeCategory().entrySet().stream().forEach(s -> System.out.println(s.getKey() + ":::" + s.getValue()));
     }
 
-    private void task3(ShoppingManager ss) {
+    private void task3(ShoppingService ss) {
         System.out.println("average Price in Category");
         ss.showAveragePriceInCategory().entrySet().stream().forEach(s -> System.out.println(s.getKey() + "::::" + s.getValue()));
         System.out.println("most expansive Product in  Category");
@@ -102,12 +102,12 @@ public class ControlAppService3 {
         ss.cheapestProductInCategory().entrySet().stream().forEach(s -> System.out.println(s.getKey() + "::::" + s.getValue()));
     }
 
-    private void task4(ShoppingManager ss) {
+    private void task4(ShoppingService ss) {
         System.out.println(" Customer and  Category which is most often choose");
         ss.customersWithCategoryMostChosen().entrySet().stream().forEach(s -> System.out.println(s.getKey() + "::::" + s.getValue()));
     }
 
-    private void task5(ShoppingManager ss) {
+    private void task5(ShoppingService ss) {
         System.out.println("Customers and their debts");
         ss.customersWithDebts().entrySet().stream().forEach(s -> System.out.println(s.getKey() + "::::" + s.getValue()));
     }
