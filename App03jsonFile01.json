@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "KarolNiewiadomska",
-        "age": 40,
-        "cash": 543
-      },
-      "products": [
-        {
-          "name": "Radio",
-          "category": "ELECTRONIC",
-          "price": 22730
-        },
-        {
-          "name": "Laptop",
-          "category": "ELECTRONIC",
-          "price": 20873
-        },
-        {
-          "name": "Game of Throne",
-          "category": "BOOK",
-          "price": 442
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "AgataKowalski",
+        "name": "JanuszNowak",
         "age": 42,
-        "cash": 341
+        "cash": 762
       },
       "products": [
         {
-          "name": "Game of Throne",
+          "name": "Banan",
+          "category": "FOOD",
+          "price": 270
+        },
+        {
+          "name": "Boogeman",
           "category": "BOOK",
-          "price": 825
+          "price": 484
         },
         {
-          "name": "Laptop",
-          "category": "ELECTRONIC",
-          "price": 22715
-        },
-        {
-          "name": "GameBoy",
-          "category": "ELECTRONIC",
-          "price": 15305
+          "name": "Choco",
+          "category": "FOOD",
+          "price": 134
         }
       ]
     },
     {
       "customer": {
-        "name": "TeresaZlotopolski",
-        "age": 45,
-        "cash": 684
+        "name": "AdamKowalski",
+        "age": 29,
+        "cash": 285
       },
       "products": [
-        {
-          "name": "Game of Throne",
-          "category": "BOOK",
-          "price": 366
-        },
         {
           "name": "Phone",
           "category": "ELECTRONIC",
-          "price": 28700
+          "price": 19593
         },
         {
-          "name": "Last Mochcanine",
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 22944
+        },
+        {
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 11083
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "KarolNiewiadomska",
+        "age": 26,
+        "cash": 375
+      },
+      "products": [
+        {
+          "name": "IceCream",
+          "category": "FOOD",
+          "price": 216
+        },
+        {
+          "name": "Game of Throne",
           "category": "BOOK",
-          "price": 504
+          "price": 872
+        },
+        {
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 25334
         }
       ]
     }

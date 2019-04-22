@@ -41,12 +41,8 @@ public class ShoppingService {
                 .collect(Collectors.toMap(
                         CustomerWithProducts::getCustomer,
                         customerWithProducts -> customerWithProducts.getProducts().stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting())),
-                        // m1
-                        // A -> 2
-                        // B -> 3
-                        // m2
-                        // A -> 3
-                        // C -> 1
+                        // m1// A -> 2// B -> 3
+                        // m2// A -> 3// C -> 1
                         (m1, m2) -> {
                             m2.forEach((k, v) -> m1.merge(k, v, (v1, v2) -> v1 + v2));
                             return m1;
@@ -119,7 +115,6 @@ public class ShoppingService {
     /**
      * This is private method return Customer who paid most in selected category
      * reduce code for main method
-     *
      * @param cat selected category
      * @return Optional Customer
      */
@@ -137,7 +132,6 @@ public class ShoppingService {
                 .getKey();
     }
     /////////////////////////////////////TASK2////////////////////////////////////
-
     /**
      * This  method return  map  with age of customers and
      * categories of products that were most often purchased at this age.

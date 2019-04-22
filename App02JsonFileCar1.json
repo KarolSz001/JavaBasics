@@ -1,23 +1,23 @@
 {
-  "model": "FIAT",
-  "price": 645452,
-  "mileage": 261952,
+  "model": "OPEL",
+  "price": 593710,
+  "mileage": 238339,
   "engine": {
-    "engineType": "LPG",
+    "engineType": "DIESEL",
     "power": 100.0
   },
   "carBody": {
-    "color": "BLACK",
-    "type": "SEDAN",
+    "color": "SILVER",
+    "type": "COMBI",
     "components": [
-      "TV",
       "RADIO",
-      "ABS"
+      "TV",
+      "GPS"
     ]
   },
   "wheel": {
-    "model": "DEBICA",
+    "model": "Pacer",
     "size": 17,
-    "tyreType": "SUMMER"
+    "tyreType": "WINTER"
   }
 }

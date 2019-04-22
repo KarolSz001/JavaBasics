@@ -35,7 +35,7 @@ class CarService {
     //////////////////////////////////////////task1////////////////////////////////////////////
 
     /**
-     * Method override toString method to show in best way raw list of Cars
+     * Method override toString method to show raw list of Cars
      */
     @Override
     public String toString() {
@@ -45,7 +45,7 @@ class CarService {
     //////////////////////////////////////////task2////////////////////////////////////////////
 
     /**
-     * Methode return new List of CarService which is sorted by parameter
+     * Method return new List of CarService which is sorted by parameter
      *
      * @param criterion  - model, price, color, mileage;
      * @param descending - sort naturalOrder or reverseOrder
@@ -58,23 +58,13 @@ class CarService {
         if (criterion == null) {
             throw new MyUncheckedException("Criterion is null");
         }
-        Stream<Car> carStream = null;
 
-        switch (criterion) {
-            case MODEL:
-                carStream = cars.stream().sorted(Comparator.comparing(Car::getModel));
-                break;
-            case PRICE:
-                carStream = cars.stream().sorted(Comparator.comparing(Car::getPrice));
-                break;
-            case COLOR:
-                carStream = cars.stream().sorted(Comparator.comparing(Car::getColor));
-                break;
-            case MILEAGE:
-                carStream = cars.stream().sorted(Comparator.comparing(Car::getMileage));
-                break;
-        }
-        List<Car> sortedCars = carStream.collect(Collectors.toList());
+        List<Car> sortedCars = switch (criterion) {
+            case MODEL -> cars.stream().sorted(Comparator.comparing(Car::getModel)).collect(Collectors.toList());
+            case PRICE -> cars.stream().sorted(Comparator.comparing(Car::getPrice)).collect(Collectors.toList());
+            case COLOR -> cars.stream().sorted(Comparator.comparing(Car::getColor)).collect(Collectors.toList());
+            case MILEAGE -> cars.stream().sorted(Comparator.comparing(Car::getMileage)).collect(Collectors.toList());
+        };
 
         if (descending) {
             Collections.reverse(sortedCars);
@@ -112,7 +102,6 @@ class CarService {
                 .collect(Collectors.groupingBy(Car::getColor, Collectors.counting()))
                 .entrySet()
                 .stream()
-                .sorted((e1, e2) -> Long.compare(e2.getValue(), e1.getValue()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, Long::max, LinkedHashMap::new));
     }
     //////////////////////////////////////////task5////////////////////////////////////////////
@@ -144,11 +133,10 @@ class CarService {
         IntSummaryStatistics issMileage = cars.stream().collect(Collectors.summarizingInt(Car::getMileage));
         System.out.println(MessageFormat.format("Statistic for MILEAGE -> maxMileage{0} ::::: minMileage {1} :::::: averMileage {2} ", dc.format(issMileage.getMax()), dc.format(issMileage.getMin()), dc.format(issMileage.getAverage())));
     }
-    //////////////////////////////////////////task7////////////////////////////////////////////
 
+    //////////////////////////////////////////task7////////////////////////////////////////////
     /**
      * Method sort List by Price and return List with the most expansive Cars
-     *
      * @return List of Car
      */
 
@@ -164,7 +152,6 @@ class CarService {
 
     /**
      * Method show List of Car with sorted list of Components
-     *
      * @return List<Car>
      */
     public List<Car> withSortedComponents() {
@@ -198,7 +185,6 @@ class CarService {
 
     /**
      * Method return new List filtered by parameters
-     *
      * @param min min price
      * @param max max price
      * @return List<Car>

@@ -1,23 +1,23 @@
 {
-  "model": "FIAT",
-  "price": 427507,
-  "mileage": 188445,
+  "model": "AUDI",
+  "price": 958101,
+  "mileage": 234829,
   "engine": {
-    "engineType": "LPG",
-    "power": 120.5
+    "engineType": "DIESEL",
+    "power": 81.0
   },
   "carBody": {
     "color": "BLUE",
-    "type": "HATCHBACK",
+    "type": "COMBI",
     "components": [
       "ABS",
-      "RADIO",
-      "GPS"
+      "GPS",
+      "RADIO"
     ]
   },
   "wheel": {
-    "model": "Pacer",
-    "size": 17,
-    "tyreType": "SUMMER"
+    "model": "Motiv",
+    "size": 19,
+    "tyreType": "WINTER"
   }
 }

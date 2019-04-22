@@ -46,12 +46,10 @@ public class CarsService2 {
     }
 
     //////////////////////////////////////////////////TASK1///////////////////////////////////////////////////////
-// is it good solution ??
 
     /**
      * This method return Set Collection of filtered by number of components, power of engine or wheels size
      * and sort natural or reverse order
-     *
      * @param choice
      * @param isReversOrder
      * @return Set<Car2>
@@ -62,9 +60,7 @@ public class CarsService2 {
         if (choice == null) {
             throw new MyUncheckedException2("choice is null");
         }
-
         Stream<Car2> car2Stream = null;
-
 //  PRICE,MILEAGE,POWER,NUMBER_COMPONENTS,SIZE_WHEEL,
 
         switch (choice) {
@@ -95,7 +91,6 @@ public class CarsService2 {
 
     /**
      * This method return Set Collection of filtered by CarBodyType and min , max price
-     *
      * @param cBT -> CarBodyType
      * @param min -> minimum price
      * @param max -> minimum price
@@ -122,8 +117,8 @@ public class CarsService2 {
         System.out.println(" solution for task nr 3 --------------->>>>>>>>>>>> ");
         return car2Set.stream()
                 .filter(f -> f.getEngine().getEngineType() == engineType)
-                .sorted(Comparator.comparing(Car2::getModel))
                 .map(Car2::getModel)
+                .sorted(Comparator.comparing(Function.identity()))
                 .collect(Collectors.toCollection(LinkedHashSet::new));
     }
     //////////////////////////////////////////////////TASK4///////////////////////////////////////////////////////
@@ -160,11 +155,9 @@ public class CarsService2 {
         }
     }
     //////////////////////////////////////////////////TASK5///////////////////////////////////////////////////////
-
     /**
-     * This method return  Map , Key Car2 and Value number of Mileage
+     * This method return  Map Car and number of Mileage
      * sorted by mileage
-     *
      * @return Map<Car2, Integer>
      */
 
@@ -172,7 +165,7 @@ public class CarsService2 {
         System.out.println("solution for task nr 5 --------------->>>>>>>>>>>>");
         return car2Set.stream()
                 .collect(Collectors.toMap(
-                        e -> e,
+                       Function.identity(),
                         Car2::getMileage,
                         Integer::max,
                         LinkedHashMap::new

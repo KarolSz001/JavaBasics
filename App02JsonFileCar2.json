@@ -1,23 +1,23 @@
 {
-  "model": "SYRENKA",
-  "price": 762610,
-  "mileage": 460235,
+  "model": "FIAT",
+  "price": 970605,
+  "mileage": 196837,
   "engine": {
-    "engineType": "LPG",
-    "power": 120.5
+    "engineType": "DIESEL",
+    "power": 100.0
   },
   "carBody": {
-    "color": "SILVER",
+    "color": "WHITE",
     "type": "COMBI",
     "components": [
-      "TV",
       "GPS",
-      "ABS"
+      "RADIO",
+      "TV"
     ]
   },
   "wheel": {
     "model": "Pacer",
-    "size": 17,
+    "size": 21,
     "tyreType": "SUMMER"
   }
 }

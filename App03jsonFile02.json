@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "GenowefaNowicki",
-        "age": 41,
-        "cash": 674
+        "name": "JanNowicki",
+        "age": 49,
+        "cash": 747
       },
       "products": [
         {
+          "name": "Last Mochcanine",
+          "category": "BOOK",
+          "price": 828
+        },
+        {
           "name": "Banan",
           "category": "FOOD",
-          "price": 224
+          "price": 270
         },
         {
-          "name": "Laptop",
-          "category": "ELECTRONIC",
-          "price": 25088
-        },
-        {
-          "name": "Alladyn",
+          "name": "Boogeman",
           "category": "BOOK",
-          "price": 775
+          "price": 460
         }
       ]
     },
     {
       "customer": {
         "name": "GenowefaNowak",
-        "age": 31,
-        "cash": 843
+        "age": 38,
+        "cash": 524
       },
       "products": [
         {
-          "name": "Alladyn",
-          "category": "BOOK",
-          "price": 395
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 14650
         },
         {
-          "name": "IceCream",
-          "category": "FOOD",
-          "price": 117
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 21486
         },
         {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 407
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 25945
         }
       ]
     },
     {
       "customer": {
-        "name": "MariaaKowalski",
-        "age": 42,
-        "cash": 274
+        "name": "KarolNowicki",
+        "age": 32,
+        "cash": 407
       },
       "products": [
         {
-          "name": "Radio",
-          "category": "ELECTRONIC",
-          "price": 28898
-        },
-        {
           "name": "Alladyn",
           "category": "BOOK",
-          "price": 359
+          "price": 488
         },
         {
           "name": "GameBoy",
           "category": "ELECTRONIC",
-          "price": 27682
+          "price": 28495
+        },
+        {
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 23759
         }
       ]
     }

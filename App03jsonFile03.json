@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "AdamNiewiadomska",
-        "age": 49,
-        "cash": 917
+        "name": "JanNiewiadomska",
+        "age": 45,
+        "cash": 736
       },
       "products": [
         {
-          "name": "Boogeman",
-          "category": "BOOK",
-          "price": 797
-        },
-        {
           "name": "Banan",
           "category": "FOOD",
-          "price": 214
+          "price": 182
         },
         {
-          "name": "Boogeman",
+          "name": "Game of Throne",
           "category": "BOOK",
-          "price": 678
+          "price": 893
+        },
+        {
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 23090
         }
       ]
     },
     {
       "customer": {
-        "name": "TeresaNowicki",
-        "age": 43,
-        "cash": 114
+        "name": "AdamNowak",
+        "age": 34,
+        "cash": 928
       },
       "products": [
-        {
-          "name": "Banan",
-          "category": "FOOD",
-          "price": 176
-        },
         {
           "name": "Apple",
           "category": "FOOD",
-          "price": 113
+          "price": 256
         },
         {
-          "name": "Alladyn",
+          "name": "Boogeman",
           "category": "BOOK",
-          "price": 852
+          "price": 731
+        },
+        {
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 15212
         }
       ]
     },
     {
       "customer": {
-        "name": "MariaaZlotopolski",
-        "age": 46,
-        "cash": 749
+        "name": "JanuszNowicki",
+        "age": 31,
+        "cash": 511
       },
       "products": [
         {
-          "name": "IceCream",
-          "category": "FOOD",
-          "price": 197
-        },
-        {
-          "name": "Boogeman",
+          "name": "Game of Throne",
           "category": "BOOK",
-          "price": 312
+          "price": 880
         },
         {
-          "name": "Banan",
-          "category": "FOOD",
-          "price": 173
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 25580
+        },
+        {
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 12004
         }
       ]
     }
