@@ -56,37 +56,24 @@ public class CarsService2 {
      */
     public Set<Car2> sortMethodByParam(Criterion2 choice, boolean isReversOrder) {
         System.out.println("solution for task nr 1 --------------->>>>>>>>>>>>");
+//  PRICE,MILEAGE,POWER,NUMBER_COMPONENTS,SIZE_WHEEL,
 
         if (choice == null) {
             throw new MyUncheckedException2("choice is null");
         }
-        Stream<Car2> car2Stream = null;
-//  PRICE,MILEAGE,POWER,NUMBER_COMPONENTS,SIZE_WHEEL,
-
-        switch (choice) {
-            case PRICE:
-                car2Stream = car2Set.stream().sorted(Comparator.comparing(Car2::getPrice));
-                break;
-            case MILEAGE:
-                car2Stream = car2Set.stream().sorted(Comparator.comparing(Car2::getMileage));
-                break;
-            case POWER:
-                car2Stream = car2Set.stream().sorted(Comparator.comparing(s -> s.getEngine().getPower()));
-                break;
-            case NUMBER_COMPONENTS:
-                car2Stream = car2Set.stream().sorted(Comparator.comparing(m -> m.getCarBody().getComponents().size()));
-                break;
-            case SIZE_WHEEL:
-                car2Stream = car2Set.stream().sorted(Comparator.comparing(c -> c.getWheel().getSize()));
-                break;
-        }
-        List<Car2> carsList = car2Stream.collect(Collectors.toCollection(ArrayList::new));
-
+        List<Car2> carsList = switch (choice) {
+            case PRICE -> car2Set.stream().sorted(Comparator.comparing(Car2::getPrice)).collect(Collectors.toCollection(ArrayList::new));
+            case MILEAGE -> car2Set.stream().sorted(Comparator.comparing(Car2::getMileage)).collect(Collectors.toCollection(ArrayList::new));
+            case POWER -> car2Set.stream().sorted(Comparator.comparing(s -> s.getEngine().getPower())).collect(Collectors.toCollection(ArrayList::new));
+            case NUMBER_COMPONENTS -> car2Set.stream().sorted(Comparator.comparing(m -> m.getCarBody().getComponents().size())).collect(Collectors.toCollection(ArrayList::new));
+            case SIZE_WHEEL -> car2Set.stream().sorted(Comparator.comparing(c -> c.getWheel().getSize())).collect(Collectors.toCollection(ArrayList::new));
+        };
         if (isReversOrder) {
             Collections.reverse(carsList);
         }
         return new LinkedHashSet<>(carsList);
     }
+
     //////////////////////////////////////////////////TASK2///////////////////////////////////////////////////////
 
     /**

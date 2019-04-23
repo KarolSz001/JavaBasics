@@ -1,23 +1,23 @@
 {
-  "model": "FIAT",
-  "price": 970605,
-  "mileage": 196837,
+  "model": "AUDI",
+  "price": 787988,
+  "mileage": 292349,
   "engine": {
     "engineType": "DIESEL",
-    "power": 100.0
+    "power": 120.5
   },
   "carBody": {
-    "color": "WHITE",
+    "color": "BLACK",
     "type": "COMBI",
     "components": [
-      "GPS",
-      "RADIO",
-      "TV"
+      "TV",
+      "ABS",
+      "RADIO"
     ]
   },
   "wheel": {
     "model": "Pacer",
-    "size": 21,
-    "tyreType": "SUMMER"
+    "size": 17,
+    "tyreType": "WINTER"
   }
 }

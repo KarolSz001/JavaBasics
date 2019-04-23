@@ -1,22 +1,22 @@
 {
   "model": "AUDI",
-  "price": 958101,
-  "mileage": 234829,
+  "price": 710646,
+  "mileage": 293083,
   "engine": {
-    "engineType": "DIESEL",
+    "engineType": "LPG",
     "power": 81.0
   },
   "carBody": {
-    "color": "BLUE",
+    "color": "GREEN",
     "type": "COMBI",
     "components": [
-      "ABS",
-      "GPS",
-      "RADIO"
+      "TV",
+      "RADIO",
+      "GPS"
     ]
   },
   "wheel": {
-    "model": "Motiv",
+    "model": "Pacer",
     "size": 19,
     "tyreType": "WINTER"
   }

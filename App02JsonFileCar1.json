@@ -1,23 +1,23 @@
 {
   "model": "OPEL",
-  "price": 593710,
-  "mileage": 238339,
+  "price": 607284,
+  "mileage": 453838,
   "engine": {
-    "engineType": "DIESEL",
-    "power": 100.0
+    "engineType": "LPG",
+    "power": 81.0
   },
   "carBody": {
-    "color": "SILVER",
-    "type": "COMBI",
+    "color": "BLACK",
+    "type": "SEDAN",
     "components": [
-      "RADIO",
+      "GPS",
       "TV",
-      "GPS"
+      "RADIO"
     ]
   },
   "wheel": {
     "model": "Pacer",
-    "size": 17,
+    "size": 19,
     "tyreType": "WINTER"
   }
 }

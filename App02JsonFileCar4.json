@@ -1,23 +1,23 @@
 {
-  "model": "SYRENKA",
-  "price": 553896,
-  "mileage": 433297,
+  "model": "TESLA",
+  "price": 398822,
+  "mileage": 477192,
   "engine": {
-    "engineType": "GASOLINE",
+    "engineType": "LPG",
     "power": 81.0
   },
   "carBody": {
     "color": "RED",
-    "type": "HATCHBACK",
+    "type": "SEDAN",
     "components": [
-      "TV",
       "RADIO",
+      "TV",
       "ABS"
     ]
   },
   "wheel": {
-    "model": "Motiv",
+    "model": "DEBICA",
     "size": 21,
-    "tyreType": "SUMMER"
+    "tyreType": "WINTER"
   }
 }
