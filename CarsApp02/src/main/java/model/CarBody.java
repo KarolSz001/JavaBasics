@@ -21,20 +21,9 @@ public class CarBody {
         this.components = components;
     }
 
-    public CarBodyColor getColor() {
-        return color;
-    }
-
-    public void setColor(CarBodyColor color) {
-        this.color = color;
-    }
 
     public CarBodyType getType() {
         return type;
-    }
-
-    public void setType(CarBodyType type) {
-        this.type = type;
     }
 
     public List<String> getComponents() {

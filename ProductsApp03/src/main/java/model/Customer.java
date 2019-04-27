@@ -18,29 +18,13 @@ public class Customer {
         this.cash = cash;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getAge() {
         return age;
     }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public BigDecimal getCash() {
         return cash;
     }
 
-    public void setCash(BigDecimal cash) {
-        this.cash = cash;
-    }
 
     @Override
     public String toString() {

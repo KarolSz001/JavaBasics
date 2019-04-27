@@ -15,21 +15,6 @@ public class Car {
     private int mileage;
     private List<String> components;
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
-    public void setMileage(int mileage) {
-        this.mileage = mileage;
-    }
 
     public void setComponents(List<String> components) {
         this.components = components;

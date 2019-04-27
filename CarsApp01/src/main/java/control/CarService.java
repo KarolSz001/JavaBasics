@@ -162,11 +162,12 @@ class CarService {
     }
 
     /**
-     * Method return new Map where a Key is name of Component and Value is a list of Car with this component
+     * Method returns new Map where a Key is name of Component and Value is a list of Car with this component
      * sorted by numbers of Car
      */
 
     public Map<String, List<Car>> componentsWithListOfCars() {
+
         return cars.stream()
                 .flatMap(car -> car.getComponents().stream())
                 .distinct()

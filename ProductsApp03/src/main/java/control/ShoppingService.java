@@ -24,7 +24,6 @@ public class ShoppingService {
 
     /**
      * This method return  Map of Customer and Map<Product,Long> where Product is a key and Long is number of purchases
-     *
      * @param fileNames get list of fileNames, convert to List <CustomerWithProduct> and than to Map<Customer, Map<Product,Long>
      * @return Map<Customer, Map < Product, Long>
      */
@@ -63,7 +62,6 @@ public class ShoppingService {
 
     /**
      * This method return  Customer who paid the most for all purchases
-     *
      * @return Customer
      */
     public Customer whoPaidTheMost() {
@@ -85,9 +83,8 @@ public class ShoppingService {
     /**
      * This method return  Customer the customer who paid the most
      * for shopping in the selected category BOOK, ELECTRONIC, FOOD
-     *
      * @param category selected category
-     * @return Optional Customer
+     * @return Customer
      */
     public Customer paidMostInSelectedCategory(Category category) {
         Customer customer;
@@ -186,11 +183,11 @@ public class ShoppingService {
                         e -> e.getValue().stream().map(Product::getPrice).reduce(BigDecimal.ZERO, BigDecimal::add).divide(new BigDecimal(e.getValue().size()), RoundingMode.DOWN)
                 ));
     }
-
     /**
      * This  method return  map  category and most expansive Product in this category
      * @return Map<Integer, Category>
      */
+
     public Map<Category, Product> mostExpProductInCategory() {
         return customersWithProducts
                 .values()

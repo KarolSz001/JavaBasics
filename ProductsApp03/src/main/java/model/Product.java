@@ -25,25 +25,14 @@ public class Product {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Category getCategory() {
         return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
     }
 
     public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
 
     @Override
     public String toString() {
@@ -68,8 +57,6 @@ public class Product {
     public int hashCode() {
         return Objects.hash(name, category, price);
     }
-
-
 
 
 }

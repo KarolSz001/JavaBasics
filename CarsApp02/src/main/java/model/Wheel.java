@@ -40,10 +40,6 @@ public class Wheel {
         return tyreType;
     }
 
-    public void setTyreType(TyreType tyreType) {
-        this.tyreType = tyreType;
-    }
-
     @Override
     public String toString() {
         return "Wheel{" +

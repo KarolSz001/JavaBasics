@@ -153,9 +153,7 @@ public class CarsService2 {
         return car2Set.stream()
                 .collect(Collectors.toMap(
                        Function.identity(),
-                        Car2::getMileage,
-                        Integer::max,
-                        LinkedHashMap::new
+                        Car2::getMileage
                 ))
                 .entrySet()
                 .stream()
@@ -167,8 +165,8 @@ public class CarsService2 {
                         LinkedHashMap::new
                 ));
 
-//        car2Set.stream()
-//                .collect(Collectors.groupingBy(Function.identity(),Collectors.collectingAndThen(Comparator.comparingInt(Car2::getMileage),Comparator.reverseOrder()),Optional::orElseThrow));
+        /*car2Set.stream()
+                .collect(Collectors.groupingBy(Function.identity(),Collectors.collectingAndThen(Comparator.comparingInt(Car2::getMileage),Comparator.reverseOrder()*/),Optional::orElseThrow));
     }
     //////////////////////////////////////////////////TASK6///////////////////////////////////////////////////////
 

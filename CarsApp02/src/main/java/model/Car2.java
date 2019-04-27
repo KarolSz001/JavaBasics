@@ -15,18 +15,6 @@ public class Car2 {
     private CarBody carBody;
     private Wheel wheel;
 
-    public Car2(String jsonFileName) {
-        CarJsonConverter2 cj2 = new CarJsonConverter2(jsonFileName);
-        Car2 tempCar = cj2.fromJson().get();
-        this.model = tempCar.getModel();
-        this.price = tempCar.getPrice();
-        this.mileage = tempCar.getMileage();
-        this.engine = tempCar.getEngine();
-        this.carBody = tempCar.getCarBody();
-        this.wheel = tempCar.getWheel();
-
-    }
-
     public Car2(String model, BigDecimal price, int mileage, Engine engine, CarBody carBody, Wheel wheel) {
         this.model = model;
         this.price = price;
