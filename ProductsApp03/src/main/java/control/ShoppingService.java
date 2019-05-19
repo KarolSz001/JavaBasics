@@ -3,6 +3,7 @@ package control;
 import converters.ShoppingJsonConverter;
 import enums.Category;
 import exception.MyUncheckedException;
+import exception.MyUncheckedException2;
 import model.Customer;
 import model.CustomerWithProducts;
 import model.Product;
@@ -12,6 +13,8 @@ import java.math.RoundingMode;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+
+import static java.util.Collections.nCopies;
 
 public class ShoppingService {
 
@@ -87,26 +90,16 @@ public class ShoppingService {
      * @return Customer
      */
     public Customer paidMostInSelectedCategory(Category category) {
-        Customer customer;
-        switch (category) {
-            case BOOK: {
-                customer = customerWhoPaidMostInCategory(Category.BOOK);
-                break;
-            }
-            case ELECTRONIC: {
-                customer = customerWhoPaidMostInCategory(Category.ELECTRONIC);
-                break;
-            }
-            case FOOD: {
-                customer = customerWhoPaidMostInCategory(Category.FOOD);
-                break;
-            }
-            default: {
-                customer = whoPaidTheMost();
-                break;
-            }
+        if (category == null) {
+            throw new MyUncheckedException2("category is null");
         }
-        return customer;
+
+        return switch (category) {
+            case BOOK -> customerWhoPaidMostInCategory(Category.BOOK);
+            case ELECTRONIC -> customerWhoPaidMostInCategory(Category.ELECTRONIC);
+            case FOOD -> customerWhoPaidMostInCategory(Category.FOOD);
+            default -> throw new MyUncheckedException2("category is wrong");
+        };
     }
 
     /**
@@ -148,7 +141,7 @@ public class ShoppingService {
                         // FOOD, FOOD, FOOD, MOTO, MOTO
                         e -> e.getValue()
                                 .stream()
-                                .flatMap(ee -> ee.getValue().entrySet().stream().flatMap(eee -> Collections.nCopies(eee.getValue().intValue(), eee.getKey()).stream()))
+                                .flatMap(ee -> ee.getValue().entrySet().stream().flatMap(eee -> nCopies(eee.getValue().intValue(), eee.getKey()).stream()))
                 ))
                 .entrySet().stream()
                 .collect(Collectors.toMap(

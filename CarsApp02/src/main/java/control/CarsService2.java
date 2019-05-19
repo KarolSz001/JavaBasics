@@ -14,7 +14,7 @@ import java.text.MessageFormat;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
 
 public class CarsService2 {
 
@@ -95,7 +95,6 @@ public class CarsService2 {
     /**
      * This method return Set Collection of Model filtered by engineType
      * and sorted Collection by Model
-     *
      * @param engineType
      * @return Set<String>
      */
@@ -164,16 +163,12 @@ public class CarsService2 {
                         Integer::max,
                         LinkedHashMap::new
                 ));
-
-        /*car2Set.stream()
-                .collect(Collectors.groupingBy(Function.identity(),Collectors.collectingAndThen(Comparator.comparingInt(Car2::getMileage),Comparator.reverseOrder()*/),Optional::orElseThrow));
     }
     //////////////////////////////////////////////////TASK6///////////////////////////////////////////////////////
 
     /**
      * This method return  Map , Key TyreType and Value list of cars how have this TyreType
      * sorted by number of Cars
-     *
      * @return Map<TyreType, List < Car2>>
      */
 
@@ -198,8 +193,6 @@ public class CarsService2 {
                         (v1, v2) -> v1,
                         LinkedHashMap::new
                 ));
-//        car2Set.stream()
-//                .collect(Collectors.groupingBy(c->c.getWheel().getTyreType(),Collectors.collectingAndThen(car2Set.stream().filter(f->f.getWheel().getTyreType().equals(Function.identity())).collect(Collectors.toList())))
-    }
+   }
 
 }
