@@ -1,0 +1,61 @@
+{
+  "customerWithProducts": [
+    {
+      "customer": {
+        "name": "GenowefaNowak",
+        "age": 35,
+        "cash": 849
+      },
+      "products": [
+        {
+          "name": "Boogeman",
+          "category": "BOOK",
+          "price": 644
+        },
+        {
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 16923
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "AdamZlotopolski",
+        "age": 33,
+        "cash": 200
+      },
+      "products": [
+        {
+          "name": "Game of Throne",
+          "category": "BOOK",
+          "price": 460
+        },
+        {
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 10098
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "JanNowicki",
+        "age": 48,
+        "cash": 210
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 493
+        },
+        {
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 15300
+        }
+      ]
+    }
+  ]
+}

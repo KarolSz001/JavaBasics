@@ -1,0 +1,23 @@
+{
+  "model": "TESLA",
+  "price": 863713,
+  "mileage": 253933,
+  "engine": {
+    "engineType": "DIESEL",
+    "power": 120.5
+  },
+  "carBody": {
+    "color": "GREEN",
+    "type": "COMBI",
+    "components": [
+      "RADIO",
+      "ABS",
+      "TV"
+    ]
+  },
+  "wheel": {
+    "model": "Motiv",
+    "size": 17,
+    "tyreType": "WINTER"
+  }
+}

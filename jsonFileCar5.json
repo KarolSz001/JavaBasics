@@ -1,0 +1,23 @@
+{
+  "model": "OPEL",
+  "price": 324537,
+  "mileage": 420142,
+  "engine": {
+    "engineType": "DIESEL",
+    "power": 81.0
+  },
+  "carBody": {
+    "color": "RED",
+    "type": "HATCHBACK",
+    "components": [
+      "RADIO",
+      "ABS",
+      "TV"
+    ]
+  },
+  "wheel": {
+    "model": "DEBICA",
+    "size": 17,
+    "tyreType": "SUMMER"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": "TESLA",
+  "price": 607580,
+  "mileage": 185065,
+  "engine": {
+    "engineType": "GASOLINE",
+    "power": 102.2
+  },
+  "carBody": {
+    "color": "RED",
+    "type": "SEDAN",
+    "components": [
+      "ABS",
+      "GPS",
+      "RADIO"
+    ]
+  },
+  "wheel": {
+    "model": "Pacer",
+    "size": 21,
+    "tyreType": "WINTER"
+  }
+}

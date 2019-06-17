@@ -16,7 +16,7 @@ public class DataManager {
 
         String line = sc.nextLine();
         if (line == null || !line.matches("\\d+")) {
-            throw new MyUncheckedException("WRONG DATA TRY AGIAN");
+            throw new MyUncheckedException("WRONG DATA TRY AGAIN");
         }
 
         return Integer.parseInt(line);

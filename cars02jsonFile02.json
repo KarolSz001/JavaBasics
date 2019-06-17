@@ -1,0 +1,61 @@
+{
+  "customerWithProducts": [
+    {
+      "customer": {
+        "name": "GenowefaKowalski",
+        "age": 22,
+        "cash": 800
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 578
+        },
+        {
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 14440
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "GenowefaZlotopolski",
+        "age": 37,
+        "cash": 811
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 698
+        },
+        {
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 17752
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "JanZlotopolski",
+        "age": 34,
+        "cash": 113
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 758
+        },
+        {
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 29065
+        }
+      ]
+    }
+  ]
+}

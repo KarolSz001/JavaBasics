@@ -1,0 +1,23 @@
+{
+  "model": "FERRARI",
+  "price": 881551,
+  "mileage": 139989,
+  "engine": {
+    "engineType": "LPG",
+    "power": 102.2
+  },
+  "carBody": {
+    "color": "GREEN",
+    "type": "HATCHBACK",
+    "components": [
+      "GPS",
+      "RADIO",
+      "TV"
+    ]
+  },
+  "wheel": {
+    "model": "Motiv",
+    "size": 21,
+    "tyreType": "WINTER"
+  }
+}
