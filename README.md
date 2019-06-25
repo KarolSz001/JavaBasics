@@ -10,7 +10,7 @@
 Basics Java , still in progress adding new functionality
 
 ## Technologies
-* Java - version 11
+* Java - version 12
 * gson - version 2.8.4
 * maven - version 3.6
 
@@ -35,7 +35,6 @@ Map<String, Car> map = cars.stream()
 To-do list:
 - cleanCode - optimize code 
 - Junit
-- SQL
 - Json
 
 
