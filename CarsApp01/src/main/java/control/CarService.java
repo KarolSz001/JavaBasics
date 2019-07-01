@@ -13,7 +13,7 @@ import java.text.MessageFormat;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
 
 
 class CarService {
@@ -178,11 +178,8 @@ class CarService {
                 .sorted(Comparator.comparing(c -> c.getValue().size(), Comparator.reverseOrder()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (v1, v2) -> v1, LinkedHashMap::new));
 
-//        cars.stream()
-//                .flatMap(f->f.getComponents().stream())
-//                .distinct()
-//                .collect(Collectors.groupingBy(Function.identity(),Collectors.collectingAndThen(cars.stream().filter(car->car.getComponents().contains(Function.identity())).collect(Collectors.toList()))));
-    }
+
+}
 
     /**
      * Method return new List filtered by parameters

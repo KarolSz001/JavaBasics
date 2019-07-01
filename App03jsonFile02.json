@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "GenowefaNowak",
-        "age": 39,
-        "cash": 352
+        "name": "JanuszKruk",
+        "age": 37,
+        "cash": 611
+      },
+      "products": [
+        {
+          "name": "Apple",
+          "category": "FOOD",
+          "price": 276
+        },
+        {
+          "name": "IceCream",
+          "category": "FOOD",
+          "price": 270
+        },
+        {
+          "name": "IceCream",
+          "category": "FOOD",
+          "price": 232
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "MariaaKruk",
+        "age": 25,
+        "cash": 938
+      },
+      "products": [
+        {
+          "name": "Game of Throne",
+          "category": "BOOK",
+          "price": 651
+        },
+        {
+          "name": "Apple",
+          "category": "FOOD",
+          "price": 136
+        },
+        {
+          "name": "Game of Throne",
+          "category": "BOOK",
+          "price": 451
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "AdamNiewiadomska",
+        "age": 48,
+        "cash": 641
       },
       "products": [
         {
           "name": "Radio",
           "category": "ELECTRONIC",
-          "price": 20074
-        },
-        {
-          "name": "Phone",
-          "category": "ELECTRONIC",
-          "price": 25720
+          "price": 18832
         },
         {
           "name": "IceCream",
           "category": "FOOD",
-          "price": 180
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "AdamNowak",
-        "age": 34,
-        "cash": 831
-      },
-      "products": [
-        {
-          "name": "IceCream",
-          "category": "FOOD",
-          "price": 178
+          "price": 172
         },
         {
-          "name": "Phone",
+          "name": "Laptop",
           "category": "ELECTRONIC",
-          "price": 21022
-        },
-        {
-          "name": "GameBoy",
-          "category": "ELECTRONIC",
-          "price": 12053
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "TeresaKruk",
-        "age": 28,
-        "cash": 510
-      },
-      "products": [
-        {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 919
-        },
-        {
-          "name": "Boogeman",
-          "category": "BOOK",
-          "price": 833
-        },
-        {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 508
+          "price": 14108
         }
       ]
     }

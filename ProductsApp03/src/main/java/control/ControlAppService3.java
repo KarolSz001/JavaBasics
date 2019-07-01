@@ -72,14 +72,14 @@ public class ControlAppService3 {
     private Category getCategoryFromNumber() {
         String parameter = dataManager.getLine(" Choose category press 1 - BOOK, 2 - ELECTRONIC, 3 - FOOD ");
         if (!parameter.matches("[123]")) {
-            return Category.ALL;
+            throw new MyUncheckedException(" WRONG CATEGORY CHOICE");
         }
         return Category.convertFromNumber(Integer.parseInt(parameter));
     }
 
     private void task1(ShoppingService ss) {
         System.out.println(" Customer who paid the most for all purchases ");
-        Customer result = ss.paidMostInSelectedCategory(Category.ALL);
+        Customer result = ss.whoPaidTheMost();
         System.out.println(result);
         Category category = getCategoryFromNumber();
         Customer result2 = ss.paidMostInSelectedCategory(category);

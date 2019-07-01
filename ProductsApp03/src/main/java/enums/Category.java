@@ -1,7 +1,7 @@
 package enums;
 
 public enum Category {
-    FOOD, BOOK, ELECTRONIC, ALL;
+    FOOD, BOOK, ELECTRONIC;
 
     Category() {
     }

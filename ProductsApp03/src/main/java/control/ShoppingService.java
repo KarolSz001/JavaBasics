@@ -108,6 +108,7 @@ public class ShoppingService {
      * @param cat selected category
      * @return Optional Customer
      */
+
     private Customer customerWhoPaidMostInCategory(Category cat) {
         return customersWithProducts.entrySet()
                 .stream()

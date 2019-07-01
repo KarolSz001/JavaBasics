@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "KarolNiewiadomska",
-        "age": 45,
-        "cash": 121
+        "name": "AdamNiewiadomska",
+        "age": 43,
+        "cash": 388
       },
       "products": [
         {
-          "name": "Alladyn",
-          "category": "BOOK",
-          "price": 633
-        },
-        {
-          "name": "Choco",
-          "category": "FOOD",
-          "price": 188
-        },
-        {
           "name": "Banan",
           "category": "FOOD",
-          "price": 219
+          "price": 155
+        },
+        {
+          "name": "IceCream",
+          "category": "FOOD",
+          "price": 241
+        },
+        {
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 18835
         }
       ]
     },
     {
       "customer": {
-        "name": "AdamKruk",
-        "age": 27,
-        "cash": 151
+        "name": "TeresaNowicki",
+        "age": 28,
+        "cash": 874
       },
       "products": [
         {
           "name": "Laptop",
           "category": "ELECTRONIC",
-          "price": 24742
+          "price": 26501
         },
         {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 514
-        },
-        {
-          "name": "Phone",
+          "name": "Laptop",
           "category": "ELECTRONIC",
-          "price": 28494
+          "price": 29431
+        },
+        {
+          "name": "Game of Throne",
+          "category": "BOOK",
+          "price": 945
         }
       ]
     },
     {
       "customer": {
-        "name": "GenowefaNowak",
-        "age": 21,
-        "cash": 905
+        "name": "KarolNowak",
+        "age": 33,
+        "cash": 278
       },
       "products": [
         {
-          "name": "Apple",
-          "category": "FOOD",
-          "price": 162
-        },
-        {
           "name": "Alladyn",
           "category": "BOOK",
-          "price": 573
+          "price": 832
         },
         {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 370
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 29266
+        },
+        {
+          "name": "Apple",
+          "category": "FOOD",
+          "price": 157
         }
       ]
     }
