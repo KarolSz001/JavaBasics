@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "AdamNowicki",
-        "age": 42,
-        "cash": 327
+        "name": "KarolNiewiadomska",
+        "age": 45,
+        "cash": 121
       },
       "products": [
         {
-          "name": "Boogeman",
-          "category": "BOOK",
-          "price": 512
-        },
-        {
           "name": "Alladyn",
           "category": "BOOK",
-          "price": 427
+          "price": 633
         },
         {
           "name": "Choco",
           "category": "FOOD",
-          "price": 166
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "MariaaNowak",
-        "age": 21,
-        "cash": 834
-      },
-      "products": [
-        {
-          "name": "GameBoy",
-          "category": "ELECTRONIC",
-          "price": 22613
+          "price": 188
         },
         {
-          "name": "Boogeman",
-          "category": "BOOK",
-          "price": 448
-        },
-        {
-          "name": "Phone",
-          "category": "ELECTRONIC",
-          "price": 19047
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "TeresaKowalski",
-        "age": 29,
-        "cash": 337
-      },
-      "products": [
-        {
-          "name": "Radio",
-          "category": "ELECTRONIC",
-          "price": 26682
-        },
-        {
-          "name": "IceCream",
+          "name": "Banan",
           "category": "FOOD",
-          "price": 159
+          "price": 219
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "AdamKruk",
+        "age": 27,
+        "cash": 151
+      },
+      "products": [
+        {
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 24742
+        },
+        {
+          "name": "Last Mochcanine",
+          "category": "BOOK",
+          "price": 514
         },
         {
           "name": "Phone",
           "category": "ELECTRONIC",
-          "price": 16805
+          "price": 28494
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "GenowefaNowak",
+        "age": 21,
+        "cash": 905
+      },
+      "products": [
+        {
+          "name": "Apple",
+          "category": "FOOD",
+          "price": 162
+        },
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 573
+        },
+        {
+          "name": "Last Mochcanine",
+          "category": "BOOK",
+          "price": 370
         }
       ]
     }

@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "JanZlotopolski",
-        "age": 31,
-        "cash": 413
+        "name": "TeresaNiewiadomska",
+        "age": 27,
+        "cash": 839
       },
       "products": [
         {
-          "name": "Banan",
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 303
+        },
+        {
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 27034
+        },
+        {
+          "name": "Choco",
           "category": "FOOD",
-          "price": 152
+          "price": 113
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "AgataNowicki",
+        "age": 42,
+        "cash": 223
+      },
+      "products": [
+        {
+          "name": "Game of Throne",
+          "category": "BOOK",
+          "price": 642
         },
         {
           "name": "Boogeman",
           "category": "BOOK",
-          "price": 307
+          "price": 972
         },
         {
-          "name": "Banan",
+          "name": "Choco",
           "category": "FOOD",
-          "price": 225
+          "price": 107
         }
       ]
     },
     {
       "customer": {
         "name": "JanKowalski",
-        "age": 20,
-        "cash": 853
+        "age": 26,
+        "cash": 821
       },
       "products": [
         {
           "name": "Alladyn",
           "category": "BOOK",
-          "price": 370
+          "price": 962
+        },
+        {
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 26001
         },
         {
           "name": "GameBoy",
           "category": "ELECTRONIC",
-          "price": 24660
-        },
-        {
-          "name": "Laptop",
-          "category": "ELECTRONIC",
-          "price": 17197
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "JanuszNiewiadomska",
-        "age": 27,
-        "cash": 155
-      },
-      "products": [
-        {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 866
-        },
-        {
-          "name": "Banan",
-          "category": "FOOD",
-          "price": 225
-        },
-        {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 907
+          "price": 29434
         }
       ]
     }

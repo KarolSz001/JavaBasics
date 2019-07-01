@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "AgataNowicki",
-        "age": 50,
-        "cash": 563
+        "name": "GenowefaNowak",
+        "age": 39,
+        "cash": 352
       },
       "products": [
         {
-          "name": "Game of Throne",
-          "category": "BOOK",
-          "price": 749
-        },
-        {
-          "name": "Last Mochcanine",
-          "category": "BOOK",
-          "price": 636
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 20074
         },
         {
           "name": "Phone",
           "category": "ELECTRONIC",
-          "price": 24746
+          "price": 25720
+        },
+        {
+          "name": "IceCream",
+          "category": "FOOD",
+          "price": 180
         }
       ]
     },
     {
       "customer": {
-        "name": "ZofiaZlotopolski",
-        "age": 26,
-        "cash": 188
+        "name": "AdamNowak",
+        "age": 34,
+        "cash": 831
       },
       "products": [
         {
-          "name": "Boogeman",
-          "category": "BOOK",
-          "price": 888
+          "name": "IceCream",
+          "category": "FOOD",
+          "price": 178
         },
         {
-          "name": "Alladyn",
-          "category": "BOOK",
-          "price": 491
-        },
-        {
-          "name": "Laptop",
+          "name": "Phone",
           "category": "ELECTRONIC",
-          "price": 19264
+          "price": 21022
+        },
+        {
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 12053
         }
       ]
     },
     {
       "customer": {
         "name": "TeresaKruk",
-        "age": 41,
-        "cash": 306
+        "age": 28,
+        "cash": 510
       },
       "products": [
         {
-          "name": "Choco",
-          "category": "FOOD",
-          "price": 196
-        },
-        {
-          "name": "Game of Throne",
+          "name": "Last Mochcanine",
           "category": "BOOK",
-          "price": 399
+          "price": 919
         },
         {
-          "name": "Choco",
-          "category": "FOOD",
-          "price": 237
+          "name": "Boogeman",
+          "category": "BOOK",
+          "price": 833
+        },
+        {
+          "name": "Last Mochcanine",
+          "category": "BOOK",
+          "price": 508
         }
       ]
     }
