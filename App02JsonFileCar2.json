@@ -1,23 +1,23 @@
 {
-  "model": "AUDI",
-  "price": 787988,
-  "mileage": 292349,
+  "model": "TESLA",
+  "price": 499680,
+  "mileage": 208336,
   "engine": {
     "engineType": "DIESEL",
-    "power": 120.5
+    "power": 102.2
   },
   "carBody": {
     "color": "BLACK",
-    "type": "COMBI",
+    "type": "HATCHBACK",
     "components": [
+      "RADIO",
       "TV",
-      "ABS",
-      "RADIO"
+      "ABS"
     ]
   },
   "wheel": {
-    "model": "Pacer",
-    "size": 17,
-    "tyreType": "WINTER"
+    "model": "DEBICA",
+    "size": 21,
+    "tyreType": "SUMMER"
   }
 }

@@ -1,23 +1,23 @@
 {
-  "model": "OPEL",
-  "price": 607284,
-  "mileage": 453838,
+  "model": "TESLA",
+  "price": 911380,
+  "mileage": 336579,
   "engine": {
-    "engineType": "LPG",
+    "engineType": "DIESEL",
     "power": 81.0
   },
   "carBody": {
-    "color": "BLACK",
-    "type": "SEDAN",
+    "color": "BLUE",
+    "type": "HATCHBACK",
     "components": [
+      "RADIO",
       "GPS",
-      "TV",
-      "RADIO"
+      "ABS"
     ]
   },
   "wheel": {
     "model": "Pacer",
-    "size": 19,
-    "tyreType": "WINTER"
+    "size": 21,
+    "tyreType": "SUMMER"
   }
 }

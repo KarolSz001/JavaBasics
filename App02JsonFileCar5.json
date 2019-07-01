@@ -1,23 +1,23 @@
 {
   "model": "AUDI",
-  "price": 710646,
-  "mileage": 293083,
+  "price": 715315,
+  "mileage": 446964,
   "engine": {
-    "engineType": "LPG",
-    "power": 81.0
+    "engineType": "GASOLINE",
+    "power": 120.5
   },
   "carBody": {
-    "color": "GREEN",
-    "type": "COMBI",
+    "color": "BLUE",
+    "type": "SEDAN",
     "components": [
-      "TV",
-      "RADIO",
-      "GPS"
+      "GPS",
+      "ABS",
+      "TV"
     ]
   },
   "wheel": {
     "model": "Pacer",
-    "size": 19,
+    "size": 21,
     "tyreType": "WINTER"
   }
 }

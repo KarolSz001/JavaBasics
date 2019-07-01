@@ -1,23 +1,23 @@
 {
-  "model": "TESLA",
-  "price": 398822,
-  "mileage": 477192,
+  "model": "FERRARI",
+  "price": 362643,
+  "mileage": 245766,
   "engine": {
-    "engineType": "LPG",
+    "engineType": "DIESEL",
     "power": 81.0
   },
   "carBody": {
-    "color": "RED",
-    "type": "SEDAN",
+    "color": "BLUE",
+    "type": "HATCHBACK",
     "components": [
-      "RADIO",
       "TV",
+      "RADIO",
       "ABS"
     ]
   },
   "wheel": {
     "model": "DEBICA",
-    "size": 21,
-    "tyreType": "WINTER"
+    "size": 17,
+    "tyreType": "SUMMER"
   }
 }

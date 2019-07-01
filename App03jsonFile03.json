@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "JanNiewiadomska",
-        "age": 45,
-        "cash": 736
+        "name": "AdamNowicki",
+        "age": 42,
+        "cash": 327
       },
       "products": [
         {
-          "name": "Banan",
-          "category": "FOOD",
-          "price": 182
-        },
-        {
-          "name": "Game of Throne",
+          "name": "Boogeman",
           "category": "BOOK",
-          "price": 893
+          "price": 512
         },
         {
-          "name": "GameBoy",
-          "category": "ELECTRONIC",
-          "price": 23090
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 427
+        },
+        {
+          "name": "Choco",
+          "category": "FOOD",
+          "price": 166
         }
       ]
     },
     {
       "customer": {
-        "name": "AdamNowak",
-        "age": 34,
-        "cash": 928
+        "name": "MariaaNowak",
+        "age": 21,
+        "cash": 834
       },
       "products": [
         {
-          "name": "Apple",
-          "category": "FOOD",
-          "price": 256
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 22613
         },
         {
           "name": "Boogeman",
           "category": "BOOK",
-          "price": 731
+          "price": 448
         },
         {
-          "name": "GameBoy",
+          "name": "Phone",
           "category": "ELECTRONIC",
-          "price": 15212
+          "price": 19047
         }
       ]
     },
     {
       "customer": {
-        "name": "JanuszNowicki",
-        "age": 31,
-        "cash": 511
+        "name": "TeresaKowalski",
+        "age": 29,
+        "cash": 337
       },
       "products": [
         {
-          "name": "Game of Throne",
-          "category": "BOOK",
-          "price": 880
-        },
-        {
           "name": "Radio",
           "category": "ELECTRONIC",
-          "price": 25580
+          "price": 26682
+        },
+        {
+          "name": "IceCream",
+          "category": "FOOD",
+          "price": 159
         },
         {
           "name": "Phone",
           "category": "ELECTRONIC",
-          "price": 12004
+          "price": 16805
         }
       ]
     }
