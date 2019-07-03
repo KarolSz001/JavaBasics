@@ -21,7 +21,9 @@ public class CarsService2 {
     private Set<Car2> car2Set;
 
     public CarsService2(List<String> stringList) {
-
+        if(stringList == null){
+            throw  new MyUncheckedException2(" ARGUMENT IS NULL IN CONSTRUCTOR CARSERVICE");
+        }
         this.car2Set = dataLoader(stringList);
     }
 
@@ -84,6 +86,12 @@ public class CarsService2 {
      * @return Set<String>
      */
     public Set<Car2> carBodyCollectionByPrice(CarBodyType cBT, BigDecimal min, BigDecimal max) {
+        if(cBT == null || min == null || max == null){
+            throw new MyUncheckedException2("ARGUMENT IN carBodyCollectionByPrice is NULL ");
+        }
+        if(min.compareTo(max) > 0){
+            throw new MyUncheckedException2(" WRONG RANGE MIN IS BIGGER THAN MAX");
+        }
         System.out.println("solution for task nr 2 --------------->>>>>>>>>>>>");
         return car2Set.stream()
                 .filter(f -> f.getCarBody().getType() == cBT)

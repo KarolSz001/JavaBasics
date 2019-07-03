@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "AdamKowalski",
-        "age": 23,
-        "cash": 199
-      },
-      "products": [
-        {
-          "name": "Apple",
-          "category": "FOOD",
-          "price": 115
-        },
-        {
-          "name": "GameBoy",
-          "category": "ELECTRONIC",
-          "price": 10251
-        },
-        {
-          "name": "Banan",
-          "category": "FOOD",
-          "price": 239
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "TeresaZlotopolski",
-        "age": 23,
-        "cash": 720
+        "name": "ZofiaNowak",
+        "age": 40,
+        "cash": 728
       },
       "products": [
         {
           "name": "Boogeman",
           "category": "BOOK",
-          "price": 541
-        },
-        {
-          "name": "Radio",
-          "category": "ELECTRONIC",
-          "price": 29206
-        },
-        {
-          "name": "Radio",
-          "category": "ELECTRONIC",
-          "price": 11688
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "GenowefaNowak",
-        "age": 45,
-        "cash": 705
-      },
-      "products": [
-        {
-          "name": "Boogeman",
-          "category": "BOOK",
-          "price": 749
+          "price": 672
         },
         {
           "name": "Laptop",
           "category": "ELECTRONIC",
-          "price": 25894
+          "price": 27537
+        },
+        {
+          "name": "Apple",
+          "category": "FOOD",
+          "price": 263
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "KarolNiewiadomska",
+        "age": 44,
+        "cash": 446
+      },
+      "products": [
+        {
+          "name": "Banan",
+          "category": "FOOD",
+          "price": 173
         },
         {
           "name": "Boogeman",
           "category": "BOOK",
-          "price": 797
+          "price": 719
+        },
+        {
+          "name": "Banan",
+          "category": "FOOD",
+          "price": 110
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "AdamKowalski",
+        "age": 23,
+        "cash": 929
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 452
+        },
+        {
+          "name": "Banan",
+          "category": "FOOD",
+          "price": 129
+        },
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 516
         }
       ]
     }

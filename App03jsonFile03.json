@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "AdamNiewiadomska",
-        "age": 43,
-        "cash": 388
+        "name": "GenowefaZlotopolski",
+        "age": 29,
+        "cash": 275
       },
       "products": [
         {
-          "name": "Banan",
+          "name": "Choco",
           "category": "FOOD",
-          "price": 155
-        },
-        {
-          "name": "IceCream",
-          "category": "FOOD",
-          "price": 241
-        },
-        {
-          "name": "Radio",
-          "category": "ELECTRONIC",
-          "price": 18835
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "TeresaNowicki",
-        "age": 28,
-        "cash": 874
-      },
-      "products": [
-        {
-          "name": "Laptop",
-          "category": "ELECTRONIC",
-          "price": 26501
+          "price": 117
         },
         {
           "name": "Laptop",
           "category": "ELECTRONIC",
-          "price": 29431
+          "price": 10564
         },
-        {
-          "name": "Game of Throne",
-          "category": "BOOK",
-          "price": 945
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "KarolNowak",
-        "age": 33,
-        "cash": 278
-      },
-      "products": [
         {
           "name": "Alladyn",
           "category": "BOOK",
-          "price": 832
+          "price": 777
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "AdamNowak",
+        "age": 31,
+        "cash": 508
+      },
+      "products": [
+        {
+          "name": "Apple",
+          "category": "FOOD",
+          "price": 228
         },
         {
-          "name": "Laptop",
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 487
+        },
+        {
+          "name": "Choco",
+          "category": "FOOD",
+          "price": 226
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "ZofiaNowak",
+        "age": 35,
+        "cash": 863
+      },
+      "products": [
+        {
+          "name": "GameBoy",
           "category": "ELECTRONIC",
-          "price": 29266
+          "price": 18759
         },
         {
           "name": "Apple",
           "category": "FOOD",
-          "price": 157
+          "price": 224
+        },
+        {
+          "name": "GameBoy",
+          "category": "ELECTRONIC",
+          "price": 28199
         }
       ]
     }

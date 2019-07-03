@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "JanuszKruk",
-        "age": 37,
-        "cash": 611
+        "name": "JanKowalski",
+        "age": 25,
+        "cash": 344
       },
       "products": [
         {
-          "name": "Apple",
-          "category": "FOOD",
-          "price": 276
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 28319
         },
         {
-          "name": "IceCream",
-          "category": "FOOD",
-          "price": 270
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 21372
         },
         {
-          "name": "IceCream",
+          "name": "Choco",
           "category": "FOOD",
-          "price": 232
+          "price": 102
         }
       ]
     },
     {
       "customer": {
         "name": "MariaaKruk",
-        "age": 25,
-        "cash": 938
+        "age": 44,
+        "cash": 423
       },
       "products": [
         {
-          "name": "Game of Throne",
-          "category": "BOOK",
-          "price": 651
+          "name": "Laptop",
+          "category": "ELECTRONIC",
+          "price": 15900
         },
         {
-          "name": "Apple",
-          "category": "FOOD",
-          "price": 136
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 17115
         },
         {
-          "name": "Game of Throne",
-          "category": "BOOK",
-          "price": 451
+          "name": "Radio",
+          "category": "ELECTRONIC",
+          "price": 14235
         }
       ]
     },
     {
       "customer": {
-        "name": "AdamNiewiadomska",
-        "age": 48,
-        "cash": 641
+        "name": "TeresaKowalski",
+        "age": 31,
+        "cash": 721
       },
       "products": [
         {
-          "name": "Radio",
-          "category": "ELECTRONIC",
-          "price": 18832
-        },
-        {
-          "name": "IceCream",
+          "name": "Choco",
           "category": "FOOD",
-          "price": 172
+          "price": 241
         },
         {
-          "name": "Laptop",
-          "category": "ELECTRONIC",
-          "price": 14108
+          "name": "Apple",
+          "category": "FOOD",
+          "price": 162
+        },
+        {
+          "name": "Apple",
+          "category": "FOOD",
+          "price": 201
         }
       ]
     }
