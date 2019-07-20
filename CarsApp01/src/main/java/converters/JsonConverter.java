@@ -18,6 +18,10 @@ public abstract class JsonConverter<T> {
     private final Type type = ((ParameterizedType)getClass().getGenericSuperclass()).getActualTypeArguments()[0];
 
     public JsonConverter(String jsonFilename) {
+        if (jsonFilename == null)
+        {
+            throw new MyUncheckedException("null argument for jsonFile");
+        }
         this.jsonFilename = jsonFilename;
     }
 
