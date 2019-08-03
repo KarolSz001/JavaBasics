@@ -6,29 +6,22 @@ import model.Car;
 import org.junit.Test;
 import exception.MyUncheckedException;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.mockito.junit.jupiter.MockitoSettings;
-import org.mockito.quality.Strictness;
-
 import java.math.BigDecimal;
 import java.util.List;
 
-
-@ExtendWith(MockitoExtension.class)
-@MockitoSettings(strictness = Strictness.LENIENT)
+@TestInstance(TestInstance.Lifecycle.PER_METHOD)
 public class CarServiceTest {
 
-    private DataLoaderService dataLoaderService = new DataLoaderService("jsonTestFile.json");
+    private DataLoaderService dataLoaderService = new DataLoaderService("App01jsonTestFile11.json");
     private CarService carService = new CarService(dataLoaderService);
 
 
-    @Test
-    @DisplayName(" carsCreator method with wrong args Test 1 ")
+   @Test
+    @DisplayName(" carsDataCreator method with wrong args Test 1 ")
     public void shouldThrowExceptionForWrongArgInCarsCreatorMethod() {
 
-        MyUncheckedException e = Assertions.assertThrows(MyUncheckedException.class, ()-> CarService.carsCreator(-10));
-        Assertions.assertEquals(" wrong args in 'carsCreator' method ",e.getMessage());
+        MyUncheckedException e = Assertions.assertThrows(MyUncheckedException.class, ()-> CarService.carsDataCreator(-10));
+        Assertions.assertEquals(" wrong args in 'carsDataCreator' method ",e.getMessage());
 
     }
 
@@ -37,7 +30,7 @@ public class CarServiceTest {
     public void shouldReturnCorrectNumberOfCars(){
 
         List<Car> carsList = carService.findAllCars();
-        Assertions.assertEquals(5,carsList.size());
+        Assertions.assertEquals(4,carsList.size());
 
     }
 
@@ -46,7 +39,7 @@ public class CarServiceTest {
     public void shouldReturnNotExpectedNumberOfCars(){
 
         List<Car> carsList = carService.findAllCars();
-        Assertions.assertNotEquals(4,carsList.size());
+        Assertions.assertNotEquals(5,carsList.size());
 
     }
 
@@ -71,7 +64,7 @@ public class CarServiceTest {
     public void shouldReturnCorrectNumberOfCarsFromMethod(){
 
         List<Car> carList =  carService.filteredByPriceInRange(new BigDecimal(0),new BigDecimal(10000000));
-        Assertions.assertEquals(5,carList.size());
+        Assertions.assertEquals(4,carList.size());
 
     }
 

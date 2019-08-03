@@ -20,11 +20,11 @@ public class CarsService2 {
 
     private Set<Car2> car2Set;
 
-    public CarsService2(List<String> stringList) {
-        if(stringList == null){
-            throw  new MyUncheckedException2(" ARGUMENT IS NULL IN CONSTRUCTOR CARSERVICE");
+    public CarsService2(List<String> dataList) {
+        if(dataList == null){
+            throw  new MyUncheckedException2(" Argument is null in CarsService2 Constructor ");
         }
-        this.car2Set = dataLoader(stringList);
+        this.car2Set = dataLoader(dataList);
     }
 
     public Set<Car2> getCar2Set() {
@@ -40,7 +40,7 @@ public class CarsService2 {
 
     private static Set<Car2> dataLoader(List<String> filesNameList) {
         if(filesNameList == null){
-            throw  new MyUncheckedException2(" ARGUMENT IS NULL IN DATALOADER");
+            throw  new MyUncheckedException2(" Argument is null in CarsService2 DataLoader ");
         }
         return filesNameList.stream()
                 .map(m->new CarJsonConverter2(m)
@@ -63,7 +63,7 @@ public class CarsService2 {
 //  PRICE,MILEAGE,POWER,NUMBER_COMPONENTS,SIZE_WHEEL,
 
         if (choice == null) {
-            throw new MyUncheckedException2("choice is null");
+            throw new MyUncheckedException2(" null argument in sortMethodByParam method ");
         }
         List<Car2> carsList = switch (choice) {
             case PRICE -> car2Set.stream().sorted(Comparator.comparing(Car2::getPrice)).collect(Collectors.toCollection(ArrayList::new));
@@ -89,10 +89,10 @@ public class CarsService2 {
      */
     public Set<Car2> carBodyCollectionByPrice(CarBodyType cBT, BigDecimal min, BigDecimal max) {
         if(cBT == null || min == null || max == null){
-            throw new MyUncheckedException2("ARGUMENT IN carBodyCollectionByPrice is NULL ");
+            throw new MyUncheckedException2("ARGUMENT IN carBodyCollectionByPrice is NULL");
         }
         if(min.compareTo(max) > 0){
-            throw new MyUncheckedException2(" WRONG RANGE MIN IS BIGGER THAN MAX");
+            throw new MyUncheckedException2("WRONG RANGE MIN IS BIGGER THAN MAX");
         }
         System.out.println("solution for task nr 2 --------------->>>>>>>>>>>>");
         return car2Set.stream()
@@ -108,7 +108,7 @@ public class CarsService2 {
      * @param engineType
      * @return Set<String>
      */
-// try commpartahor and then
+// try comparator and then
     public Set<String> carsWithEngineType(EngineType engineType) {
         System.out.println(" solution for task nr 3 --------------->>>>>>>>>>>> ");
         return car2Set.stream()

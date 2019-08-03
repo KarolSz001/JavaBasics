@@ -27,7 +27,7 @@ public class DataLoaderService {
         if (numberOfCars <= 0) {
             throw new MyUncheckedException(" wrong args for saveToFile ");
         }
-        List<Car> carList = CarService.carsCreator(numberOfCars);
+        List<Car> carList = CarService.carsDataCreator(numberOfCars);
         carsJson.toJson(carList);
     }
 

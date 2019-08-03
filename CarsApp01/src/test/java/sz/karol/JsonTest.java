@@ -12,7 +12,7 @@ import java.util.List;
 
 public class JsonTest {
 
-    private final String fileName = "jsonTestFile.json";
+    private final String fileName = "App01jsonTestFile11.json";
 
 
     @Test(expected = MyUncheckedException.class)

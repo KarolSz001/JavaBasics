@@ -15,10 +15,10 @@ import java.util.*;
 public class ControlAppService2 {
 
     public ControlAppService2() {
-        carsFileConstructor();
+        saveDataToJsonFile();
     }
 
-    private final List<String> filesNameList = Arrays.asList("App02JsonFileCar1.json", "App02JsonFileCar2.json",
+    private final List<String> filesNameList = Arrays.asList("App02jsonTestFile21.json", "App02jsonTestFile22.json",
             "App02JsonFileCar3.json", "App02JsonFileCar4.json", "App02JsonFileCar5.json");
     private final DataManager2 dataManager = new DataManager2();
 
@@ -83,7 +83,7 @@ public class ControlAppService2 {
         store.stream().forEach(System.out::println);
     }
 
-    public void carsFileConstructor() {
+    public void saveDataToJsonFile() {
         filesNameList.forEach(name -> {
             try {
                 new CarJsonConverter2(name).toJson(CarGenerator2.carGenerator());

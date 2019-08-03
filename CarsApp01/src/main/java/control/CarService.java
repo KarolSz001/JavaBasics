@@ -13,6 +13,7 @@ import java.text.MessageFormat;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class CarService {
@@ -23,15 +24,11 @@ public class CarService {
         this.cars = dataLoaderService.loadData();
     }
 
-    public static List<Car> carsCreator(int number) {
+    public static List<Car> carsDataCreator(int number) {
         if (number <= 0) {
-            throw new MyUncheckedException(" wrong args in 'carsCreator' method ");
+            throw new MyUncheckedException(" wrong args in 'carsDataCreator' method ");
         }
-        List<Car> temp = new ArrayList<>();
-        for (int i = 0; i < number; i++) {
-            temp.add(CarGenerator.carGenerator());
-        }
-        return temp;
+        return Stream.generate(CarGenerator::carGenerator).limit(number).collect(Collectors.toList());
     }
 
     public List<Car> findAllCars(){

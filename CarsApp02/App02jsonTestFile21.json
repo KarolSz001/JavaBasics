@@ -1,0 +1,23 @@
+{
+  "model": "TESLA",
+  "price": 911380,
+  "mileage": 336579,
+  "engine": {
+    "engineType": "DIESEL",
+    "power": 81.0
+  },
+  "carBody": {
+    "color": "BLUE",
+    "type": "HATCHBACK",
+    "components": [
+      "RADIO",
+      "GPS",
+      "ABS"
+    ]
+  },
+  "wheel": {
+    "model": "Pacer",
+    "size": 21,
+    "tyreType": "SUMMER"
+  }
+}
