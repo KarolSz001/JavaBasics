@@ -15,18 +15,17 @@ public abstract class JsonConverter<T> {
 
     private final String jsonFilename;
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    private final Type type = ((ParameterizedType)getClass().getGenericSuperclass()).getActualTypeArguments()[0];
+    private final Type type = ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
 
     public JsonConverter(String jsonFilename) {
-        if (jsonFilename == null)
-        {
+        if (jsonFilename == null) {
             throw new MyUncheckedException("null argument for jsonFile");
         }
         this.jsonFilename = jsonFilename;
     }
 
     // conversion from object to json
-    public void toJson(final T element)  {
+    public void toJson(final T element) {
         try (FileWriter fileWriter = new FileWriter(jsonFilename)) {
             if (element == null) {
                 throw new MyUncheckedException("ELEMENT IS NULL");

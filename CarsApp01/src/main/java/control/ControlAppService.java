@@ -12,10 +12,11 @@ public class ControlAppService {
     private DataLoaderService dataLoaderService;
     private final DataManager dataManager;
     private final CarService carService;
+    private final int numberOfCars = 4;
 
     public ControlAppService(final String jsonFilename) {
         dataLoaderService = new DataLoaderService(jsonFilename);
-        dataLoaderService.saveToFile();
+        dataLoaderService.saveToFile(numberOfCars);
         dataManager = new DataManager();
         carService = new CarService(dataLoaderService);
     }

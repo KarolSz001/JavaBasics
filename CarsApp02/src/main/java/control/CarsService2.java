@@ -39,12 +39,14 @@ public class CarsService2 {
     }
 
     private static Set<Car2> dataLoader(List<String> filesNameList) {
+        if(filesNameList == null){
+            throw  new MyUncheckedException2(" ARGUMENT IS NULL IN DATALOADER");
+        }
         return filesNameList.stream()
                 .map(m->new CarJsonConverter2(m)
                 .fromJson()
                 .orElseThrow(()-> new MyUncheckedException2(" dataLoader Error")))
                 .collect(Collectors.toSet());
-
     }
 
     //////////////////////////////////////////////////TASK1///////////////////////////////////////////////////////

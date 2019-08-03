@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CarsApp02" />
-        <module name="CarsApp01" />
         <module name="ProductsApp03" />
+        <module name="CarsApp01" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="12">
       <module name="CarsApp01" target="12" />
       <module name="CarsApp02" target="12" />
       <module name="ProductsApp03" target="12" />

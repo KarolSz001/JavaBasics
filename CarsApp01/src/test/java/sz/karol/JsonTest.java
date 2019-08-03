@@ -4,35 +4,42 @@ import converters.CarsStoresJsonConverter;
 import exception.MyUncheckedException;
 import model.Car;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class JsonTest {
 
-    private final String fileName = "jsonFile.json";
+    private final String fileName = "jsonTestFile.json";
 
 
     @Test(expected = MyUncheckedException.class)
+    @DisplayName("Test 1 -> shouldThrowExceptionForNullArgument ")
     public void shouldThrowExceptionForNullArgument() {
-        final CarsStoresJsonConverter carsJson = new CarsStoresJsonConverter(fileName);
+        CarsStoresJsonConverter carsJson = new CarsStoresJsonConverter(fileName);
         carsJson.toJson(null);
-
     }
 
 
     @Test(expected = MyUncheckedException.class)
+    @DisplayName("Test 1 -> shouldThrowExceptionForNullFile ")
     public void shouldThrowExceptionForNullFile() {
-        final CarsStoresJsonConverter carsJson = new CarsStoresJsonConverter(null);
+        CarsStoresJsonConverter carsJson = new CarsStoresJsonConverter(null);
         List<Car> carList = new ArrayList<>();
         carsJson.toJson(carList);
     }
 
-    @Test(expected = MyUncheckedException.class)
+    @Test
+    @DisplayName("Test 1 -> shouldThrowExceptionForNullFile2 ")
     public void shouldThrowExceptionForNullFile2() {
-        final CarsStoresJsonConverter carsJson = new CarsStoresJsonConverter(null);
-        List<Car> carList = carsJson.fromJson().get();
-        carList.forEach(System.out::println);
+        MyUncheckedException e = Assertions.assertThrows(MyUncheckedException.class, ()->new CarsStoresJsonConverter(null));
+        Assertions.assertEquals( "null argument for jsonFile",e.getMessage());
 
     }
+
+
+
+
 }

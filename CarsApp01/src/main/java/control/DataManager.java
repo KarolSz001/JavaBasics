@@ -39,7 +39,6 @@ public class DataManager {
         if (!text.matches("[1-" + criteria.length + "]")) {
             throw new MyUncheckedException(" Choice number is not correct ");
         }
-
         return criteria[Integer.parseInt(text) - 1];
     }
 

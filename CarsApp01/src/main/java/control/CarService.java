@@ -15,8 +15,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 
-
-class CarService {
+public class CarService {
 
     private final List<Car> cars;
 
@@ -24,12 +23,19 @@ class CarService {
         this.cars = dataLoaderService.loadData();
     }
 
-    public static List<Car> carsCreator() {
+    public static List<Car> carsCreator(int number) {
+        if (number <= 0) {
+            throw new MyUncheckedException(" wrong args in 'carsCreator' method ");
+        }
         List<Car> temp = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < number; i++) {
             temp.add(CarGenerator.carGenerator());
         }
         return temp;
+    }
+
+    public List<Car> findAllCars(){
+        return cars;
     }
 
     //////////////////////////////////////////task1////////////////////////////////////////////
@@ -56,7 +62,7 @@ class CarService {
     public List<Car> sort(Criterion criterion, boolean descending) {
 
         if (criterion == null) {
-            throw new MyUncheckedException("Criterion is null");
+            throw new MyUncheckedException(" null args in sort method ");
         }
 
         List<Car> sortedCars = switch (criterion) {
@@ -69,9 +75,7 @@ class CarService {
         if (descending) {
             Collections.reverse(sortedCars);
         }
-
         return sortedCars;
-
     }
     //////////////////////////////////////////task3////////////////////////////////////////////
 
@@ -83,6 +87,9 @@ class CarService {
      */
 
     public List<Car> collectionByMileage(int mileage) {
+        if( mileage < 0){
+            throw new MyUncheckedException(" wrong arg in collectionByMileage method ");
+        }
         return cars
                 .stream()
                 .filter(p -> p.getMileage() > mileage)
@@ -135,8 +142,10 @@ class CarService {
     }
 
     //////////////////////////////////////////task7////////////////////////////////////////////
+
     /**
      * Method sort List by Price and return List with the most expansive Cars
+     *
      * @return List of Car
      */
 
@@ -152,6 +161,7 @@ class CarService {
 
     /**
      * Method show List of Car with sorted list of Components
+     *
      * @return List<Car>
      */
     public List<Car> withSortedComponents() {
@@ -178,11 +188,11 @@ class CarService {
                 .sorted(Comparator.comparing(c -> c.getValue().size(), Comparator.reverseOrder()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (v1, v2) -> v1, LinkedHashMap::new));
 
-
-}
+    }
 
     /**
      * Method return new List filtered by parameters
+     *
      * @param min min price
      * @param max max price
      * @return List<Car>
@@ -190,7 +200,7 @@ class CarService {
     public List<Car> filteredByPriceInRange(BigDecimal min, BigDecimal max) {
 
         if (min.compareTo(max) >= 0) {
-            throw new MyUncheckedException(" Range is not correct ");
+            throw new MyUncheckedException(" Range is not correct in filteredByPriceInRange method ");
         }
         return cars.stream()
                 .filter(p -> p.getPrice().compareTo(min) > 0 && p.getPrice().compareTo(max) < 0)
