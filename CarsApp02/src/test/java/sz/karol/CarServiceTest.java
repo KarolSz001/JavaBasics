@@ -1,7 +1,8 @@
 package sz.karol;
 
-import control.CarsService2;
+import service.CarsService2;
 import enums.CarBodyType;
+import enums.Criterion2;
 import exception.MyUncheckedException2;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -24,8 +25,8 @@ public class CarServiceTest {
 
 
     @Test()
-    @DisplayName("shouldThrowExceptionForNullArgs Test 2")
-    public void shouldThrowExceptionForNullArgs() {
+    @DisplayName("shouldThrowExceptionForNullArgsInServiceConstructor Test 2")
+    public void shouldThrowExceptionForNullArgsInConstructor() {
 
         MyUncheckedException2 e = Assertions.assertThrows(MyUncheckedException2.class, ()-> new CarsService2(null));
         Assertions.assertEquals(" Argument is null in CarsService2 Constructor ",e.getMessage());
@@ -39,7 +40,15 @@ public class CarServiceTest {
     }
 
     @Test()
-    @DisplayName("shouldThrowExceptionForWrongArgsInMethod Test 4")
+    @DisplayName("shouldReturnCorrectNUmberOfCarsWithProperEngine Test 4")
+    public void shouldReturnCorrectNumberOfCars(){
+
+        Assertions.assertEquals(2,carsService2.sortMethodByParam(Criterion2.MILEAGE,true).size()  );
+
+    }
+
+    @Test()
+    @DisplayName("shouldThrowExceptionForWrongArgsInMethod Test 5")
     public void shouldThrowExceptionForWrongArgsInMethod(){
 
         MyUncheckedException2 e = Assertions.assertThrows(MyUncheckedException2.class, ()-> carsService2.carBodyCollectionByPrice(CarBodyType.COMBI,new BigDecimal(100),new BigDecimal(50)));
@@ -48,7 +57,7 @@ public class CarServiceTest {
     }
 
     @Test()
-    @DisplayName("shouldThrowExceptionForWrongArgsInMethod Test 5")
+    @DisplayName("shouldThrowExceptionForWrongArgsInMethod Test 6")
     public void shouldThrowExceptionForNullArgsInMethod2(){
 
         MyUncheckedException2 e = Assertions.assertThrows(MyUncheckedException2.class, ()-> carsService2.carBodyCollectionByPrice(null,new BigDecimal(1),new BigDecimal(50)));
@@ -57,12 +66,13 @@ public class CarServiceTest {
     }
 
     @Test()
-    @DisplayName("shouldReturnCorrectNUmberOfCarsWithProperEngine Test 6")
+    @DisplayName("shouldReturnCorrectNUmberOfCarsWithProperEngine Test 7")
     public void shouldReturnCorrectNUmberOfCarsWithProperEngine(){
 
         Assertions.assertEquals(2,carsService2.getCar2Set().size()  );
 
     }
+
 
 
 }

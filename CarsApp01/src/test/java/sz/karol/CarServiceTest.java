@@ -1,7 +1,7 @@
 package sz.karol;
 
-import control.CarService;
-import control.DataLoaderService;
+import service.CarService;
+import service.DataLoaderService;
 import model.Car;
 import org.junit.Test;
 import exception.MyUncheckedException;

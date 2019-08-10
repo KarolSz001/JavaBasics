@@ -2,33 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20cd8bd9-3fbc-4f1d-a8e0-f9a84d2d796e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CarsApp02/App02jsonTestFile21.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApp02/App02jsonTestFile22.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App01JsonFilename.json" beforeDir="false" afterPath="$PROJECT_DIR$/App01JsonFilename.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp01/jsonFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/App01jsonTestFile11.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp01/jsonTestFile.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/control/DataLoaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/control/DataLoaderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/control/ControlAppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/service/ControlAppService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/control/DataLoaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/service/DataLoaderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/control/DataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/utility/DataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/control/enums/Criterion.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/enums/Criterion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/converters/AverageCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/utility/AverageCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/converters/CarsStoresJsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/utility/CarsStoresJsonConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/converters/JsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/utility/JsonConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/dataGenerator/CarGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/model/CarGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/main/Main01.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/main/Main01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/model/enums/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/enums/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/main/java/screen/ScreenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/main/java/utility/ScreenManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/CarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/CarServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/DataLoaderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/DataLoaderServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/JsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/JsonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/control/CarService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/target/classes/control/CarService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/control/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/target/classes/control/CarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/control/DataLoaderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/target/classes/control/DataLoaderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/control/CarService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/control/CarService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/control/ControlAppService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/control/DataLoaderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/control/DataManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/control/enums/Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/converters/AverageCollector$BigDecimalAccumulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/converters/AverageCollector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/converters/CarsStoresJsonConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/converters/JsonConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/dataGenerator/CarGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/main/Main01.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/target/classes/main/Main01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/model/Car$CarBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/target/classes/model/Car$CarBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/target/classes/model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/model/enums/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/classes/screen/ScreenManager.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CarsApp01/target/test-classes/sz/karol/CarServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/target/test-classes/sz/karol/CarServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp01/target/test-classes/sz/karol/DataLoaderServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/target/test-classes/sz/karol/DataLoaderServiceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarsApp01/target/test-classes/sz/karol/JsonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp01/target/test-classes/sz/karol/JsonTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/CarsApp02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/CarsApp02.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/control/AverageCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/service/AverageCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/service/CarsService2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/service/ControlAppService2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/control/DataManager2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/service/DataManager2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/converters/CarJsonConverter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/utility/CarJsonConverter2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/converters/JsonConverter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/utility/JsonConverter2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/model/Car2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/model/Car2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/CarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/CarServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/DataManagerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/jsonConverterTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/test-classes/sz/karol/AppTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CarsApp02/target/test-classes/sz/karol/CarServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/target/test-classes/sz/karol/CarServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/test-classes/sz/karol/DataManagerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/test-classes/sz/karol/jsonConverterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/service/ControlAppService3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/service/DataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoppingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/service/ShoppingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/converters/JsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/utility/JsonConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/converters/ShoppingJsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/utility/ShoppingJsonConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main03.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/control/ControlAppService3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/control/DataManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/control/ShoppingService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/control/ShoppingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/converters/JsonConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/converters/ShoppingJsonConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/enums/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/exception/MyException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/exception/MyUncheckedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/generators/CustomerGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/generators/ProductGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/main/Main03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/model/CustomerWithProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/model/CustomerWithProductsFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/output/FileUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/paresTemp/FileTxtOperations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/target/classes/screen/ScreenManager.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/CarsApp01/target/" />
     <ignored path="$PROJECT_DIR$/CarsApp02/target/" />
@@ -56,102 +101,57 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="DockManager">
-    <window id="5">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/CarServiceTest.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="629">
-                    <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="4">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/CarServiceTest.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="566">
-                    <caret line="41" column="67" lean-forward="true" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="e#530#531#0" expanded="true" />
-                      <element signature="e#588#589#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/main/Main01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/DataManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/ScreenManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#86#87#0" expanded="true" />
+                <element signature="e#168#169#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java">
+        <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/AverageCollector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+            <state relative-caret-position="68">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/CarsStoresJsonConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#193#194#0" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/DataManager2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/AverageCollector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-605">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/model/Car2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
             </state>
           </provider>
         </entry>
@@ -159,17 +159,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/model/CarBody.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CarsApp01/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-697">
-              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+            <state relative-caret-position="510">
+              <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -177,16 +177,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CarsApp02/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
+            <state relative-caret-position="1122">
               <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/converters/JsonConverter.java">
+        <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/JsonConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
+            <state relative-caret-position="613">
               <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -224,8 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/CarsApp02/src/main/java/enums/Criterion2.java" />
         <option value="$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlApp2.java" />
         <option value="$PROJECT_DIR$/CarsApp02/src/main/java/control/DataManager2.java" />
         <option value="$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataLoaderGenerator.java" />
@@ -270,11 +268,13 @@
         <option value="$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java" />
         <option value="$PROJECT_DIR$/CarsApp01/App01jsonTestFile11.json" />
         <option value="$PROJECT_DIR$/CarsApp02/pom.xml" />
-        <option value="$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/CarServiceTest.java" />
         <option value="$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java" />
-        <option value="$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java" />
         <option value="$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/CarMatcher.java" />
         <option value="$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/CarServiceTest.java" />
+        <option value="$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java" />
+        <option value="$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/CarServiceTest.java" />
+        <option value="$PROJECT_DIR$/CarsApp01/src/main/java/main/Main01.java" />
+        <option value="$PROJECT_DIR$/CarsApp01/src/main/java/utility/JsonConverter.java" />
       </list>
     </option>
   </component>
@@ -301,12 +301,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1914" />
-    <option name="y" value="75" />
-    <option name="width" value="1825" />
-    <option name="height" value="1015" />
-  </component>
+  <component name="ProjectId" id="1PFRBVsrjXUL9OOgtpZBwIVjZ9M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -318,45 +313,37 @@
           <expand>
             <path>
               <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
+              <item name="CarsApp01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
+              <item name="CarsApp01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
+              <item name="CarsApp01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
+              <item name="CarsApp01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
+              <item name="CarsApp01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
+              <item name="CarsApp01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -364,67 +351,19 @@
             </path>
             <path>
               <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarsApp02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="karol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
+              <item name="CarsApp01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
+              <item name="CarsApp01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaBasics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProductsApp03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="karol" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -479,18 +418,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarServiceTest">
-    <configuration name="CarServiceTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main01">
+    <configuration name="Main01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main01" />
       <module name="CarsApp01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sz.karol.*" />
+          <option name="PATTERN" value="main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sz.karol" />
-      <option name="MAIN_CLASS_NAME" value="sz.karol.CarServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -510,7 +447,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarServiceTest.shouldNotThrowNoException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarServiceTest.shouldReturnCorrectNumberOfCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CarsApp02" />
       <extension name="coverage">
         <pattern>
@@ -520,23 +457,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="sz.karol" />
       <option name="MAIN_CLASS_NAME" value="sz.karol.CarServiceTest" />
-      <option name="METHOD_NAME" value="shouldNotThrowNoException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarServiceTest.shouldReturnCorrectNUmberOfCarsWithProperEngine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CarsApp02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sz.karol.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sz.karol" />
-      <option name="MAIN_CLASS_NAME" value="sz.karol.CarServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnCorrectNUmberOfCarsWithProperEngine" />
+      <option name="METHOD_NAME" value="shouldReturnCorrectNumberOfCars" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -558,13 +479,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarServiceTest.shouldThrowExceptionForWrongArgsInMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarsApp02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sz.karol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sz.karol" />
+      <option name="MAIN_CLASS_NAME" value="sz.karol.CarServiceTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionForWrongArgsInMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main01" />
         <item itemvalue="JUnit.CarServiceTest" />
+        <item itemvalue="JUnit.CarServiceTest.shouldThrowExceptionForWrongArgsInMethod" />
+        <item itemvalue="JUnit.CarServiceTest.shouldReturnCorrectNumberOfCars" />
         <item itemvalue="JUnit.CarServiceTest.shouldThrowExceptionForNullArgsInMethod2" />
-        <item itemvalue="JUnit.CarServiceTest (1)" />
-        <item itemvalue="JUnit.CarServiceTest.shouldReturnCorrectNUmberOfCarsWithProperEngine" />
-        <item itemvalue="JUnit.CarServiceTest.shouldNotThrowNoException" />
       </list>
     </recent_temporary>
   </component>
@@ -611,32 +548,14 @@
       <workItem from="1563489441512" duration="961000" />
       <workItem from="1563641069354" duration="2783000" />
       <workItem from="1564699653452" duration="874000" />
-      <workItem from="1564781585201" duration="25056000" />
+      <workItem from="1564781585201" duration="26023000" />
+      <workItem from="1564941739998" duration="3850000" />
+      <workItem from="1565205358907" duration="2362000" />
+      <workItem from="1565291929201" duration="3138000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarServiceTest_(1) - 2019.08.03 at 14h 03m 31s.xml">
-      <configuration name="CarServiceTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_(1) - 2019.08.03 at 14h 09m 35s.xml">
-      <configuration name="CarServiceTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_shouldThrowExceptionForNullArgsInMethod - 2019.08.03 at 14h 16m 41s.xml">
-      <configuration name="CarServiceTest.shouldThrowExceptionForNullArgsInMethod" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_shouldThrowExceptionForWrongArgsInMethod - 2019.08.03 at 14h 24m 10s.xml">
-      <configuration name="CarServiceTest.shouldThrowExceptionForWrongArgsInMethod" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_shouldThrowExceptionForWrongArgsInMethod - 2019.08.03 at 14h 24m 23s.xml">
-      <configuration name="CarServiceTest.shouldThrowExceptionForWrongArgsInMethod" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_shouldThrowExceptionForWrongArgsInMethod - 2019.08.03 at 14h 24m 35s.xml">
-      <configuration name="CarServiceTest.shouldThrowExceptionForWrongArgsInMethod" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarServiceTest_shouldNotThrowNoException - 2019.08.03 at 14h 25m 55s.xml">
-      <configuration name="CarServiceTest.shouldNotThrowNoException" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CarServiceTest_shouldReturnCorrectNUmberOfCarsWithProperEngine - 2019.08.03 at 14h 27m 42s.xml">
       <configuration name="CarServiceTest.shouldReturnCorrectNUmberOfCarsWithProperEngine" configurationId="JUnit" />
     </history-entry>
@@ -646,15 +565,36 @@
     <history-entry file="CarServiceTest_(1) - 2019.08.03 at 17h 05m 59s.xml">
       <configuration name="CarServiceTest (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CarServiceTest_shouldThrowExceptionForNullArgsInMethod2 - 2019.08.03 at 17h 12m 21s.xml">
+      <configuration name="CarServiceTest.shouldThrowExceptionForNullArgsInMethod2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarServiceTest - 2019.08.03 at 17h 13m 02s.xml">
+      <configuration name="CarServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarServiceTest - 2019.08.03 at 17h 24m 23s.xml">
+      <configuration name="CarServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarServiceTest_shouldReturnCorrectNumberOfCars - 2019.08.03 at 17h 25m 53s.xml">
+      <configuration name="CarServiceTest.shouldReturnCorrectNumberOfCars" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarServiceTest_shouldReturnCorrectNumberOfCars - 2019.08.03 at 17h 26m 15s.xml">
+      <configuration name="CarServiceTest.shouldReturnCorrectNumberOfCars" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarServiceTest_shouldThrowExceptionForWrongArgsInMethod - 2019.08.03 at 17h 26m 21s.xml">
+      <configuration name="CarServiceTest.shouldThrowExceptionForWrongArgsInMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarServiceTest - 2019.08.03 at 17h 26m 34s.xml">
+      <configuration name="CarServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176629000" />
+    <option name="totallyTimeSpent" value="186946000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1914" y="75" width="1825" height="1015" extended-state="0" />
+    <frame x="-1928" y="58" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14390935" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -663,16 +603,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.2244898" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.20578778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.18589744" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.17684887" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.17573696" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003413" side_tool="true" weight="0.3149883" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4996587" weight="0.16505896" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4996587" weight="0.16452742" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -694,22 +634,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/iface/ProductDataAccess.java" />
-    <entry file="file://$PROJECT_DIR$/App03jsonFile01.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/model/CustomerWithProducts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/model/Tshirt.java" />
     <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/model/Boots.java" />
     <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/model/User.java" />
@@ -769,7 +693,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/DataManager.java">
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/service/DataManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
@@ -781,18 +705,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/ShoppingService.java">
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/service/ShoppingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1728">
           <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1562008370155" expanded="true" signature="6665:6853" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/control/ControlAppService3.java">
+    <entry file="file://$PROJECT_DIR$/ProductsApp03/src/main/java/service/ControlAppService3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
@@ -803,42 +726,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/description/descr.txt" />
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/converters/AverageCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/exception/MyUncheckedException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/dataGenerator/CarGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/control/DataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/converters/CarsStoresJsonConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,34 +743,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/jsonConverterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/DataManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/control/ControlAppService.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/AppTest.java" />
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/jsonConverterTest.java" />
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/DataManagerTest.java" />
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/service/ControlAppService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
           <caret line="88" column="5" lean-forward="true" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
@@ -889,14 +756,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/converters/CarJsonConverter2.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/utility/CarJsonConverter2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/converters/JsonConverter2.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/utility/JsonConverter2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
@@ -913,7 +780,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/control/DataLoaderService.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/service/DataLoaderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
@@ -925,14 +792,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/main/Main01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/control/CarService.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/service/CarService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
@@ -944,23 +804,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/jsonFile.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/jsonFile.json" />
     <entry file="file://$PROJECT_DIR$/App01JsonFilename.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="15" selection-end-line="45" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/converters/JsonConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,57 +826,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/model/Car2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/CarMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="19" column="73" lean-forward="true" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/model/CarBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/CarMatcher.java" />
     <entry file="file://$PROJECT_DIR$/CarsApp02/src/test/java/sz/karol/CarServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="41" column="67" lean-forward="true" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
+        <state relative-caret-position="238">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#530#531#0" expanded="true" />
@@ -1037,50 +839,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/AverageCollector.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/CarServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-605">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="629">
+          <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/DataManager2.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/service/CarsService2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
+        <state relative-caret-position="186">
+          <caret line="89" column="68" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/service/ControlAppService2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/service/DataManager2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
           <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/ControlAppService2.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/service/AverageCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/control/CarsService2.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/model/Car2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        <state relative-caret-position="714">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/enums/Criterion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/enums/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/model/CarGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/AverageCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/CarsStoresJsonConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/model/CarBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp02/src/main/java/main/Main02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/JsonConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarsApp01/src/test/java/sz/karol/CarServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/ScreenManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#86#87#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/utility/DataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/src/main/java/main/Main01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarsApp01/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
         </state>
       </provider>
     </entry>

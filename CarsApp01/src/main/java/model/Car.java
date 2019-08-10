@@ -1,6 +1,6 @@
 package model;
 
-import model.enums.Color;
+import enums.Color;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package main;
 
-import control.ControlAppService2;
+import service.ControlAppService2;
 
 public class Main02 {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package sz.karol;
 
 import org.junit.Test;
-import control.DataLoaderService;
+import service.DataLoaderService;
 import exception.MyUncheckedException;
 import org.junit.jupiter.api.*;
 

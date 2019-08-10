@@ -1,6 +1,6 @@
 package sz.karol;
 
-import converters.CarsStoresJsonConverter;
+import utility.CarsStoresJsonConverter;
 import exception.MyUncheckedException;
 import model.Car;
 import org.junit.Test;
