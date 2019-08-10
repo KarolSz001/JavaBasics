@@ -1,23 +1,23 @@
 {
-  "model": "AUDI",
-  "price": 715315,
-  "mileage": 446964,
+  "model": "OPEL",
+  "price": 485062,
+  "mileage": 454652,
   "engine": {
-    "engineType": "GASOLINE",
-    "power": 120.5
+    "engineType": "LPG",
+    "power": 81.0
   },
   "carBody": {
-    "color": "BLUE",
-    "type": "SEDAN",
+    "color": "RED",
+    "type": "COMBI",
     "components": [
-      "GPS",
       "ABS",
-      "TV"
+      "TV",
+      "GPS"
     ]
   },
   "wheel": {
     "model": "Pacer",
     "size": 21,
-    "tyreType": "WINTER"
+    "tyreType": "SUMMER"
   }
 }

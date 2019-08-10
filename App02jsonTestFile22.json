@@ -1,23 +1,23 @@
 {
   "model": "FERRARI",
-  "price": 637581,
-  "mileage": 153755,
+  "price": 961505,
+  "mileage": 355675,
   "engine": {
-    "engineType": "GASOLINE",
-    "power": 120.5
+    "engineType": "DIESEL",
+    "power": 81.0
   },
   "carBody": {
     "color": "BLUE",
-    "type": "COMBI",
+    "type": "HATCHBACK",
     "components": [
-      "GPS",
-      "ABS",
-      "TV"
+      "TV",
+      "RADIO",
+      "ABS"
     ]
   },
   "wheel": {
     "model": "Pacer",
-    "size": 17,
+    "size": 21,
     "tyreType": "SUMMER"
   }
 }

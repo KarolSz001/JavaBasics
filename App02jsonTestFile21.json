@@ -1,23 +1,23 @@
 {
-  "model": "AUDI",
-  "price": 809628,
-  "mileage": 389136,
+  "model": "OPEL",
+  "price": 424701,
+  "mileage": 359953,
   "engine": {
     "engineType": "LPG",
-    "power": 120.5
+    "power": 102.2
   },
   "carBody": {
-    "color": "WHITE",
-    "type": "COMBI",
+    "color": "BLUE",
+    "type": "SEDAN",
     "components": [
       "GPS",
-      "RADIO",
-      "ABS"
+      "ABS",
+      "TV"
     ]
   },
   "wheel": {
     "model": "Motiv",
-    "size": 21,
+    "size": 19,
     "tyreType": "SUMMER"
   }
 }
