@@ -2,7 +2,7 @@ package utility;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import exception.MyUncheckedException;
+import exception.MyUncheckedException3;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -25,11 +25,11 @@ public abstract class JsonConverter<T> {
     public void toJson(final T element) {
         try (FileWriter fileWriter = new FileWriter(jsonFilename)) {
             if (element == null) {
-                throw new MyUncheckedException("ELEMENT IS NULL");
+                throw new MyUncheckedException3("ELEMENT IS NULL");
             }
             gson.toJson(element, fileWriter);
         } catch (Exception e) {
-            throw new MyUncheckedException("TO JSON EXCEPTION");
+            throw new MyUncheckedException3("TO JSON EXCEPTION");
         }
     }
 
@@ -38,7 +38,7 @@ public abstract class JsonConverter<T> {
         try (FileReader fileReader = new FileReader(jsonFilename)) {
             return Optional.of(gson.fromJson(fileReader, type));
         } catch (IOException e) {
-            throw new MyUncheckedException("FROM JSON - JSON FILENAME EXCEPTION");
+            throw new MyUncheckedException3("FROM JSON - JSON FILENAME EXCEPTION");
         }
     }
 }

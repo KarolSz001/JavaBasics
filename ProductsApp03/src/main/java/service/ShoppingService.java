@@ -2,8 +2,7 @@ package service;
 
 import utility.ShoppingJsonConverter;
 import enums.Category;
-import exception.MyUncheckedException;
-import exception.MyUncheckedException2;
+import exception.MyUncheckedException3;
 import model.Customer;
 import model.CustomerWithProducts;
 import model.Product;
@@ -24,7 +23,6 @@ public class ShoppingService {
 
         this.customersWithProducts = loadData(filenames);
     }
-
     /**
      * This method return  Map of Customer and Map<Product,Long> where Product is a key and Long is number of purchases
      * @param fileNames get list of fileNames, convert to List <CustomerWithProduct> and than to Map<Customer, Map<Product,Long>
@@ -35,7 +33,7 @@ public class ShoppingService {
                 .stream(fileNames)
                 .flatMap(filename -> new ShoppingJsonConverter(filename)
                         .fromJson()
-                        .orElseThrow(() -> new MyUncheckedException(""))
+                        .orElseThrow(() -> new MyUncheckedException3(""))
                         .getCustomerWithProducts().stream()
                 )
                 .collect(Collectors.toList())
@@ -82,7 +80,6 @@ public class ShoppingService {
 
     }
     /////////////////////////////////////TASK1B////////////////////////////////////
-
     /**
      * This method return  Customer the customer who paid the most
      * for shopping in the selected category BOOK, ELECTRONIC, FOOD
@@ -91,17 +88,16 @@ public class ShoppingService {
      */
     public Customer paidMostInSelectedCategory(Category category) {
         if (category == null) {
-            throw new MyUncheckedException2("category is null");
+            throw new MyUncheckedException3("category is null");
         }
 
-        return switch (category) {
-            case BOOK -> customerWhoPaidMostInCategory(Category.BOOK);
-            case ELECTRONIC -> customerWhoPaidMostInCategory(Category.ELECTRONIC);
-            case FOOD -> customerWhoPaidMostInCategory(Category.FOOD);
-            default -> throw new MyUncheckedException2("category is wrong");
-        };
+        switch (category) {
+            case BOOK : return customerWhoPaidMostInCategory(Category.BOOK);
+            case ELECTRONIC : return customerWhoPaidMostInCategory(Category.ELECTRONIC);
+            case FOOD : return customerWhoPaidMostInCategory(Category.FOOD);
+            default : throw new MyUncheckedException3("category is wrong");
+        }
     }
-
     /**
      * This is private method return Customer who paid most in selected category
      * reduce code for main method

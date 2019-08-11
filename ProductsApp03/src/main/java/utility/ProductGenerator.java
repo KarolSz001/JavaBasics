@@ -1,4 +1,4 @@
-package generators;
+package utility;
 
 import enums.Category;
 import model.Product;

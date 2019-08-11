@@ -10,5 +10,4 @@ public class Main03 {
         ca.runApp();
     }
 }
-// save to json file as a list , next load and convert to map !!
-// changed list to map as a major container of data
+

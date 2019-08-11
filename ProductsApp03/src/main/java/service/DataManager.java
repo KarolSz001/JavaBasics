@@ -1,9 +1,9 @@
 package service;
 
 import utility.ShoppingJsonConverter;
-import exception.MyUncheckedException;
-import generators.CustomerGenerator;
-import generators.ProductGenerator;
+import exception.MyUncheckedException3;
+import utility.CustomerGenerator;
+import utility.ProductGenerator;
 import model.CustomerWithProducts;
 import model.CustomerWithProductsFile;
 import model.Product;
@@ -23,7 +23,7 @@ public class DataManager {
 
         String line = sc.nextLine();
         if (line == null || !line.matches("\\d+")) {
-            throw new MyUncheckedException("WRONG DATA TRY AGIAN");
+            throw new MyUncheckedException3("WRONG DATA TRY AGIAN");
         }
 
         return Integer.parseInt(line);

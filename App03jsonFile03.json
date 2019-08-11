@@ -2,73 +2,73 @@
   "customerWithProducts": [
     {
       "customer": {
-        "name": "GenowefaZlotopolski",
-        "age": 29,
-        "cash": 275
+        "name": "ZofiaKruk",
+        "age": 20,
+        "cash": 458
       },
       "products": [
         {
-          "name": "Choco",
-          "category": "FOOD",
-          "price": 117
+          "name": "Game of Throne",
+          "category": "BOOK",
+          "price": 354
         },
+        {
+          "name": "Phone",
+          "category": "ELECTRONIC",
+          "price": 25312
+        },
+        {
+          "name": "IceCream",
+          "category": "FOOD",
+          "price": 278
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "KarolKruk",
+        "age": 43,
+        "cash": 723
+      },
+      "products": [
+        {
+          "name": "Alladyn",
+          "category": "BOOK",
+          "price": 457
+        },
+        {
+          "name": "Boogeman",
+          "category": "BOOK",
+          "price": 865
+        },
+        {
+          "name": "Boogeman",
+          "category": "BOOK",
+          "price": 956
+        }
+      ]
+    },
+    {
+      "customer": {
+        "name": "GenowefaNowak",
+        "age": 32,
+        "cash": 969
+      },
+      "products": [
         {
           "name": "Laptop",
           "category": "ELECTRONIC",
-          "price": 10564
+          "price": 22548
         },
         {
-          "name": "Alladyn",
-          "category": "BOOK",
-          "price": 777
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "AdamNowak",
-        "age": 31,
-        "cash": 508
-      },
-      "products": [
-        {
-          "name": "Apple",
-          "category": "FOOD",
-          "price": 228
-        },
-        {
-          "name": "Alladyn",
-          "category": "BOOK",
-          "price": 487
-        },
-        {
-          "name": "Choco",
-          "category": "FOOD",
-          "price": 226
-        }
-      ]
-    },
-    {
-      "customer": {
-        "name": "ZofiaNowak",
-        "age": 35,
-        "cash": 863
-      },
-      "products": [
-        {
-          "name": "GameBoy",
+          "name": "Radio",
           "category": "ELECTRONIC",
-          "price": 18759
+          "price": 20124
         },
         {
-          "name": "Apple",
-          "category": "FOOD",
-          "price": 224
-        },
-        {
-          "name": "GameBoy",
-          "category": "ELECTRONIC",
-          "price": 28199
+          "name": "Last Mochcanine",
+          "category": "BOOK",
+          "price": 336
         }
       ]
     }

@@ -1,9 +1,9 @@
 package service;
 
 import enums.Category;
-import exception.MyUncheckedException;
+import exception.MyUncheckedException3;
 import model.Customer;
-import screen.ScreenManager;
+import utility.ScreenManager;
 
 
 public class ControlAppService3 {
@@ -55,7 +55,7 @@ public class ControlAppService3 {
                         break;
                     }
                 }
-            } catch (MyUncheckedException e) {
+            } catch (MyUncheckedException3 e) {
                 e.printStackTrace();
             }
 
@@ -72,7 +72,7 @@ public class ControlAppService3 {
     private Category getCategoryFromNumber() {
         String parameter = dataManager.getLine(" Choose category press 1 - BOOK, 2 - ELECTRONIC, 3 - FOOD ");
         if (!parameter.matches("[123]")) {
-            throw new MyUncheckedException(" WRONG CATEGORY CHOICE");
+            throw new MyUncheckedException3(" WRONG CATEGORY CHOICE");
         }
         return Category.convertFromNumber(Integer.parseInt(parameter));
     }

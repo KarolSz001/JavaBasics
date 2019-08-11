@@ -2,66 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20cd8bd9-3fbc-4f1d-a8e0-f9a84d2d796e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_qdox_qdox_2_0_M8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_aether_provider_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_core_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_builder_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_compiler_plugin_3_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_incremental_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_utils_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_api_2_8_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_javac_2_8_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_manager_2_8_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_java_0_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_api_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_impl_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_spi_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_util_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_noaop_2_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_bean_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_plexus_1_4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App02JsonFileCar3.json" beforeDir="false" afterPath="$PROJECT_DIR$/App02JsonFileCar3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App02JsonFileCar4.json" beforeDir="false" afterPath="$PROJECT_DIR$/App02JsonFileCar4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App02JsonFileCar5.json" beforeDir="false" afterPath="$PROJECT_DIR$/App02JsonFileCar5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/CarsApp02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/CarsApp02.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/screen/ScreenManager2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/utility/ScreenManager2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/service/AverageCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/utility/AverageCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/service/ControlAppService2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/service/ControlAppService2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/src/main/java/service/DataManager2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/src/main/java/utility/DataManager2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/META-INF/CarsApp02.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/control/AverageCollector$BigDecimalAccumulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/control/AverageCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/control/CarsService2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/control/CarsService2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/control/ControlApp2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/control/ControlAppService2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/control/DataManager2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/converters/CarJsonConverter2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/converters/JsonConverter2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/enums/Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/main/Main02.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/target/classes/main/Main02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/model/Car2.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/target/classes/model/Car2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/classes/screen/ScreenManager2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/test-classes/META-INF/CarsApp02.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsApp02/target/test-classes/sz/karol/CarServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CarsApp02/target/test-classes/sz/karol/CarServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductsApp03/ProductsApp03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/ProductsApp03.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/exception/MyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/exception/MyUncheckedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/exception/MyUncheckedException3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/generators/CustomerGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/utility/CustomerGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/generators/ProductGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/utility/ProductGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main03.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/main/Main03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/output/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/paresTemp/FileTxtOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/utility/FileTxtOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/screen/ScreenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/utility/ScreenManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/service/ControlAppService3.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/service/ControlAppService3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/service/DataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/service/DataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/service/ShoppingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/service/ShoppingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductsApp03/src/main/java/utility/JsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductsApp03/src/main/java/utility/JsonConverter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main02">
+  <component name="RunManager" selected="Application.Main03">
     <configuration name="Main01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main01" />
       <module name="CarsApp01" />
@@ -187,6 +140,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main03" />
+      <module name="ProductsApp03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CarServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CarsApp02" />
       <extension name="coverage">
@@ -198,22 +164,6 @@
       <option name="PACKAGE_NAME" value="sz.karol" />
       <option name="MAIN_CLASS_NAME" value="sz.karol.CarServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarServiceTest.shouldReturnCorrectNumberOfCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CarsApp02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sz.karol.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sz.karol" />
-      <option name="MAIN_CLASS_NAME" value="sz.karol.CarServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnCorrectNumberOfCars" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -236,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main03" />
         <item itemvalue="Application.Main02" />
         <item itemvalue="Application.Main01" />
         <item itemvalue="JUnit.CarServiceTest" />
         <item itemvalue="JUnit.CarServiceTest.shouldThrowExceptionForWrongArgsInMethod" />
-        <item itemvalue="JUnit.CarServiceTest.shouldReturnCorrectNumberOfCars" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +241,7 @@
       <workItem from="1564941739998" duration="3850000" />
       <workItem from="1565205358907" duration="2362000" />
       <workItem from="1565291929201" duration="3138000" />
-      <workItem from="1565467724570" duration="1036000" />
+      <workItem from="1565467724570" duration="5656000" />
     </task>
     <servers />
   </component>
