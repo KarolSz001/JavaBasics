@@ -18,7 +18,11 @@ Basics Java , still in progress adding new functionality
 download, compile and run
 
 ## Code Examples
-Map<String, Car> map = cars.stream()
+
+
+Map<String, Car> map = 
+
+                cars.stream()
                 .collect(Collectors.groupingBy(c -> c.getModel()))
                 .entrySet()
                 .stream()
